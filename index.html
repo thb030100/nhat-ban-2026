@@ -1,0 +1,581 @@
+<title>Nhật Bản 22–30/12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&text=東京富士京都大阪河口湖&display=swap">
+<style>
+:root{
+  --bg:#F2F5F9;
+  --surface:#FFFFFF;
+  --ink:#152033;
+  --muted:#5A6679;
+  --line:#DAE1EA;
+  --map:#E9EFF6;
+  --ai:#22406A;
+  --ai-soft:#E3EAF4;
+  --shu:#C33F2A;
+  --shu-soft:#F7E4DF;
+  --snow:#5E8FBA;
+  --snow-soft:#E1EDF7;
+  --warn-bg:#FFF3D9;
+  --warn-ink:#734D00;
+  --tip-bg:#E6F2EC;
+  --tip-ink:#1E5A3C;
+  --sans:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --jp:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E131A;--surface:#161D27;--ink:#E6EBF2;--muted:#97A2B3;--line:#283241;--map:#121A24;
+    --ai:#93B3DD;--ai-soft:#1D2A3C;--shu:#F07B63;--shu-soft:#3A221E;
+    --snow:#8DB8DE;--snow-soft:#1A2B3B;--warn-bg:#352A12;--warn-ink:#F1CB7A;--tip-bg:#15291F;--tip-ink:#8FD3AE;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E131A;--surface:#161D27;--ink:#E6EBF2;--muted:#97A2B3;--line:#283241;--map:#121A24;
+  --ai:#93B3DD;--ai-soft:#1D2A3C;--shu:#F07B63;--shu-soft:#3A221E;
+  --snow:#8DB8DE;--snow-soft:#1A2B3B;--warn-bg:#352A12;--warn-ink:#F1CB7A;--tip-bg:#15291F;--tip-ink:#8FD3AE;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.55;font-variant-numeric:tabular-nums;-webkit-text-size-adjust:100%}
+.wrap{max-width:560px;margin:0 auto;padding-inline:16px;padding-block:20px 48px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--ai)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* Hero */
+.hero{display:grid;gap:14px;padding-block:8px 20px}
+.hero h1{font-size:30px;line-height:1.15;font-weight:700;letter-spacing:-.01em}
+.count{display:inline-flex;align-items:baseline;gap:6px;font-weight:600;color:var(--shu)}
+.count b{font-size:22px}
+.route{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.route::before{content:"";position:absolute;left:12.5%;right:12.5%;top:22px;height:3px;background:var(--ai);border-radius:2px}
+.route li{display:grid;justify-items:center;gap:2px;text-align:center;position:relative}
+.route .k{font-family:var(--jp);font-weight:600;font-size:17px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:3px solid var(--ai);color:var(--ai);line-height:1}
+.route .n{font-weight:600;font-size:14px;margin-top:4px}
+.route .s{font-size:12px;color:var(--muted)}
+.route .ski-mark{font-size:11px;font-weight:600;color:var(--snow)}
+
+/* Sticky nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);margin-inline:-16px;padding:8px 16px;border-bottom:1px solid var(--line)}
+nav .row{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+nav .row::-webkit-scrollbar{display:none}
+nav a{flex:0 0 auto;display:grid;justify-items:center;min-width:46px;padding:6px 8px;border-radius:10px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);font-size:12px;line-height:1.2}
+nav a b{font-size:16px}
+nav a.txt{align-content:center;font-weight:600;font-size:13px;padding-inline:12px}
+nav a.on{background:var(--ai);border-color:var(--ai);color:var(--surface)}
+nav a.today{border-color:var(--shu);box-shadow:inset 0 0 0 1px var(--shu)}
+a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outline:2px solid var(--shu);outline-offset:2px}
+
+/* Maps */
+.map{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.map img{display:block;width:100%;height:auto;background:var(--map)}
+.map .cap{padding:8px 14px 0;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.mapfoot{display:grid;gap:8px;padding:10px 14px 12px;border-top:1px solid var(--line)}
+.stops{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px}
+.stops li{display:inline-flex;align-items:center;gap:5px}
+.stops i{font-style:normal;display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--ai);color:var(--surface);font-size:10px;font-weight:700}
+.stops i.h{border-radius:4px;background:var(--shu)}
+.stops a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--muted);text-decoration-thickness:1px;text-underline-offset:3px;padding-block:3px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);align-items:center}
+.legend span::before{content:"";display:inline-block;width:20px;vertical-align:middle;margin-right:6px}
+.lg-train::before{border-top:3px solid var(--ai)}
+.lg-road::before{border-top:3px dashed var(--shu)}
+.lg-walk::before{border-top:3px dotted var(--muted)}
+.gm{justify-self:start;display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;text-decoration:none;color:var(--surface);background:var(--ai);padding:8px 14px;border-radius:10px}
+.gm:hover{opacity:.9}
+.g{stroke:var(--line);stroke-width:1}
+.r{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.r-train{stroke:var(--ai);stroke-width:3}
+.r-road{stroke:var(--shu);stroke-width:2.5;stroke-dasharray:7 5}
+.r-walk{stroke:var(--muted);stroke-width:2.5;stroke-dasharray:.5 5}
+.ah-train{fill:var(--ai)}.ah-road{fill:var(--shu)}.ah-walk{fill:var(--muted)}
+.mk{fill:var(--ai);stroke:var(--surface);stroke-width:2}
+.mk-h{fill:var(--shu);stroke:var(--surface);stroke-width:2}
+.mk-n{fill:var(--surface);font:700 10px var(--sans);text-anchor:middle}
+.lbl{fill:var(--ink);font:600 11px var(--sans);paint-order:stroke;stroke:var(--map);stroke-width:3.5px;stroke-linejoin:round}
+.pill{fill:var(--surface);stroke:var(--line)}
+.pill-t{fill:var(--ink);font:600 11px var(--sans)}
+.fuji{fill:var(--snow)}
+.sc{stroke:var(--muted);stroke-width:1.5;fill:none}
+.sc-t{fill:var(--muted);font:500 10px var(--sans)}
+
+/* Days */
+.day{scroll-margin-top:84px;padding-block:28px 4px;display:grid;gap:14px}
+.dhead{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center}
+.dnum{font-size:40px;font-weight:700;line-height:1;color:var(--ai)}
+.dmeta{display:grid;gap:2px}
+.dmeta h2{font-size:19px;line-height:1.25}
+.dkanji{font-family:var(--jp);font-size:30px;color:var(--ai);opacity:.22;line-height:1;white-space:nowrap}
+.facts{display:flex;flex-wrap:wrap;gap:6px}
+.fact{font-size:12.5px;padding:3px 10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--muted)}
+.fact strong{color:var(--ink);font-weight:600}
+.badge-today{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--shu);background:var(--shu-soft);padding:2px 8px;border-radius:999px;justify-self:start}
+
+.tl{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.tl li{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:12px 14px;border-top:1px solid var(--line)}
+.tl li:first-child{border-top:0}
+.tl time{font-weight:600;font-size:14px;color:var(--ink);padding-top:1px}
+.tl .t{font-weight:600}
+.tl .d{color:var(--muted);font-size:14px}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;padding:1px 7px;border-radius:6px;margin-right:6px;vertical-align:1px}
+.tl li.move{background:var(--ai-soft)}
+.tl li.move .tag{background:var(--ai);color:var(--surface)}
+.tl li.ski{background:var(--snow-soft)}
+.tl li.ski .tag{background:var(--snow);color:var(--surface)}
+.tl li.task .tag{background:var(--shu-soft);color:var(--shu)}
+
+.ph summary{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;font-weight:600;color:var(--ai);cursor:pointer;list-style:none;padding:4px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.ph summary::-webkit-details-marker{display:none}
+.ph summary::before{content:"";width:0;height:0;border-left:5px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent}
+.ph[open] summary::before{transform:rotate(90deg)}
+.ph .c,.ph[open] .o{display:none}
+.ph[open] .c{display:inline}
+.ph img{display:block;width:100%;height:auto;max-height:420px;object-fit:cover;border-radius:10px;margin-top:8px;background:var(--line)}
+.credit{font-size:11.5px;color:var(--muted);margin-top:4px}
+.credit a{color:var(--muted)}
+.allph{justify-self:start;font:inherit;font-size:14px;font-weight:600;color:var(--ai);background:var(--surface);border:1px solid var(--ai);border-radius:10px;padding:8px 14px;cursor:pointer}
+.note{font-size:14px;padding:10px 14px;border-radius:12px}
+.note.warn{background:var(--warn-bg);color:var(--warn-ink)}
+.note.tip{background:var(--tip-bg);color:var(--tip-ink)}
+.note b{font-weight:600}
+
+/* Sections */
+.sec{scroll-margin-top:84px;padding-block:36px 4px;display:grid;gap:14px}
+.sec h2{font-size:22px}
+.sub{color:var(--muted);font-size:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+
+/* Stays */
+.stay{display:grid;gap:10px}
+.stay-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.stay-h h3{font-size:17px}
+.stay-h h3 .jp{font-family:var(--jp);color:var(--ai);margin-right:6px}
+.stay-h span{font-size:13px;color:var(--muted)}
+.stay dl{margin:0;display:grid;grid-template-columns:84px 1fr;gap:6px 12px;font-size:14px}
+.stay dt{color:var(--muted);font-size:12.5px;padding-top:1px}
+.stay dd{margin:0}
+.price{font-weight:700;color:var(--ai)}
+.price.over{color:var(--shu)}
+.chains{display:flex;flex-wrap:wrap;gap:6px}
+.chains span{font-size:13px;padding:3px 10px;border-radius:999px;background:var(--ai-soft);color:var(--ink)}
+
+.cost{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.cost li{display:grid;gap:5px}
+.cost .r{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.cost .r span:last-child{font-weight:600;white-space:nowrap}
+.bar{height:6px;border-radius:3px;background:var(--ai-soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ai);border-radius:3px}
+.total{display:grid;gap:4px;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.total .r{display:flex;justify-content:space-between;gap:12px;font-weight:700}
+.total .big{font-size:20px;color:var(--shu)}
+
+.conv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.conv label{display:grid;gap:4px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.conv input{font:inherit;font-size:18px;font-weight:600;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 10px;width:100%;min-width:0}
+.conv .out{grid-column:1/-1;font-size:22px;font-weight:700;color:var(--ai)}
+.conv .out small{font-size:13px;font-weight:500;color:var(--muted)}
+
+.check{list-style:none;margin:0;padding:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.check li{border-top:1px solid var(--line)}
+.check li:first-child{border-top:0}
+.check label{display:grid;grid-template-columns:24px 1fr;gap:10px;padding:12px 14px;cursor:pointer}
+.check input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--ai)}
+.check .t{font-weight:600}
+.check .d{color:var(--muted);font-size:13.5px}
+.check input:checked ~ span .t{text-decoration:line-through;color:var(--muted)}
+.prog{font-weight:600;color:var(--ai)}
+
+.pack{display:flex;flex-wrap:wrap;gap:8px}
+.pack span{font-size:14px;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.foot{color:var(--muted);font-size:13px;padding-top:28px}
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <p class="eyebrow">9 ngày 8 đêm · Thứ 3 22/12 → Thứ 4 30/12</p>
+    <h1>Nhật Bản mùa đông</h1>
+    <p class="sub">Vietnam Airlines bay thẳng · HAN 08:40 → HND 15:05 · KIX 15:40 → HAN 19:15</p>
+    <p class="count" id="count"><b>—</b> <span>ngày nữa khởi hành</span></p>
+    <ol class="route" aria-label="Cung đường">
+      <li><span class="k">東京</span><span class="n">Tokyo</span><span class="s">3 đêm</span></li>
+      <li><span class="k">富士</span><span class="n">Phú Sĩ</span><span class="s">2 đêm</span><span class="ski-mark">Trượt tuyết</span></li>
+      <li><span class="k">京都</span><span class="n">Kyoto</span><span class="s">2 đêm</span></li>
+      <li><span class="k">大阪</span><span class="n">Osaka</span><span class="s">1 đêm</span></li>
+    </ol>
+    <div id="overview"></div>
+    <p class="sub">Bấm vào tên từng điểm dưới bản đồ để mở trong Google Maps, rồi bấm <b>Lưu</b> để giữ lại.</p>
+    <button type="button" class="allph" id="allph" aria-pressed="false">Mở tất cả ảnh</button>
+    <p class="note warn">Từ <b>29/12</b> Nhật vào kỳ nghỉ năm mới. Lịch đã xếp để các điểm hay đóng cửa rơi vào trước ngày đó.</p>
+  </header>
+
+  <nav aria-label="Đi tới"><div class="row" id="nav"></div></nav>
+
+  <main id="days"></main>
+
+  <section class="sec" id="cho-o">
+    <h2>Chỗ ở, tối đa $100/đêm</h2>
+    <p class="sub">Tính theo phòng, $100 ≈ 15.000 ¥ ≈ 2,6 triệu. Giá là mức thường gặp cuối tháng 12, chưa kiểm tra cho năm nay. Tìm theo khu và tên chuỗi trên Booking hoặc Agoda.</p>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">東京</span>Tokyo</h3><span>3 đêm · 22–24/12</span></div>
+      <dl>
+        <dt>Nên ở</dt><dd><b>Shinjuku</b>, phía nam hoặc phía tây ga</dd>
+        <dt>Vì sao</dt><dd>Bến xe buýt đi Phú Sĩ (Busta Shinjuku) nằm ngay trên ga. Tàu JR đi Shibuya 5 phút, Harajuku 3 phút. Từ Haneda có xe buýt chạy thẳng.</dd>
+        <dt>Giá</dt><dd><span class="price">12.000–18.000 ¥</span> phòng đôi, khách sạn business</dd>
+        <dt>Chuỗi</dt><dd class="chains"><span>Sotetsu Fresa Inn</span><span>Hotel Mystays</span><span>APA Hotel</span><span>Toyoko Inn</span><span>Tokyu Stay</span></dd>
+      </dl>
+      <p class="note tip">Tokyu Stay có máy giặt trong phòng ở nhiều chi nhánh, giặt được giữa chuyến 9 ngày. Giá thường sát ngân sách. Muốn rẻ hơn (10.000–14.000 ¥) thì ở Ueno hoặc Asakusa, nhưng sáng 25/12 phải đi thêm ~25 phút ra Shinjuku bắt xe buýt.</p>
+    </article>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">河口湖</span>Kawaguchiko</h3><span>2 đêm · 25–26/12</span></div>
+      <dl>
+        <dt>Nên ở</dt><dd>Quanh <b>ga Kawaguchiko</b> và bờ đông hồ</dd>
+        <dt>Vì sao</dt><dd>Xe buýt từ Shinjuku và xe đi Mishima đều đỗ ở ga. Taxi lên khu trượt tuyết Fujiten ~25 phút. Đi bộ ra hồ và cáp treo.</dd>
+        <dt>Giá</dt><dd><span class="price">10.000–15.000 ¥</span> khách sạn nhỏ, guesthouse<br><span class="price over">40.000–80.000 ¥</span> ryokan nhìn Phú Sĩ, kèm ăn tối</dd>
+        <dt>Tìm</dt><dd>Lọc "onsen" và "Mt Fuji view". Một số khách sạn nhỏ gần ga có bồn onsen chung trên sân thượng nhìn ra núi. Hostel có phòng riêng (ví dụ K's House Mt Fuji) là lựa chọn rẻ nhất.</dd>
+      </dl>
+      <p class="note warn"><b>Ryokan nhìn Phú Sĩ kèm bữa tối vượt xa $100</b>, nhất là tối thứ Bảy dịp Giáng sinh. Nếu muốn thử ryokan: một đêm ryokan không kèm bữa (khoảng 18.000–25.000 ¥) và một đêm guesthouse. Trung bình hai đêm vẫn quanh $100.</p>
+    </article>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">京都</span>Kyoto</h3><span>2 đêm · 27–28/12</span></div>
+      <dl>
+        <dt>Nên ở</dt><dd>Quanh <b>ga Kyoto</b>, ưu tiên phía nam (cửa Hachijo)</dd>
+        <dt>Vì sao</dt><dd>Xuống Shinkansen kéo vali vài phút là tới. Sáng 29 đi Fushimi Inari chỉ 2 ga JR. Xe buýt đi Kiyomizu, Chùa Vàng xuất phát từ ga.</dd>
+        <dt>Giá</dt><dd><span class="price">10.000–16.000 ¥</span> phòng đôi</dd>
+        <dt>Chuỗi</dt><dd class="chains"><span>Daiwa Roynet</span><span>Hotel Keihan</span><span>Sotetsu Fresa Inn</span><span>Toyoko Inn</span><span>Dormy Inn</span></dd>
+      </dl>
+      <p class="note tip">Dormy Inn có bồn tắm onsen chung và mì miễn phí buổi tối, nhưng giá thường sát hoặc vượt ngân sách. Khu Shijo, Kawaramachi gần Gion và chỗ ăn tối hơn, nhưng xa ga hơn ~10 phút tàu điện ngầm.</p>
+    </article>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">大阪</span>Osaka</h3><span>1 đêm · 29/12</span></div>
+      <dl>
+        <dt>Nên ở</dt><dd><b>Namba</b></dd>
+        <dt>Vì sao</dt><dd>Tàu Nankai ra sân bay Kansai chạy thẳng từ ga Namba. Đi bộ tới Dotonbori, chợ Kuromon, Shinsaibashi.</dd>
+        <dt>Giá</dt><dd><span class="price">9.000–15.000 ¥</span> phòng đôi</dd>
+        <dt>Chuỗi</dt><dd class="chains"><span>APA Hotel</span><span>Hotel Mystays</span><span>Toyoko Inn</span><span>Super Hotel</span><span>Dormy Inn</span></dd>
+      </dl>
+    </article>
+
+    <p class="note tip">Phòng "double" ở khách sạn business Nhật chỉ khoảng 11–14 m², giường ~140 cm. Hai người lớn mang vali to nên chọn phòng <b>twin</b> hoặc "moderate double".</p>
+  </section>
+
+  <section class="sec" id="chi-phi">
+    <h2>Chi phí mỗi người</h2>
+    <p class="sub">Ước tính cho 2 người ở chung phòng, chưa gồm vé máy bay. Nên kiểm tra lại giá khi đặt.</p>
+    <div class="card">
+      <ul class="cost" id="cost"></ul>
+      <div class="total">
+        <div class="r"><span>Tổng tại Nhật</span><span>155.000–175.000 ¥</span></div>
+        <div class="r"><span>Quy đổi</span><span>≈ 26–30 triệu</span></div>
+        <div class="r"><span>Cộng vé máy bay ~19,8 triệu</span><span class="big">46–50 triệu</span></div>
+      </div>
+      <p class="sub" style="margin-top:10px">Vé Vietnam Airlines bay thẳng, đi Haneda, về từ Kansai. Giá trên trang so sánh, kiểm tra lại hạng vé và hành lý khi đặt.</p>
+    </div>
+    <div class="card conv">
+      <label for="yen">Yên<input id="yen" type="number" inputmode="numeric" value="15000"></label>
+      <label for="rate">VND / 1 yên<input id="rate" type="number" inputmode="decimal" value="170"></label>
+      <p class="out" id="vnd" aria-live="polite">—</p>
+    </div>
+  </section>
+
+  <section class="sec" id="chuan-bi">
+    <h2>Việc cần làm</h2>
+    <p class="sub">Theo thứ tự ưu tiên. <span class="prog" id="prog"></span></p>
+    <ul class="check" id="todo"></ul>
+
+    <h2 style="margin-top:14px">Đồ mang theo</h2>
+    <p class="sub">Tokyo, Kyoto, Osaka khoảng 2–12°C. Kawaguchiko từ −4 đến 8°C, trên khu trượt tuyết còn lạnh hơn.</p>
+    <div class="pack" id="pack"></div>
+  </section>
+
+  <p class="foot">Ảnh từ Wikipedia và Wikimedia Commons theo giấy phép tự do, ghi tên tác giả dưới mỗi ảnh. Bản đồ nền © OpenStreetMap contributors. Đường nối trên bản đồ là thứ tự đi, không phải đường đi thực tế; bấm Google Maps để xem chỉ đường. Ngày mở cửa khu trượt tuyết, giờ xe chạy và lịch nghỉ năm mới có thể thay đổi theo năm.</p>
+</div>
+
+<script>
+(function(){
+  var START=22,END=30;
+
+  function P(n,a,o,m,q){return {n:n,a:a,o:o,m:m,q:q}}
+  var HOT={
+    T:{a:35.6885,o:139.6990,q:"Shinjuku Station, Tokyo"},
+    F:{a:35.5060,o:138.7680,q:"Kawaguchiko Station"},
+    K:{a:34.9835,o:135.7585,q:"Kyoto Station"},
+    O:{a:34.6650,o:135.5020,q:"Namba Station, Osaka"}
+  };
+  function H(c,m){var h=HOT[c];return {n:"Khách sạn",a:h.a,o:h.o,m:m,q:h.q,h:1}}
+  var FUJI={n:"Núi Phú Sĩ 3.776 m",a:35.3606,o:138.7274};
+
+  var DAYS=[
+    {n:22,w:"Thứ 3",k:"東京",title:"Bay sang, tối Shibuya",sleep:"Shinjuku",temp:"2–12°C",sun:"16:32",
+     maps:[{from:{t:"Từ Haneda · tàu ~45'",a:35.5494,o:139.7798,m:"train"},pts:[
+       H("T"),P("Shibuya Sky",35.6584,139.7022,"train","Shibuya Sky"),P("Omoide Yokocho",35.6929,139.6996,"train","Omoide Yokocho, Shinjuku"),H("T","walk")]}],
+     items:[
+      ["8:40","Cất cánh từ Nội Bài","Vietnam Airlines, bay thẳng 4h25.","move"],
+      ["15:05","Đến sân bay Haneda","Nhập cảnh, lấy hành lý khoảng 45 phút.","move"],
+      ["16:00","Về Shinjuku","Tàu hoặc xe buýt limousine, ~45 phút.","move"],
+      ["17:00","Nhận phòng khách sạn",""],
+      ["18:00","Shibuya","Ngã tư Shibuya, lên Shibuya Sky ngắm Tokyo về đêm. Đặt vé khung giờ sau 18:00."],
+      ["20:00","Omoide Yokocho","Ăn tối ở hẻm quán nướng Shinjuku."]
+    ],notes:[["tip","Mặt trời lặn 16:32, lúc đó bạn còn trên đường từ sân bay về. Ngày đầu chỉ đi buổi tối cho nhẹ."]]},
+    {n:23,w:"Thứ 4",k:"東京",title:"Tokyo truyền thống",sleep:"Shinjuku",temp:"2–12°C",sun:"16:32",
+     maps:[{pts:[
+       H("T"),P("Sensō-ji",35.7148,139.7967,"train","Senso-ji, Tokyo"),P("Skytree",35.7101,139.8107,"walk","Tokyo Skytree"),
+       P("Ueno · Ameyoko",35.7120,139.7745,"train","Ameyoko, Tokyo"),P("Akihabara",35.6984,139.7731,"train","Akihabara Station"),H("T","train")]}],
+     items:[
+      ["8:30","Asakusa","Chùa Sensō-ji trước khi đông, phố Nakamise."],
+      ["11:00","Sông Sumida, Tokyo Skytree","Lên Skytree nếu trời trong. Không lên thì ngắm từ bờ sông."],
+      ["13:30","Ueno, chợ Ameyoko","Ăn trưa, đi dạo công viên Ueno."],
+      ["17:00","Akihabara","Cửa hàng điện tử, game, ăn tối."]
+    ]},
+    {n:24,w:"Thứ 5",k:"東京",title:"Tokyo hiện đại, đêm Giáng sinh",sleep:"Shinjuku",temp:"2–12°C",sun:"16:33",
+     maps:[{pts:[
+       H("T"),P("Đền Meiji",35.6764,139.6993,"train","Meiji Jingu"),P("Harajuku",35.6716,139.7031,"walk","Takeshita Street, Harajuku"),
+       P("teamLab Planets",35.6491,139.7898,"train","teamLab Planets Tokyo"),P("Marunouchi",35.6812,139.7671,"train","Marunouchi, Tokyo"),
+       P("Yurakucho",35.6750,139.7630,"walk","Yurakucho Station"),H("T","train")]}],
+     items:[
+      ["9:00","Đền Meiji → Harajuku","Phố Takeshita, Omotesando."],
+      ["13:00","teamLab Planets","Ở Toyosu, đặt vé theo khung giờ."],
+      ["16:30","Đèn Giáng sinh","Marunouchi và ga Tokyo, hoặc Roppongi Hills. Đêm 24 là đông và đẹp nhất."],
+      ["19:30","Ăn tối ở Ginza hoặc Yurakucho","Nhà hàng dịp Giáng sinh nên đặt trước."],
+      ["21:30","Gửi vali đi Kyoto","Takkyubin ở quầy lễ tân, ~2.500 ¥/vali. Ghi ngày nhận 27/12, báo khách sạn Kyoto giữ giúp.","task"]
+    ],notes:[["tip","Từ mai chỉ mang <b>balo nhỏ</b>: đồ cho 2 đêm ở Kawaguchiko và đồ trượt tuyết."]]},
+    {n:25,w:"Thứ 6",k:"河口湖",title:"Lên Phú Sĩ",sleep:"Kawaguchiko",temp:"−4–8°C",sun:"16:37",
+     maps:[{from:{t:"Từ Shinjuku · xe buýt 2h",a:35.6886,o:139.7005,m:"road"},look:FUJI,pts:[
+       P("Ga Kawaguchiko",35.4985,138.7690,null,"Kawaguchiko Station"),P("Chùa Chureito",35.5011,138.8013,"train","Chureito Pagoda"),
+       P("Công viên Oishi",35.5233,138.7449,"road","Oishi Park, Fujikawaguchiko"),P("Cáp treo Kachi Kachi",35.5022,138.7727,"road","Mt. Fuji Panoramic Ropeway"),H("F","walk")]}],
+     items:[
+      ["8:00","Xe buýt Shinjuku → Kawaguchiko","Từ bến Busta Shinjuku, ~2h, ~2.200 ¥. Đặt vé trước.","move"],
+      ["10:30","Chùa Chureito","Đi tàu 2 ga đến Shimoyoshida, leo ~400 bậc. Góc chụp Phú Sĩ cùng ngôi chùa năm tầng."],
+      ["12:30","Mì hōtō","Món đặc sản vùng Yamanashi."],
+      ["14:00","Hồ Kawaguchi","Công viên Oishi bằng xe buýt vòng quanh hồ, rồi cáp treo Kachi Kachi lúc hoàng hôn."],
+      ["16:30","Nhận phòng","Tắm onsen nếu chỗ ở có, ăn tối quanh ga."]
+    ]},
+    {n:26,w:"Thứ 7",k:"富士",title:"Trượt tuyết cả ngày",sleep:"Kawaguchiko",temp:"−8–2°C",sun:"16:37",
+     maps:[{ctx:[FUJI],pts:[H("F"),P("Fujiten",35.4350,138.6950,"road","Fujiten Snow Resort"),H("F","road")]}],
+     items:[
+      ["8:00","Taxi hoặc xe đưa đón đến Fujiten","~25 phút, taxi ~5.000 ¥ mỗi chiều. Hỏi chỗ ở xem có xe đưa đón không.","move"],
+      ["8:30","Thuê đồ","Trọn bộ ván, giày, quần áo trượt tuyết. Chỉ cần mang găng tay và đồ giữ nhiệt."],
+      ["9:30","Lớp học cho người mới","Khoảng 2 tiếng: đứng, phanh, rẽ.","ski"],
+      ["12:00","Ăn trưa ở nhà hàng trong khu","Nhìn thẳng ra Phú Sĩ khi trời trong."],
+      ["13:00","Tự trượt","Dốc cho người mới, cả buổi chiều để quen tay. Khu đóng khoảng 16:30.","ski"],
+      ["16:00","Về chỗ ở","","move"],
+      ["17:00","Onsen","Nếu chỗ ở không có, đi onsen công cộng quanh hồ, khoảng 1.000–1.500 ¥."]
+    ],notes:[["warn","Hôm nay là <b>thứ Bảy</b>: khu trượt đông hơn ngày thường. Đặt lớp học trước, đến sớm để thuê đồ."],["tip","Ở 2 đêm là <b>3 buổi sáng</b> có cơ hội thấy Phú Sĩ. Mây che hôm nay thì còn sáng 27."],["warn","Nếu Fujiten chưa mở cửa: đổi sang Fujiyama Snow Resort Yeti (tuyết nhân tạo, mở sớm hơn)."]]},
+    {n:27,w:"Chủ nhật",k:"京都",title:"Phú Sĩ buổi sáng, chiều Kyoto",sleep:"Gần ga Kyoto",temp:"1–10°C",sun:"16:53",
+     maps:[{from:{t:"Từ Kawaguchiko · buýt + Shinkansen ~4h30",a:35.1264,o:138.9110,m:"train"},pts:[
+       H("K"),P("Kiyomizu-dera",34.9949,135.7850,"road","Kiyomizu-dera"),P("Sannenzaka",34.9965,135.7810,"walk","Sannenzaka"),
+       P("Ninenzaka",34.9982,135.7806,"walk","Ninenzaka"),P("Đền Yasaka",35.0037,135.7785,"walk","Yasaka Shrine"),
+       P("Hanamikoji",35.0025,135.7750,"walk","Hanamikoji Street"),P("Pontocho",35.0050,135.7710,"walk","Pontocho, Kyoto"),H("K","road")]}],
+     items:[
+      ["6:45","Phú Sĩ lúc bình minh","Lần ngắm cuối. Sáng sớm trời trong nhất."],
+      ["9:00","Xe buýt đi ga Mishima","~2h.","move"],
+      ["11:30","Shinkansen Mishima → Kyoto","~2h, ~11.000 ¥. Có thể đổi tàu ở Nagoya.","move"],
+      ["14:00","Đến Kyoto","Nhận phòng, nhận lại vali đã gửi."],
+      ["15:00","Kiyomizu-dera","Xe buýt hoặc taxi ~15 phút. Lên chùa lúc chiều muộn, ngắm hoàng hôn trên thành phố."],
+      ["16:30","Dốc Sannenzaka, Ninenzaka → đền Yasaka","Đi bộ xuống dốc, đến Yasaka vừa lúc lên đèn."],
+      ["17:30","Gion, Pontocho","Phố Hanamikoji, ăn tối ở Pontocho."]
+    ]},
+    {n:28,w:"Thứ 2",k:"京都",title:"Arashiyama và Chùa Vàng",sleep:"Gần ga Kyoto",temp:"1–10°C",sun:"16:54",
+     maps:[{pts:[
+       H("K"),P("Rừng tre · Tenryū-ji",35.0165,135.6722,"train","Arashiyama Bamboo Grove"),P("Cầu Togetsukyo",35.0127,135.6778,"walk","Togetsukyo Bridge"),
+       P("Kinkaku-ji",35.0394,135.7292,"road","Kinkaku-ji"),P("Nishiki · Kawaramachi",35.0045,135.7665,"road","Nishiki Market"),H("K","train")]}],
+     items:[
+      ["7:30","Rừng tre Arashiyama","Tàu JR ~15 phút từ ga Kyoto. Đến trước 8:00. Chùa Tenryū-ji, cầu Togetsukyo."],
+      ["11:30","Chùa Vàng Kinkaku-ji","Taxi ~25 phút."],
+      ["13:30","Ăn trưa, chợ Nishiki","Cuối năm chợ bán đồ Tết, rất đông vui."],
+      ["16:00","Tự do","Mua sắm ở Kawaramachi, hoặc nghỉ ở khách sạn."]
+    ],notes:[["tip","Ngày cuối trước kỳ nghỉ năm mới. Nếu muốn mua quà ở cửa hàng nhỏ, mua hôm nay."]]},
+    {n:29,w:"Thứ 3",k:"大阪",title:"Fushimi Inari, rồi sang Osaka",sleep:"Namba, Osaka",temp:"3–11°C",sun:"16:55",
+     maps:[
+      {cap:"Sáng · Kyoto",to:{t:"Đi Osaka · JR 30'",a:34.7025,o:135.4959,m:"train"},pts:[
+        H("K"),P("Fushimi Inari",34.9671,135.7727,"train","Fushimi Inari Taisha"),H("K","train")]},
+      {cap:"Chiều · Osaka",from:{t:"Từ Kyoto · JR + tàu điện ngầm",a:34.9858,o:135.7588,m:"train"},pts:[
+        H("O"),P("Lâu đài Osaka",34.6873,135.5262,"train","Osaka Castle"),P("Shinsekai",34.6525,135.5063,"train","Shinsekai, Osaka"),
+        P("Dotonbori",34.6687,135.5013,"train","Dotonbori"),H("O","walk")]}
+     ],
+     items:[
+      ["7:00","Đền Fushimi Inari","5 phút tàu JR từ ga Kyoto. Đi một đoạn đường cổng torii, không cần leo hết núi."],
+      ["10:00","Trả phòng, lấy vali","Gửi vali ở khách sạn từ sáng."],
+      ["10:30","JR Kyoto → Osaka","~30 phút, ~580 ¥. Gửi vali ở khách sạn Namba.","move"],
+      ["13:00","Công viên lâu đài Osaka","Ngắm lâu đài từ bên ngoài, đi dạo hào và tường thành."],
+      ["16:00","Shinsekai","Khu phố cũ, tháp Tsutenkaku, kushikatsu."],
+      ["19:00","Dotonbori","Biển Glico, takoyaki, okonomiyaki."]
+    ],notes:[["warn","Tháp lâu đài Osaka thường <b>đóng cửa 28/12–1/1</b>. Vẫn vào công viên và ngắm lâu đài từ ngoài được."]]},
+    {n:30,w:"Thứ 4",k:"大阪",title:"Bay về",sleep:"Bay về Hà Nội",temp:"3–11°C",sun:"",
+     maps:[{to:{t:"Ra sân bay Kansai · Nankai 45'",a:34.4320,o:135.2304,m:"train"},pts:[
+       H("O"),P("Chợ Kuromon",34.6654,135.5065,"walk","Kuromon Market"),P("Shinsaibashi",34.6748,135.5012,"walk","Shinsaibashi-suji"),H("O","walk")]}],
+     items:[
+      ["8:30","Chợ Kuromon","Ăn sáng hải sản. Ngày 30 chợ rất đông vì người Nhật mua đồ Tết."],
+      ["10:00","Trả phòng, mua sắm ở Namba, Shinsaibashi","Gửi vali ở quầy lễ tân. Trung tâm thương mại lớn vẫn mở."],
+      ["12:00","Lấy vali, ra ga Nankai Namba",""],
+      ["12:30","Tàu Nankai → sân bay Kansai","~45 phút. Có mặt ở sân bay trước 13:30.","move"],
+      ["15:40","Cất cánh về Hà Nội","Vietnam Airlines, bay thẳng 5h35, đến Nội Bài 19:15.","move"]
+    ]}
+  ];
+  var OVERVIEW={numbered:false,ctx:[{n:"Phú Sĩ",a:35.3606,o:138.7274}],pts:[
+    P("Haneda",35.5494,139.7798,null),P("Tokyo · 22–24",35.6896,139.7006,"train"),
+    P("Kawaguchiko · 25–26",35.4985,138.7690,"road"),P("Mishima",35.1264,138.9110,"road"),
+    P("Kyoto · 27–28",34.9858,135.7588,"train"),P("Osaka · 29",34.6663,135.5003,"train"),P("Sân bay Kansai",34.4320,135.2304,"train")]};
+
+  // Photos: free-licensed lead images from Wikipedia / Wikimedia Commons (get_photos.py); keyed day-itemIndex
+  var PHOTOS={"haneda":{"src":"photos/haneda.webp","credit":"ブルーノ・プラス · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:All_haneda.jpg","w":900,"h":675},"shibuya":{"src":"photos/shibuya.webp","credit":"David Kernan · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg","w":900,"h":506},"sensoji":{"src":"photos/sensoji.webp","credit":"Akonnchiroll · CC0","file":"https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg","w":900,"h":643},"skytree":{"src":"photos/skytree.webp","credit":"Kakidai · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg","w":900,"h":1379},"kawaguchi":{"src":"photos/kawaguchi.webp","credit":"Alpsdake · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg","w":900,"h":600},"omoide":{"src":"photos/omoide.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Shinjuku-West_Omoide-Yokocho.jpg","w":900,"h":600},"ameyoko":{"src":"photos/ameyoko.webp","credit":"Ka23 13 · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:Ueno_20241210_133139.jpg","w":900,"h":506},"akihabara":{"src":"photos/akihabara.webp","credit":"Phineyes · CC0","file":"https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png","w":900,"h":675},"meiji":{"src":"photos/meiji.webp","credit":"Akonnchiroll · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg","w":900,"h":506},"teamlab":{"src":"photos/teamlab.webp","credit":"Sasa0403 · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Photos_at_teamlab_planets_tokyo.jpg","w":900,"h":506},"marunouchi":{"src":"photos/marunouchi.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg","w":900,"h":600},"ginza":{"src":"photos/ginza.webp","credit":"Kakidai · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Ginza-WAKO_at_night.jpg","w":900,"h":675},"busta":{"src":"photos/busta.webp","credit":"江戸前鰻 · CC BY 3.0","file":"https://commons.wikimedia.org/wiki/File:Shinjuku_Expressway_Bus_Terminal_2020.JPG","w":900,"h":675},"chureito":{"src":"photos/chureito.webp","credit":"Wikimedia Commons · CC BY 2.0","file":"https://commons.wikimedia.org/wiki/File:Chuurei-tou_Fujiyoshida_17025277650_c59733d6ba_o.jpg","w":900,"h":600},"hoto":{"src":"photos/hoto.webp","credit":"Wikimedia Commons · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Houtou.jpg","w":900,"h":713},"fujiten":{"src":"photos/fujiten.webp","credit":"Derek Springer · CC BY-SA 2.0","file":"https://commons.wikimedia.org/wiki/File:Fujiten_Snow_Resort_(1)_Dec_27,_2006.jpg","w":900,"h":600},"fuji":{"src":"photos/fuji.webp","credit":"Suicasmo · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg","w":900,"h":440},"shinkansen":{"src":"photos/shinkansen.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Series-N700S-J2.jpg","w":900,"h":601},"kiyomizu":{"src":"photos/kiyomizu.webp","credit":"Jordy Meow · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg","w":900,"h":601},"sannenzaka":{"src":"photos/sannenzaka.webp","credit":"Tomomarusan · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:Stone_stairway_Kiyomizu-dera.JPG","w":900,"h":1200},"gion":{"src":"photos/gion.webp","credit":"663highland · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg","w":900,"h":600},"arashiyama":{"src":"photos/arashiyama.webp","credit":"Basile Morin · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Bamboo_Grove,_Arashiyama,_Kyoto,_Japan.jpg","w":900,"h":1350},"kinkakuji":{"src":"photos/kinkakuji.webp","credit":"Nacaru · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg","w":900,"h":1350},"nishiki":{"src":"photos/nishiki.webp","credit":"matsuyuki · CC BY-SA 2.0","file":"https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg","w":900,"h":1200},"fushimi":{"src":"photos/fushimi.webp","credit":"Basile Morin · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg","w":900,"h":600},"osakajo":{"src":"photos/osakajo.webp","credit":"663highland · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:Osaka_Castle_03bs3200.jpg","w":900,"h":600},"shinsekai":{"src":"photos/shinsekai.webp","credit":"Dick Thomas Johnson from Tokyo, Japan · CC BY 2.0","file":"https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_at_night_2019-04-12.jpg","w":900,"h":1350},"dotonbori":{"src":"photos/dotonbori.webp","credit":"Type specimen · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg","w":900,"h":598},"kuromon":{"src":"photos/kuromon.webp","credit":"ほっきー · CC0","file":"https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg","w":900,"h":675},"shinsaibashi":{"src":"photos/shinsaibashi.webp","credit":"Mc681 · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Shinsaibashi-suji_201408.JPG","w":900,"h":900}};
+  var PHOTO_AT={"22-1":"haneda","22-4":"shibuya","22-5":"omoide","23-0":"sensoji","23-1":"skytree","23-2":"ameyoko","23-3":"akihabara","24-0":"meiji","24-1":"teamlab","24-2":"marunouchi","24-3":"ginza","25-0":"busta","25-1":"chureito","25-2":"hoto","25-3":"kawaguchi","26-2":"fujiten","27-0":"fuji","27-2":"shinkansen","27-4":"kiyomizu","27-5":"sannenzaka","27-6":"gion","28-0":"arashiyama","28-1":"kinkakuji","28-2":"nishiki","29-0":"fushimi","29-3":"osakajo","29-4":"shinsekai","29-5":"dotonbori","30-0":"kuromon","30-1":"shinsaibashi"};
+  function photo(ph,alt){
+    if(!ph)return '';
+    return '<details class="ph"><summary><span class="o">Xem ảnh</span><span class="c">Ẩn ảnh</span></summary>'+
+      '<img src="'+ph.src+'" alt="'+esc(alt)+'" loading="lazy" width="'+ph.w+'" height="'+ph.h+'">'+
+      '<p class="credit">Ảnh: <a href="'+ph.file+'" target="_blank" rel="noopener">'+esc(ph.credit)+'</a></p></details>';
+  }
+  var TAGS={move:"Di chuyển",ski:"Trượt tuyết",task:"Việc cần làm"};
+  var MODES={train:"Tàu",road:"Xe buýt, taxi",walk:"Đi bộ"};
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+
+  // ---------- Maps: pre-rendered on OpenStreetMap tiles by make_maps.py; the list under each map names every stop ----------
+  function renderMap(panel,src){
+    var numbered=panel.numbered!==false,marks=[],seen={},num=0,modes={};
+    panel.pts.forEach(function(p,i){
+      if(i>0)modes[p.m||"train"]=1;
+      var key=p.a.toFixed(4)+","+p.o.toFixed(4);
+      if(seen[key])return;
+      var m={p:p,h:!!p.h};
+      if(!m.h&&numbered)m.num=++num;
+      seen[key]=1;marks.push(m);
+    });
+    if(panel.from)modes[panel.from.m]=1;
+    if(panel.to)modes[panel.to.m]=1;
+    var img='<img src="'+src+'" alt="'+esc("Bản đồ: "+marks.map(function(m){return m.p.n}).join(", "))+'" decoding="async">';
+    var stops=numbered?'<ol class="stops">'+marks.map(function(m){return '<li><i'+(m.h?' class="h">H':'>'+m.num)+'</i><a href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(m.p.q)+'" target="_blank" rel="noopener">'+esc(m.p.n)+'</a></li>'}).join("")+'</ol>':'';
+    var legend='<div class="legend">'+Object.keys(MODES).filter(function(k){return modes[k]}).map(function(k){return '<span class="lg-'+k+'">'+MODES[k]+'</span>'}).join("")+'</div>';
+    var link="";
+    if(numbered){
+      var qs=[];panel.pts.forEach(function(p){if(qs[qs.length-1]!==p.q)qs.push(p.q)});
+      link='<a class="gm" href="https://www.google.com/maps/dir/'+qs.map(encodeURIComponent).join("/")+'" target="_blank" rel="noopener">Chỉ đường trên Google Maps ↗</a>';
+    }
+    return '<figure class="map">'+(panel.cap?'<p class="cap">'+esc(panel.cap)+'</p>':'')+img+'<div class="mapfoot">'+stops+legend+link+'</div></figure>';
+  }
+
+  var COST=[
+    ["Chỗ ở 8 đêm (≤ $100/phòng, chia đôi)",60000,"~60.000 ¥"],
+    ["Ăn uống",40000,"~40.000 ¥"],
+    ["Đi lại",32000,"~32.000 ¥"],
+    ["Trượt tuyết cả ngày (vé, thuê đồ, lớp học)",22500,"20–25.000 ¥"],
+    ["Tham quan, chuyển hành lý",10000,"~10.000 ¥"]
+  ];
+
+  var TODO=[
+    ["visa","Nộp hồ sơ visa Nhật","Cuối tháng 10 – giữa tháng 11. Cuối năm hồ sơ dồn nhiều."],
+    ["flight","Vé Vietnam Airlines ~19,8 triệu","HAN 08:40 → HND 15:05 ngày 22/12, KIX 15:40 → HAN 19:15 ngày 30/12. Chọn hạng có 23 kg hành lý, đổi hoặc hoàn được vì chưa có visa."],
+    ["ryokan","Chỗ ở Kawaguchiko 2 đêm 25–26/12","Đặt trước tiên: có tối thứ Bảy dịp Giáng sinh, chỗ rẻ hết nhanh."],
+    ["hotels","Khách sạn ≤ $100/đêm","Shinjuku 3 đêm, gần ga Kyoto 2 đêm, Namba 1 đêm. Chọn phòng twin nếu 2 người."],
+    ["ski","Đặt lớp trượt tuyết ở Fujiten ngày 26/12","Thứ Bảy đông. Đầu tháng 12 kiểm tra khu đã mở cửa chưa."],
+    ["tickets","Vé Shibuya Sky, teamLab, xe buýt đi Kawaguchiko","Đặt trước 1–2 tuần."],
+    ["xmas","Nhà hàng tối 24/12 ở Tokyo","Đêm Giáng sinh ở Nhật là dịp đi ăn, quán đẹp kín chỗ sớm."],
+    ["money","Tiền mặt và thẻ IC","Đổi yên, cài Suica trên điện thoại hoặc mua thẻ ở ga."]
+  ];
+  var PACK=["Áo giữ nhiệt","Áo khoác dày","Găng tay chống nước","Mũ len","Khăn quàng","Tất len dày","Giày chống trơn","Kem dưỡng ẩm, son dưỡng","Kính râm (tuyết chói)","Đầu chuyển phích chân dẹt","Sạc dự phòng"];
+
+  // Today in Japan time, to mark the current day and count down
+  var now=new Date(Date.now()+9*3600e3);
+  var y=now.getUTCFullYear(),m=now.getUTCMonth()+1,d=now.getUTCDate();
+  var start=Date.UTC(2026,11,START),todayUTC=Date.UTC(y,m-1,d);
+  var diff=Math.round((start-todayUTC)/864e5);
+  var todayN=(y===2026&&m===12&&d>=START&&d<=END)?d:null;
+  var total=END-START+1;
+  var cnt=document.getElementById("count");
+  if(diff>0){cnt.innerHTML="<b>"+diff+"</b> <span>ngày nữa khởi hành</span>"}
+  else if(todayN){cnt.innerHTML="<b>Ngày "+(todayN-START+1)+"/"+total+"</b> <span>đang ở Nhật</span>"}
+  else{cnt.innerHTML="<span>Chuyến đi đã kết thúc</span>"}
+
+  document.getElementById("overview").innerHTML=renderMap(OVERVIEW,"maps/overview.webp");
+
+  var nav="",html="";
+  DAYS.forEach(function(D){
+    var id="d"+D.n,isToday=D.n===todayN;
+    nav+='<a href="#'+id+'" data-t="'+id+'"'+(isToday?' class="today"':'')+'><b>'+D.n+'</b>'+esc(D.w.replace("Thứ ","T").replace("Chủ nhật","CN"))+'</a>';
+    var facts='<span class="fact">Ngủ: <strong>'+esc(D.sleep)+'</strong></span><span class="fact"><strong>'+D.temp+'</strong></span>'+(D.sun?'<span class="fact">Mặt trời lặn <strong>'+D.sun+'</strong></span>':'');
+    var items=D.items.map(function(it,i){
+      var ph=PHOTOS[PHOTO_AT[D.n+"-"+i]];
+      var tag=it[3]?'<span class="tag">'+TAGS[it[3]]+'</span>':'';
+      return '<li class="'+(it[3]||'')+'"><time>'+esc(it[0])+'</time><div><p class="t">'+tag+esc(it[1])+'</p>'+(it[2]?'<p class="d">'+esc(it[2])+'</p>':'')+photo(ph,it[1])+'</div></li>';
+    }).join("");
+    var notes=(D.notes||[]).map(function(x){return '<p class="note '+x[0]+'">'+x[1]+'</p>'}).join("");
+    var maps=(D.maps||[]).map(function(p,i){return renderMap(p,"maps/d"+D.n+"-"+i+".webp")}).join("");
+    html+='<section class="day" id="'+id+'">'+(isToday?'<span class="badge-today">Hôm nay</span>':'')+
+      '<div class="dhead"><span class="dnum">'+D.n+'</span><div class="dmeta"><span class="eyebrow">'+esc(D.w)+' · Ngày '+(D.n-START+1)+'</span><h2>'+esc(D.title)+'</h2></div><span class="dkanji" aria-hidden="true">'+D.k+'</span></div>'+
+      '<div class="facts">'+facts+'</div>'+maps+'<ol class="tl">'+items+'</ol>'+notes+'</section>';
+  });
+  nav+='<a class="txt" href="#cho-o" data-t="cho-o">Chỗ ở</a><a class="txt" href="#chi-phi" data-t="chi-phi">Chi phí</a><a class="txt" href="#chuan-bi" data-t="chuan-bi">Chuẩn bị</a>';
+  document.getElementById("nav").innerHTML=nav;
+  document.getElementById("days").innerHTML=html;
+
+  var max=60000;
+  document.getElementById("cost").innerHTML=COST.map(function(c){
+    return '<li><div class="r"><span>'+esc(c[0])+'</span><span>'+c[2]+'</span></div><div class="bar"><i style="width:'+Math.round(c[1]/max*100)+'%"></i></div></li>';
+  }).join("");
+
+  // Yen converter
+  var yen=document.getElementById("yen"),rate=document.getElementById("rate"),out=document.getElementById("vnd");
+  try{var r=localStorage.getItem("jp-rate");if(r)rate.value=r}catch(e){}
+  function conv(){
+    var v=parseFloat(yen.value)||0,k=parseFloat(rate.value)||0,t=v*k;
+    out.innerHTML=Math.round(t).toLocaleString("vi-VN")+' ₫ <small>≈ '+(t/1e6).toLocaleString("vi-VN",{maximumFractionDigits:2})+' triệu</small>';
+    try{localStorage.setItem("jp-rate",rate.value)}catch(e){}
+  }
+  yen.addEventListener("input",conv);rate.addEventListener("input",conv);conv();
+
+  // Checklist, remembered on this device
+  var done={};
+  try{done=JSON.parse(localStorage.getItem("jp-todo")||"{}")||{}}catch(e){}
+  var ul=document.getElementById("todo");
+  ul.innerHTML=TODO.map(function(t){
+    return '<li><label for="todo-'+t[0]+'"><input type="checkbox" id="todo-'+t[0]+'" data-k="'+t[0]+'"'+(done[t[0]]?' checked':'')+'><span><p class="t">'+esc(t[1])+'</p><p class="d">'+esc(t[2])+'</p></span></label></li>';
+  }).join("");
+  function prog(){
+    var n=TODO.filter(function(t){return done[t[0]]}).length;
+    document.getElementById("prog").textContent="Đã xong "+n+"/"+TODO.length+".";
+  }
+  ul.addEventListener("change",function(e){
+    var k=e.target.getAttribute("data-k");if(!k)return;
+    done[k]=e.target.checked;
+    try{localStorage.setItem("jp-todo",JSON.stringify(done))}catch(err){}
+    prog();
+  });
+  prog();
+
+  document.getElementById("pack").innerHTML=PACK.map(function(p){return '<span>'+esc(p)+'</span>'}).join("");
+
+  // One switch to open every photo for a quick visual pass over the plan
+  var allBtn=document.getElementById("allph");
+  allBtn.addEventListener("click",function(){
+    var open=allBtn.getAttribute("aria-pressed")!=="true";
+    document.querySelectorAll("details.ph").forEach(function(d){d.open=open});
+    allBtn.setAttribute("aria-pressed",open?"true":"false");
+    allBtn.textContent=open?"Đóng tất cả ảnh":"Mở tất cả ảnh";
+  });
+
+  // Highlight the section in view
+  if("IntersectionObserver" in window){
+    var links={};
+    document.querySelectorAll("nav a").forEach(function(a){links[a.getAttribute("data-t")]=a});
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        Object.keys(links).forEach(function(k){links[k].classList.toggle("on",k===e.target.id)});
+        var a=links[e.target.id];
+        if(a){var row=a.parentNode;row.scrollTo({left:a.offsetLeft-row.offsetWidth/2+a.offsetWidth/2,behavior:"smooth"})}
+      });
+    },{rootMargin:"-40% 0px -55% 0px"});
+    document.querySelectorAll(".day,.sec").forEach(function(s){io.observe(s)});
+  }
+})();
+</script>

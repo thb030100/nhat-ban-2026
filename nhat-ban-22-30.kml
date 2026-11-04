@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>Nhật Bản 22–30/12</name>
+<Style id="s0"><IconStyle><color>ffE5881E</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s1"><IconStyle><color>ff47A043</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s2"><IconStyle><color>ffAA248E</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s3"><IconStyle><color>ff1E51F4</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s4"><IconStyle><color>ffE59B03</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s5"><IconStyle><color>ff3539E5</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s6"><IconStyle><color>ff42B37C</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s7"><IconStyle><color>ff008CFB</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s8"><IconStyle><color>ff414C6D</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Style id="s9"><IconStyle><color>ff2A3FC3</color><Icon><href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href></Icon></IconStyle></Style>
+<Folder><name>22/12 · Thứ 3 · Đến Tokyo</name>
+<Placemark><name>1. Sân bay Haneda</name><description>Đến 15:05, chuyến Vietnam Airlines từ Hà Nội.</description><styleUrl>#s0</styleUrl><Point><coordinates>139.7798,35.5494,0</coordinates></Point></Placemark>
+<Placemark><name>2. Shibuya Sky</name><description>18:00 · Ngắm Tokyo về đêm, đặt vé khung sau 18:00.</description><styleUrl>#s0</styleUrl><Point><coordinates>139.7022,35.6584,0</coordinates></Point></Placemark>
+<Placemark><name>3. Omoide Yokocho</name><description>20:00 · Ăn tối hẻm quán nướng.</description><styleUrl>#s0</styleUrl><Point><coordinates>139.6996,35.6929,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>23/12 · Thứ 4 · Tokyo truyền thống</name>
+<Placemark><name>1. Chùa Sensō-ji</name><description>8:30 · Asakusa, phố Nakamise.</description><styleUrl>#s1</styleUrl><Point><coordinates>139.7967,35.7148,0</coordinates></Point></Placemark>
+<Placemark><name>2. Tokyo Skytree</name><description>11:00 · Lên nếu trời trong.</description><styleUrl>#s1</styleUrl><Point><coordinates>139.8107,35.7101,0</coordinates></Point></Placemark>
+<Placemark><name>3. Ueno · chợ Ameyoko</name><description>13:30 · Ăn trưa, công viên Ueno.</description><styleUrl>#s1</styleUrl><Point><coordinates>139.7745,35.7101,0</coordinates></Point></Placemark>
+<Placemark><name>4. Akihabara</name><description>17:00 · Điện tử, game, ăn tối.</description><styleUrl>#s1</styleUrl><Point><coordinates>139.7731,35.6984,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>24/12 · Thứ 5 · Tokyo hiện đại, Giáng sinh</name>
+<Placemark><name>1. Đền Meiji</name><description>9:00</description><styleUrl>#s2</styleUrl><Point><coordinates>139.6993,35.6764,0</coordinates></Point></Placemark>
+<Placemark><name>2. Phố Takeshita, Harajuku</name><description>Sau đền Meiji, rồi Omotesando.</description><styleUrl>#s2</styleUrl><Point><coordinates>139.7031,35.6716,0</coordinates></Point></Placemark>
+<Placemark><name>3. teamLab Planets</name><description>13:00 · Đặt vé theo khung giờ.</description><styleUrl>#s2</styleUrl><Point><coordinates>139.7898,35.6491,0</coordinates></Point></Placemark>
+<Placemark><name>4. Marunouchi, ga Tokyo</name><description>16:30 · Đèn Giáng sinh.</description><styleUrl>#s2</styleUrl><Point><coordinates>139.7671,35.6812,0</coordinates></Point></Placemark>
+<Placemark><name>5. Yurakucho</name><description>19:30 · Ăn tối, quán dưới gầm đường tàu.</description><styleUrl>#s2</styleUrl><Point><coordinates>139.763,35.675,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>25/12 · Thứ 6 · Lên Phú Sĩ</name>
+<Placemark><name>1. Bến xe Busta Shinjuku</name><description>8:00 · Xe buýt đi Kawaguchiko, ~2h.</description><styleUrl>#s3</styleUrl><Point><coordinates>139.7005,35.6886,0</coordinates></Point></Placemark>
+<Placemark><name>2. Ga Kawaguchiko</name><description>~10:00 · Xuống xe.</description><styleUrl>#s3</styleUrl><Point><coordinates>138.769,35.4985,0</coordinates></Point></Placemark>
+<Placemark><name>3. Chùa Chureito</name><description>10:30 · ~400 bậc, góc chụp Phú Sĩ.</description><styleUrl>#s3</styleUrl><Point><coordinates>138.8013,35.5011,0</coordinates></Point></Placemark>
+<Placemark><name>4. Công viên Oishi</name><description>14:00 · Bờ bắc hồ Kawaguchi.</description><styleUrl>#s3</styleUrl><Point><coordinates>138.7449,35.5233,0</coordinates></Point></Placemark>
+<Placemark><name>5. Cáp treo Kachi Kachi</name><description>Hoàng hôn ~16:37.</description><styleUrl>#s3</styleUrl><Point><coordinates>138.7727,35.5022,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>26/12 · Thứ 7 · Trượt tuyết</name>
+<Placemark><name>1. Fujiten Snow Resort</name><description>Cả ngày · Lớp học 9:30, tự trượt buổi chiều.</description><styleUrl>#s4</styleUrl><Point><coordinates>138.695,35.435,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>27/12 · Chủ nhật · Sang Kyoto</name>
+<Placemark><name>1. Ga Mishima</name><description>~11:30 · Shinkansen đi Kyoto.</description><styleUrl>#s5</styleUrl><Point><coordinates>138.911,35.1264,0</coordinates></Point></Placemark>
+<Placemark><name>2. Ga Kyoto</name><description>~14:00 · Nhận phòng, nhận vali.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.7588,34.9858,0</coordinates></Point></Placemark>
+<Placemark><name>3. Chùa Kiyomizu-dera</name><description>15:00 · Ngắm hoàng hôn.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.785,34.9949,0</coordinates></Point></Placemark>
+<Placemark><name>4. Dốc Sannenzaka</name><description>16:30 · Đi bộ xuống dốc.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.781,34.9965,0</coordinates></Point></Placemark>
+<Placemark><name>5. Dốc Ninenzaka</name><description></description><styleUrl>#s5</styleUrl><Point><coordinates>135.7806,34.9982,0</coordinates></Point></Placemark>
+<Placemark><name>6. Đền Yasaka</name><description>Lúc lên đèn.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.7785,35.0037,0</coordinates></Point></Placemark>
+<Placemark><name>7. Phố Hanamikoji, Gion</name><description>17:30</description><styleUrl>#s5</styleUrl><Point><coordinates>135.775,35.0025,0</coordinates></Point></Placemark>
+<Placemark><name>8. Pontocho</name><description>Ăn tối.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.771,35.005,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>28/12 · Thứ 2 · Arashiyama, Chùa Vàng</name>
+<Placemark><name>1. Rừng tre Arashiyama</name><description>7:30 · Đến trước 8:00.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.6713,35.017,0</coordinates></Point></Placemark>
+<Placemark><name>2. Chùa Tenryū-ji</name><description></description><styleUrl>#s6</styleUrl><Point><coordinates>135.6738,35.0157,0</coordinates></Point></Placemark>
+<Placemark><name>3. Cầu Togetsukyo</name><description></description><styleUrl>#s6</styleUrl><Point><coordinates>135.6778,35.0127,0</coordinates></Point></Placemark>
+<Placemark><name>4. Chùa Vàng Kinkaku-ji</name><description>11:30 · Taxi ~25 phút.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.7292,35.0394,0</coordinates></Point></Placemark>
+<Placemark><name>5. Chợ Nishiki</name><description>13:30 · Ăn trưa, đồ Tết.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.7649,35.005,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>29/12 · Thứ 3 · Fushimi Inari, sang Osaka</name>
+<Placemark><name>1. Đền Fushimi Inari</name><description>7:00 · 5 phút tàu JR từ ga Kyoto.</description><styleUrl>#s7</styleUrl><Point><coordinates>135.7727,34.9671,0</coordinates></Point></Placemark>
+<Placemark><name>2. Công viên lâu đài Osaka</name><description>13:00 · Tháp đóng cửa 28/12–1/1, ngắm từ ngoài.</description><styleUrl>#s7</styleUrl><Point><coordinates>135.5262,34.6873,0</coordinates></Point></Placemark>
+<Placemark><name>3. Shinsekai</name><description>16:00 · Tháp Tsutenkaku, kushikatsu.</description><styleUrl>#s7</styleUrl><Point><coordinates>135.5063,34.6525,0</coordinates></Point></Placemark>
+<Placemark><name>4. Dotonbori</name><description>19:00 · Biển Glico, takoyaki.</description><styleUrl>#s7</styleUrl><Point><coordinates>135.5013,34.6687,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>30/12 · Thứ 4 · Bay về</name>
+<Placemark><name>1. Chợ Kuromon</name><description>8:30 · Ăn sáng hải sản.</description><styleUrl>#s8</styleUrl><Point><coordinates>135.5065,34.6654,0</coordinates></Point></Placemark>
+<Placemark><name>2. Shinsaibashi</name><description>10:00 · Mua sắm.</description><styleUrl>#s8</styleUrl><Point><coordinates>135.5012,34.6748,0</coordinates></Point></Placemark>
+<Placemark><name>3. Ga Nankai Namba</name><description>12:30 · Tàu ra sân bay, ~45 phút.</description><styleUrl>#s8</styleUrl><Point><coordinates>135.5013,34.6629,0</coordinates></Point></Placemark>
+<Placemark><name>4. Sân bay Kansai</name><description>15:40 · Cất cánh về Hà Nội.</description><styleUrl>#s8</styleUrl><Point><coordinates>135.2304,34.432,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Khu nên ở (khách sạn ≤ $100)</name>
+<Placemark><name>1. Khu khách sạn Shinjuku</name><description>22–24/12 · Phía nam hoặc tây ga Shinjuku.</description><styleUrl>#s9</styleUrl><Point><coordinates>139.699,35.6885,0</coordinates></Point></Placemark>
+<Placemark><name>2. Khu chỗ ở Kawaguchiko</name><description>25–26/12 · Quanh ga Kawaguchiko, bờ đông hồ.</description><styleUrl>#s9</styleUrl><Point><coordinates>138.768,35.506,0</coordinates></Point></Placemark>
+<Placemark><name>3. Khu khách sạn ga Kyoto</name><description>27–28/12 · Phía nam ga, cửa Hachijo.</description><styleUrl>#s9</styleUrl><Point><coordinates>135.7585,34.9835,0</coordinates></Point></Placemark>
+<Placemark><name>4. Khu khách sạn Namba</name><description>29/12 · Gần ga Nankai Namba.</description><styleUrl>#s9</styleUrl><Point><coordinates>135.502,34.665,0</coordinates></Point></Placemark>
+</Folder>
+</Document></kml>
