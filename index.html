@@ -200,7 +200,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   <header class="hero">
     <p class="eyebrow">10 ngày 9 đêm · Thứ 4 23/12/2026 → Thứ 6 01/01/2027</p>
     <h1>Nhật Bản mùa đông</h1>
-    <p class="sub">Vietnam Airlines bay thẳng · 23/12 HAN 08:40 → HND 15:05 · 01/01 KIX 15:40 → HAN 19:15</p>
+    <p class="sub">VietJet Air bay thẳng · 23/12 HAN 08:20 → NRT 15:30 (VJ934) · 01/01 KIX 15:30 → HAN 19:15 (VJ931)</p>
     <p class="count" id="count"><b>—</b> <span>ngày nữa khởi hành</span></p>
     <ol class="route" aria-label="Cung đường">
       <li><span class="k">東京</span><span class="n">Tokyo</span><span class="s">3 đêm</span></li>
@@ -226,7 +226,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
       <div class="stay-h"><h3><span class="jp">東京</span>Tokyo</h3><span>3 đêm · 23–25/12</span></div>
       <dl>
         <dt>Nên ở</dt><dd><b>Shinjuku</b>, phía nam hoặc phía tây ga</dd>
-        <dt>Vì sao</dt><dd>Bến xe buýt đi Phú Sĩ (Busta Shinjuku) nằm ngay trên ga. Tàu JR đi Shibuya 5 phút, Harajuku 3 phút. Từ Haneda có xe buýt chạy thẳng.</dd>
+        <dt>Vì sao</dt><dd>Bến xe buýt đi Phú Sĩ (Busta Shinjuku) nằm ngay trên ga. Tàu JR đi Shibuya 5 phút, Harajuku 3 phút. Từ sân bay Narita có tàu Narita Express (N'EX) chạy thẳng về ga Shinjuku (~1h15).</dd>
         <dt>Giá</dt><dd><span class="price">12.000–18.000 ¥</span> phòng đôi, khách sạn business</dd>
         <dt>Chuỗi</dt><dd class="chains"><span>Sotetsu Fresa Inn</span><span>Hotel Mystays</span><span>APA Hotel</span><span>Toyoko Inn</span><span>Tokyu Stay</span></dd>
       </dl>
@@ -278,7 +278,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
         <div class="r"><span>Quy đổi</span><span>≈ 29–33 triệu</span></div>
         <div class="r"><span>Cộng vé máy bay ~19,8 triệu</span><span class="big">49–53 triệu</span></div>
       </div>
-      <p class="sub" style="margin-top:10px">Vé Vietnam Airlines bay thẳng, đi Haneda, về từ Kansai. Giá trên trang so sánh, kiểm tra lại hạng vé và hành lý khi đặt.</p>
+      <p class="sub" style="margin-top:10px">Vé VietJet Air bay thẳng (đã xuất vé): 23/12 HAN → NRT, 01/01 KIX → HAN. Kiểm tra hành lý ký gửi mua kèm theo vé.</p>
     </div>
     <div class="card conv">
       <label for="yen">Yên<input id="yen" type="number" inputmode="numeric" value="15000"></label>
@@ -313,17 +313,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   var FUJI={n:"Núi Phú Sĩ 3.776 m",a:35.3606,o:138.7274};
 
   var DAYS=[
-    {id:"d23",dnum:"23",dateLabel:"23",w:"Thứ 4",k:"東京",title:"Bay sang, tối Shibuya",sleep:"Shinjuku",temp:"2–12°C",sun:"16:32",
-     maps:[{src:"maps/d22-0.webp",from:{t:"Từ Haneda · tàu ~45'",a:35.5494,o:139.7798,m:"train"},pts:[
+    {id:"d23",dnum:"23",dateLabel:"23",w:"Thứ 4",k:"東京",title:"Bay sang Narita, tối Shibuya",sleep:"Shinjuku",temp:"2–12°C",sun:"16:32",
+     maps:[{src:"maps/d22-0.webp",from:{t:"Từ Narita · Narita Express ~1h15'",a:35.7720,o:140.3929,m:"train"},pts:[
        H("T"),P("Shibuya Sky",35.6584,139.7022,"train","Shibuya Sky"),P("Omoide Yokocho",35.6929,139.6996,"train","Omoide Yokocho, Shinjuku"),H("T","walk")]}],
      items:[
-      ["8:40","Cất cánh từ Nội Bài","Vietnam Airlines, bay thẳng 4h25.","move"],
-      ["15:05","Đến sân bay Haneda","Nhập cảnh, lấy hành lý khoảng 45 phút.","move","haneda"],
-      ["16:00","Về Shinjuku","Tàu hoặc xe buýt limousine, ~45 phút.","move"],
-      ["17:00","Nhận phòng khách sạn",""],
-      ["18:00","Shibuya","Ngã tư Shibuya, lên Shibuya Sky ngắm Tokyo về đêm. Đặt vé khung giờ sau 18:00.",null,"shibuya"],
-      ["20:00","Omoide Yokocho","Ăn tối ở hẻm quán nướng Shinjuku.",null,"omoide"]
-    ],notes:[["tip","Mặt trời lặn 16:32, lúc đó bạn còn trên đường từ sân bay về. Ngày đầu chỉ đi buổi tối cho nhẹ."]]},
+      ["8:20","Cất cánh từ Nội Bài","VietJet Air VJ934, bay thẳng ~5h10.","move"],
+      ["15:30","Đến sân bay Narita (NRT)","Terminal 2. Nhập cảnh, lấy hành lý khoảng 45–60 phút.","move","haneda"],
+      ["16:30","Tàu Narita Express về Shinjuku","Tàu N'EX chạy thẳng ~1h15 đến ga Shinjuku.","move"],
+      ["18:00","Nhận phòng khách sạn","Nghỉ ngơi, chuẩn bị đi chơi tối."],
+      ["19:30","Shibuya Sky ngắm Tokyo về đêm","Ngã tư Shibuya, lên đài quan sát Shibuya Sky (đặt vé khung sau 19:00).",null,"shibuya"],
+      ["21:00","Ăn tối Omoide Yokocho","Thưởng thức xiên nướng yakitori ở hẻm Shinjuku.",null,"omoide"]
+    ],notes:[["tip","Mặt trời lặn 16:32 lúc bạn đang trên tàu từ sân bay về. Về khách sạn cất đồ xong đi chơi tối vừa đẹp."]]},
 
     {id:"d24",dnum:"24",dateLabel:"24",w:"Thứ 5",k:"東京",title:"Tokyo truyền thống, đêm Giáng sinh",sleep:"Shinjuku",temp:"2–12°C",sun:"16:33",
      maps:[{src:"maps/d23-0.webp",pts:[
@@ -438,12 +438,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
       ["10:30","Trả phòng khách sạn","Lấy vali gửi ở quầy lễ tân."],
       ["11:00","Săn túi may mắn Fukubukuro","Trải nghiệm mua 'túi mù may mắn' ngày đầu năm mới tại các trung tâm thương mại quanh ga Namba."],
       ["12:30","Tàu Nankai Rapi:t ra sân bay Kansai","Chuyến tàu chạy thẳng ~40 phút. Có mặt tại sân bay KIX trước 13:30.","move"],
-      ["15:40","Cất cánh về Hà Nội","Chuyến bay Vietnam Airlines, bay thẳng 5h35, hạ cánh Nội Bài 19:15.","move"]
+      ["15:30","Cất cánh về Hà Nội","VietJet Air VJ931, bay thẳng 5h45, hạ cánh Nội Bài 19:15.","move"]
     ],notes:[["tip","Ngày 1/1 sân bay Kansai rất đông khách du lịch quốc tế và nội địa, nên có mặt đúng giờ trước 2–2.5 tiếng."]]}
   ];
 
   var OVERVIEW={numbered:false,ctx:[{n:"Phú Sĩ",a:35.3606,o:138.7274}],pts:[
-    P("Haneda",35.5494,139.7798,null),P("Tokyo · 23–25",35.6896,139.7006,"train"),
+    P("Narita",35.7720,140.3929,null),P("Tokyo · 23–25",35.6896,139.7006,"train"),
     P("Kawaguchiko · 26–27",35.4985,138.7690,"road"),P("Mishima",35.1264,138.9110,"road"),
     P("Kyoto · 28–29",34.9858,135.7588,"train"),P("Osaka · 30–31",34.6663,135.5003,"train"),P("Sân bay Kansai",34.4320,135.2304,"train")]};
 
@@ -492,7 +492,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   ];
 
   var TODO=[
-    ["flight","Vé Vietnam Airlines 23/12 – 01/01","HAN 08:40 → HND 15:05 ngày 23/12, KIX 15:40 → HAN 19:15 ngày 01/01/2027. Chọn hạng có 23 kg hành lý, đổi hoặc hoàn được vì chưa có visa."],
+    ["flight","Vé máy bay VietJet Air (Đã xuất vé ✓)","HAN 08:20 → NRT 15:30 ngày 23/12 (VJ934), KIX 15:30 → HAN 19:15 ngày 01/01 (VJ931). Kiểm tra hành lý ký gửi mua kèm theo vé."],
     ["visa","Nộp hồ sơ visa Nhật","Cuối tháng 10 – giữa tháng 11. Cuối năm hồ sơ dồn nhiều."],
     ["ryokan","Chỗ ở Kawaguchiko 2 đêm 26–27/12","Đặt trước tiên: có tối thứ Bảy và Chủ nhật, chỗ view núi hết nhanh."],
     ["hotels","Khách sạn ≤ $100/đêm","Shinjuku 3 đêm (23–25/12), ga Kyoto 2 đêm (28–29/12), Namba 2 đêm (30–31/12). Chọn phòng twin."],

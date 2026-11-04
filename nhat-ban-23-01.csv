@@ -1,7 +1,7 @@
 Tên,Ngày,Thứ tự,Ghi chú,Tìm,Vĩ độ,Kinh độ
-Sân bay Haneda,23/12 · Thứ 4 · Đến Tokyo,1,"Đến 15:05, chuyến Vietnam Airlines từ Hà Nội.",Haneda Airport Terminal 3,35.5494,139.7798
-Shibuya Sky,23/12 · Thứ 4 · Đến Tokyo,2,"18:00 · Ngắm Tokyo về đêm, đặt vé khung sau 18:00.",Shibuya Sky,35.6584,139.7022
-Omoide Yokocho,23/12 · Thứ 4 · Đến Tokyo,3,20:00 · Ăn tối hẻm quán nướng Shinjuku.,Omoide Yokocho Shinjuku,35.6929,139.6996
+Sân bay Narita,23/12 · Thứ 4 · Đến Tokyo,1,"Đến 15:30, chuyến VietJet Air VJ934 từ Hà Nội.",Narita International Airport Terminal 2,35.772,140.3929
+Shibuya Sky,23/12 · Thứ 4 · Đến Tokyo,2,"19:30 · Ngắm Tokyo về đêm, đặt vé khung sau 19:00.",Shibuya Sky,35.6584,139.7022
+Omoide Yokocho,23/12 · Thứ 4 · Đến Tokyo,3,21:00 · Ăn tối hẻm quán nướng Shinjuku.,Omoide Yokocho Shinjuku,35.6929,139.6996
 Chùa Sensō-ji,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",1,"8:30 · Asakusa, phố Nakamise.",Senso-ji Asakusa,35.7148,139.7967
 Tokyo Skytree,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",2,11:00 · Lên nếu trời trong.,Tokyo Skytree,35.7101,139.8107
 Ueno · chợ Ameyoko,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",3,"13:30 · Ăn trưa, công viên Ueno.",Ameyoko Ueno,35.7101,139.7745
@@ -38,7 +38,7 @@ Shinsaibashi,31/12 · Thứ 5 · Giao thừa Osaka,2,10:30 · Mua sắm cuối n
 Dotonbori Countdown,31/12 · Thứ 5 · Giao thừa Osaka,3,22:30 · Đón giao thừa chào năm mới 2027.,Dotonbori,34.6687,135.5013
 Đền Namba Yasaka,01/01 · Thứ 6 · Tết Hatsumode & Bay về,1,8:30 · Lễ đền đầu năm cầu may mắn.,Namba Yasaka Shrine,34.661,135.4965
 Ga Nankai Namba,01/01 · Thứ 6 · Tết Hatsumode & Bay về,2,"12:30 · Tàu ra sân bay, ~40 phút.",Nankai Namba Station,34.6629,135.5013
-Sân bay Kansai,01/01 · Thứ 6 · Tết Hatsumode & Bay về,3,15:40 · Cất cánh về Hà Nội.,Kansai International Airport,34.432,135.2304
+Sân bay Kansai,01/01 · Thứ 6 · Tết Hatsumode & Bay về,3,15:30 · Cất cánh về Hà Nội (VietJet Air VJ931).,Kansai International Airport,34.432,135.2304
 Khu khách sạn Shinjuku,Khu nên ở (khách sạn ≤ $100),1,23–25/12 · Phía nam hoặc tây ga Shinjuku.,Shinjuku Station,35.6885,139.699
 Khu chỗ ở Kawaguchiko,Khu nên ở (khách sạn ≤ $100),2,"26–27/12 · Quanh ga Kawaguchiko, bờ đông hồ.",Kawaguchiko Station,35.506,138.768
 Khu khách sạn ga Kyoto,Khu nên ở (khách sạn ≤ $100),3,"28–29/12 · Phía nam ga, cửa Hachijo.",Kyoto Station Hachijo Exit,34.9835,135.7585
