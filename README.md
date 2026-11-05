@@ -16,6 +16,8 @@ Trong thư mục repo, chạy `python3 -m http.server 8000`, rồi mở `http://
 
 Widget “Một lá thư nhỏ từ Nhật Bản” chọn ngẫu nhiên một trong 60 lá thư và ghép với một nhân vật phù hợp chủ đề. Có thể kiểm tra trực tiếp bằng `?previewLetter=kaizen&previewCharacter=naruto`; các mã nhân vật gồm `doraemon-snack`, `doraemon-walk`, `doraemon-broom`, `naruto` và `kuromi`.
 
+Các CSS, JavaScript và ảnh nhân vật dùng release query trong URL để tránh GitHub Pages phục vụ HTML mới cùng asset cũ trong khoảng cache CDN. Khi cập nhật một trong các asset này, tăng cùng release query trong `index.html` và `companion-data.js`.
+
 Ảnh trang chủ, nguồn và giấy phép nằm trong `experience-data.js`; các ảnh trong `hero/` được thu nhỏ và cắt khung khi hiển thị. Dữ liệu thẻ Ăn uống, Mua sắm, Chụp ảnh cũng ở file này. `trip-data.js` chứa lịch 10 ngày; `experience.js` dựng giao diện; bộ ảnh và phần HTML các chương nằm trong `index.html`.
 
 Lịch trình 31/12 dành buổi sáng cho Katsuoji. Giờ mở cửa và xe buýt dịp cuối năm 2026 cần được xác nhận lại gần ngày đi.
