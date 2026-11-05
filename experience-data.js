@@ -57,8 +57,8 @@ window.JP_EXPERIENCE = {
     }
   ],
   food: [
-    {city:"Tokyo · Shinjuku",title:"Bữa tối đầu tiên gần ga",detail:"Tối đến Narita, ăn nhẹ quanh cửa Nam ga Shinjuku rồi về Shinjuku Washington Hotel nghỉ.",time:"Tối 23/12",day:"d23",query:"dinner near Shinjuku Station South Exit"},
-    {city:"Tokyo · Shinjuku",title:"Bữa tối Noel",detail:"Chọn nhà hàng quanh cửa Nam ga trước khi dạo Shinjuku South Illumination; nên đặt bàn trước.",time:"Tối 24/12",day:"d24",query:"Christmas dinner Shinjuku South Exit"},
+    {city:"Tokyo · Shinjuku",title:"Sushiro Shinjuku West Exit",detail:"Ăn tối tại tầng 6 Shinjuku Palette Building sau khi nhận phòng; kiểm tra giờ phục vụ gần ngày đi.",time:"20:00–21:30 · 23/12",day:"d23",query:"Sushiro Shinjuku West Exit",official:"https://www.akindo-sushiro.co.jp/shop/detail.php?id=2550"},
+    {city:"Tokyo · Roppongi",title:"Roppongi Hills Christmas Market",detail:"Ăn tối và dạo chợ Giáng sinh tại Ō-Yane Plaza; chương trình 2026 miễn phí vào cửa.",time:"18:15–19:45 · 24/12",day:"d24",query:"Roppongi Hills O-Yane Plaza",official:"https://www.roppongihills.com/sp/christmashills/101/"},
     {city:"Fuji · Kawaguchiko",title:"Bữa trưa gần ga Kawaguchiko",detail:"Ăn thuận đường ngay khi bus tới, để kịp taxi đi Nagaike và Hirano chiều 25/12.",time:"Trưa 25/12",day:"d25",query:"lunch near Kawaguchiko Station"},
     {city:"Fuji · Kawaguchiko",title:"Bữa tối sau hai hồ",detail:"Về Kawaguchiko ăn tối, rồi nghỉ và tắm onsen tại khách sạn nếu muốn.",time:"Tối 25/12",day:"d25",query:"dinner near Kawaguchiko Station"},
     {city:"Fuji · Fujiten",title:"Bữa trưa tại khu trượt",detail:"Ăn nhanh sau lớp trượt tuyết buổi sáng, trước khi về Oishi Park.",time:"Trưa 26/12",day:"d26",query:"Fujiten Snow Resort restaurant"},
@@ -74,14 +74,14 @@ window.JP_EXPERIENCE = {
     {city:"Osaka · Namba",title:"Bữa tối giao thừa",detail:"Đặt bàn tại Namba và xác nhận giờ mở 31/12; ăn xong còn thời gian ra Nankai Namba để đến Sumiyoshi Taisha.",time:"18:00–20:00 · 31/12",day:"d31",query:"dinner Namba Osaka December 31"}
   ],
   shopping: [
-    {city:"Tokyo",title:"Shibuya và Harajuku",detail:"Dạo phố, tìm quà nhỏ trong buổi chiều Tokyo trước khi về Shinjuku nghỉ.",time:"24/12",day:"d24",query:"Shibuya Harajuku shopping Tokyo"},
+    {city:"Tokyo",title:"Cat Street, Jinnan và chợ Giáng sinh",detail:"Dạo phố từ Omotesando tới Shibuya; buổi tối có thể tìm quà lễ hội tại Roppongi Hills.",time:"24/12",day:"d24",query:"Cat Street Jinnan Shibuya Tokyo"},
     {city:"Fuji",title:"Quà quanh ga Kawaguchiko",detail:"Chỉ ghé nếu còn thời gian sau Oishi Park; ưu tiên nghỉ trước chặng đi Kyoto.",time:"26/12 · tùy chọn",day:"d26",query:"souvenir near Kawaguchiko Station"},
     {city:"Kyoto",title:"Quà quanh Kyoto Station",detail:"Phù hợp với phương án nhẹ ngày 29/12: về trung tâm nghỉ, mua quà và giữ buổi chiều tự do.",time:"Chiều 29/12 · phương án nhẹ",day:"d29",query:"Kyoto Station shopping"},
     {city:"Osaka",title:"Kuromon và Dotonbori",detail:"Dạo phố khi mới đến Namba; một số quầy có thể đổi giờ cuối năm.",time:"30/12",day:"d30",query:"Kuromon Market Dotonbori Osaka"},
     {city:"Osaka",title:"Namba và Shinsaibashi",detail:"Ghé ngắn sau Katsuoji; kiểm tra cửa hàng còn mở và giữ thời gian nghỉ trước giao thừa.",time:"Trưa 31/12",day:"d31",query:"Shinsaibashi shopping Osaka"}
   ],
   photography: [
-    {city:"Tokyo",title:"Shibuya",image:"shibuya",tip:"Tìm một góc cao để giữ nhịp người và biển hiệu trong cùng khung hình.",time:"Chiều 24/12",day:"d24"},
+    {city:"Tokyo",title:"Jinnan và Shibuya",image:"shibuya",tip:"Chụp đường phố trong nắng cuối ngày từ 15:15; sau đó dành buổi tối cho đèn Roppongi Hills và Keyakizaka.",time:"15:15–16:30 · 24/12",day:"d24"},
     {city:"Fuji",title:"Fujiten",image:"fujiten",tip:"Chụp đường tuyết và người mới tập sau lớp học; giữ an toàn trên dốc.",time:"Sáng 26/12",day:"d26"},
     {city:"Fuji",title:"Bờ bắc hồ Kawaguchi",image:"winterlake",tip:"Chờ khoảng trời quang để mặt hồ và Fuji có lớp lang mùa đông.",time:"Chiều 26/12",day:"d26"},
     {city:"Kyoto",title:"Kimono ở Gion Shirakawa",image:"gion",tip:"Chụp quanh cầu Tatsumi và ven kênh trong hai giờ; chỉ đứng ở nơi cho phép và luôn giữ lối đi thông thoáng.",time:"09:45–11:45 · 28/12",day:"d28"},

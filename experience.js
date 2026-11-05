@@ -115,7 +115,7 @@
       '<p class="locale">'+esc(item.city)+'</p><h3>'+esc(item.title)+'</h3><p>'+esc(item.detail)+'</p>'+
       '<div class="discover-meta"><span>'+esc(item.time)+'</span></div>'+
       '<div class="discover-actions"><a href="#'+esc(item.day)+'">Xem trong lịch trình ↗</a><a href="'+mapUrl(item.query)+'" target="_blank" rel="noopener noreferrer">Mở Google Maps ↗</a>'+
-      (item.official?'<a href="'+esc(item.official)+'" target="_blank" rel="noopener noreferrer">Trang quán ↗</a>':'')+'</div></article>'}).join("");
+      (item.official?'<a href="'+esc(item.official)+'" target="_blank" rel="noopener noreferrer">Trang chính thức ↗</a>':'')+'</div></article>'}).join("");
   }
   renderRecommendations(data.food,"food-grid");renderRecommendations(data.shopping,"shop-grid");
   var photos=window.JP_PHOTOS||{};

@@ -10,28 +10,34 @@
       S("Osaka · 30–31/12","Namba Station Osaka","train"),S("Kansai · 01/01","Kansai International Airport","train")
     ]},
     days:[
-      {id:"d23",dnum:"23",dateLabel:"23",w:"Thứ 4",k:"東京",title:"Đến Narita, về Shinjuku nghỉ ngơi",sleep:"Shinjuku Washington Hotel",
-       maps:[{pts:[S("Narita Airport","Narita International Airport"),S("Shinjuku Station","Shinjuku Station Tokyo","train"),S("Shinjuku Washington Hotel","Shinjuku Washington Hotel","walk",true)]}],
+      {id:"d23",dnum:"23",dateLabel:"23",w:"Thứ 4",k:"東京",title:"Narita → Shinjuku → Sushiro",sleep:"Shinjuku Washington Hotel",
+       maps:[{pts:[S("Narita Airport","Narita International Airport"),S("Shinjuku Station","Shinjuku Station Tokyo","train"),S("Shinjuku Washington Hotel","Shinjuku Washington Hotel","walk",true),S("Shinjuku West Exit","Shinjuku Station West Exit","walk"),S("Sushiro","Sushiro Shinjuku West Exit","walk"),S("Khách sạn","Shinjuku Washington Hotel","walk",true)]}],
        items:[
-        ["08:20 VN","Cất cánh từ Hà Nội","VietJet Air HAN → NRT, bay thẳng; giờ khởi hành là giờ Việt Nam.","move"],
-        ["15:25 JST","Hạ cánh Narita","Đến sân bay NRT theo ảnh hành trình; kiểm tra terminal trên vé điện tử.","move"],
-        ["15:25–17:00","Nhập cảnh và nhận hành lý","Dành khoảng 75–95 phút; có thể lâu hơn khi sân bay đông."],
-        ["17:00–18:45","Narita Express về Shinjuku","Chọn chuyến thẳng phù hợp; tính 1 giờ 20–40 phút trên tàu và thêm thời gian chờ.","move"],
-        ["18:45–19:30","Nhận phòng Shinjuku Washington Hotel","Đi từ cửa Nam ga Shinjuku đến khách sạn; cộng thời gian tìm lối ra và kéo vali."],
-        ["19:30–21:00","Ăn tối gần ga Shinjuku","Đi dạo nhẹ và ngủ sớm, không xếp thêm điểm tham quan xa."]
-       ],notes:[["tip","Giờ bay HAN dùng giờ Việt Nam; các mốc tại Nhật dùng JST. Xem <a href=\"https://www.narita-airport.jp/en/access/train/\" target=\"_blank\" rel=\"noopener\">hướng dẫn tàu từ Narita</a> và <a href=\"https://whgshinjuku.washington-hotels.jp/access/\" target=\"_blank\" rel=\"noopener\">đường đến khách sạn</a>."]]},
+        ["15:25","Hạ cánh Narita","Đến sân bay NRT; kiểm tra terminal trên vé điện tử.","move"],
+        ["15:25–17:00","Nhập cảnh, lấy hành lý và chuẩn bị thẻ IC","Dành khoảng 95 phút; có thể lâu hơn khi sân bay đông."],
+        ["17:00–18:45","Đi tàu về Shinjuku","Chọn chuyến phù hợp và giữ đệm cho thời gian chờ tàu.","move"],
+        ["18:45–19:30","Nhận phòng Shinjuku Washington Hotel","Đi tới khách sạn, nhận phòng và cất hành lý."],
+        ["19:30–20:00","Đến cửa Tây ga Shinjuku","Đi bộ hoặc taxi ngắn từ khách sạn.","move"],
+        ["20:00–21:30","Ăn tối tại Sushiro Shinjuku West Exit","Nhà hàng ở tầng 6 Shinjuku Palette Building."],
+        ["21:30–22:00","Về khách sạn nghỉ","Đi bộ hoặc taxi ngắn, ngủ sớm sau ngày bay."]
+       ],notes:[["tip","Sushiro Shinjuku West Exit hiện niêm yết tại tầng 6 Shinjuku Palette Building, cách ga Shinjuku hoặc Shinjuku-nishiguchi khoảng 1 phút. Xem <a href=\"https://www.akindo-sushiro.co.jp/shop/detail.php?id=2550\" target=\"_blank\" rel=\"noopener\">thông tin cửa hàng</a> và kiểm tra giờ phục vụ gần ngày đi."],["tip","Xem <a href=\"https://www.narita-airport.jp/en/access/train/\" target=\"_blank\" rel=\"noopener\">hướng dẫn tàu từ Narita</a> và <a href=\"https://whgshinjuku.washington-hotels.jp/access/\" target=\"_blank\" rel=\"noopener\">đường đến khách sạn</a>."]]},
 
-      {id:"d24",dnum:"24",dateLabel:"24",w:"Thứ 5",k:"東京",title:"Tokyo ngày Noel, đèn Shinjuku buổi tối",sleep:"Shinjuku Washington Hotel",
-       maps:[{pts:[S("Khách sạn","Shinjuku Washington Hotel",null,true),S("Meiji Jingu","Meiji Jingu Tokyo"),S("Harajuku · Omotesando","Harajuku Omotesando Tokyo","walk"),S("Shibuya","Shibuya Crossing"),S("Shinjuku South","Shinjuku Southern Terrace")]}],
+      {id:"d24",dnum:"24",dateLabel:"24",w:"Thứ 5",k:"東京",title:"Tokyo Tower, Shibuya và Roppongi Hills",sleep:"Shinjuku Washington Hotel",
+       maps:[{pts:[S("Khách sạn","Shinjuku Washington Hotel",null,true),S("Akabanebashi","Akabanebashi Station"),S("Prince Shiba Park","Prince Shiba Park Tokyo","walk"),S("Zōjō-ji","Zojoji Temple Tokyo","walk"),S("Harajuku","Harajuku Station","train"),S("Meiji Jingu","Meiji Jingu Tokyo","walk"),S("Omotesando · Cat Street · Jinnan","Cat Street Tokyo","walk"),S("Shibuya","Jinnan Shibuya Tokyo","walk"),S("Roppongi Hills","Roppongi Hills Tokyo","road"),S("Keyakizaka","Keyakizaka Street Roppongi","walk")]}],
        items:[
-        ["08:30–10:30","Meiji Jingu","Dạo lối rừng và khu đền; đi JR đến Harajuku.",null,"meiji"],
-        ["10:30–12:30","Harajuku và Omotesando","Đi bộ, ăn trưa trong khu vực."],
-        ["13:30–16:00","Shibuya","Ngắm giao lộ, phố mua sắm và café; nếu muốn lên đài quan sát, đặt vé riêng.",null,"shibuya"],
-        ["16:00–18:00","Về Shinjuku nghỉ","Chuẩn bị hành lý cho chặng Fuji sáng hôm sau."],
-        ["18:00–19:30","Ăn tối Noel","Chọn nhà hàng quanh cửa Nam ga Shinjuku, nên đặt bàn trước."],
-        ["19:30–20:30","Shinjuku South Illumination","Dạo New South Gate và Southern Terrace dưới ánh đèn cuối năm."],
-        ["20:30–21:30","Về khách sạn","Nghỉ sớm trước chuyến bus 09:15 ngày 25/12."]
-       ],notes:[["tip","Xem <a href=\"https://www.gotokyo.org/en/spot/ev134/index.html\" target=\"_blank\" rel=\"noopener\">thông tin Shinjuku South Illumination</a> và xác nhận lịch sự kiện gần ngày đi."]]},
+        ["09:00–09:45","Đến Akabanebashi và Shiba Park","Rời khách sạn, đi tàu tới khu Tokyo Tower.","move"],
+        ["09:45–10:45","Chụp Tokyo Tower từ Prince Shiba Park","Chụp từ bãi cỏ, giữ lối đi và khu vực nghỉ thông thoáng."],
+        ["10:45–11:30","Zōjō-ji và Tokyo Tower","Đi bộ qua chùa, tìm góc có cả mái chùa và tháp."],
+        ["11:30–12:15","Đi tàu đến Harajuku","Đổi tàu phù hợp và đi bộ tới khu ăn trưa.","move"],
+        ["12:15–13:15","Ăn trưa Harajuku hoặc Omotesando","Chọn quán thuận tuyến buổi chiều."],
+        ["13:15–14:15","Meiji Jingu theo tuyến ngắn","Có thể bỏ để dành thêm thời gian chụp phố.",null,"meiji"],
+        ["14:15–15:15","Omotesando → Cat Street → Jinnan","Đi bộ qua các khu phố và cửa hàng.","move"],
+        ["15:15–16:30","Chụp phố Jinnan và Shibuya","Tận dụng nắng cuối ngày cho ảnh đường phố.",null,"shibuya"],
+        ["16:30–17:15","Shibuya → Roppongi Hills","Ưu tiên bus RH01 đi thẳng; đổi sang tàu nếu bus quá đông.","move"],
+        ["17:15–18:15","Dạo Roppongi Hills miễn phí","Đi qua 66 Plaza, tượng nhện Maman, West Walk Christmas Tree và Mohri Garden Illumination."],
+        ["18:15–19:45","Ăn tối tại Roppongi Hills Christmas Market","Tham quan chợ Giáng sinh ở Ō-Yane Plaza; vào cửa miễn phí."],
+        ["19:45–20:30","Keyakizaka Illumination","Chụp đèn trắng xanh và Tokyo Tower ở cuối phố."]
+       ],notes:[["tip","Roppongi Hills Christmas Market 2026 được công bố tại Ō-Yane Plaza, miễn phí vào cửa; chương trình diễn ra tới 25/12. Xem <a href=\"https://www.roppongihills.com/sp/christmashills/101/\" target=\"_blank\" rel=\"noopener\">thông tin chính thức</a>. Nội dung hoặc giờ có thể thay đổi khi thời tiết xấu."],["warn","Ngày 25/12 đi Fuji bằng bus 09:15, nên về khách sạn sau Keyakizaka và chuẩn bị hành lý trước khi ngủ."]]},
 
       {id:"d25",dnum:"25",dateLabel:"25",w:"Thứ 6",k:"富士",title:"Kawaguchiko và ánh chiều Yamanakako",sleep:"Super Hotel Fujikawaguchiko Natural Hot Spring",
        maps:[{pts:[S("Busta Shinjuku","Shinjuku Expressway Bus Terminal"),S("Kawaguchiko Station","Kawaguchiko Station","road"),S("Super Hotel","Super Hotel Fujikawaguchiko Natural Hot Spring","road",true),S("Nagaike Shinsui Park","Nagaike Shinsui Park","road"),S("Hirano Beach","Hirano Beach Yamanakako","road")]}],
