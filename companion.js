@@ -6,6 +6,7 @@
   var query=new URLSearchParams(location.search);
   var current=0;
   var expanded=false;
+  var sealed=false;
   var imageVersion=0;
   var currentCharacter="";
   var mobileQuery=window.matchMedia("(max-width: 680px)");
@@ -29,20 +30,38 @@
   function setExpanded(next){
     expanded=!!next;
     $("companion-letter").classList.toggle("is-expanded",expanded);
-    if(mobileQuery.matches){
-      $("companion-letter").setAttribute("aria-expanded",String(expanded));
-      $("companion-letter").setAttribute("aria-label",expanded?"Thu gọn lá thư":"Mở rộng lá thư");
-    }
+    updateLetterAffordance();
+  }
+  function setLetterContentHidden(hidden){
+    $("companion-city-stamp").setAttribute("aria-hidden","true");
+    ["companion-eyebrow","companion-title","companion-copy-wrap"].forEach(function(id){
+      $(id).setAttribute("aria-hidden",String(!!hidden));
+    });
   }
   function updateLetterAffordance(){
     var element=$("companion-letter");
-    if(mobileQuery.matches){
+    if(sealed){
       element.setAttribute("role","button");element.setAttribute("tabindex","0");
-      element.setAttribute("aria-controls","companion-copy-wrap");setExpanded(expanded);
+      element.setAttribute("aria-expanded","false");element.setAttribute("aria-label","Mở lá thư bí mật");
+      element.removeAttribute("aria-controls");
+    }else if(data.letters[current]&&data.letters[current].secret){
+      expanded=false;element.classList.remove("is-expanded");
+      ["role","tabindex","aria-controls","aria-expanded","aria-label"].forEach(function(name){element.removeAttribute(name)});
+    }else if(mobileQuery.matches){
+      element.setAttribute("role","button");element.setAttribute("tabindex","0");
+      element.setAttribute("aria-controls","companion-copy-wrap");
+      element.setAttribute("aria-expanded",String(expanded));
+      element.setAttribute("aria-label",expanded?"Thu gọn lá thư":"Mở rộng lá thư");
     }else{
       expanded=false;element.classList.remove("is-expanded");
       ["role","tabindex","aria-controls","aria-expanded","aria-label"].forEach(function(name){element.removeAttribute(name)});
     }
+  }
+  function openSecret(){
+    if(!sealed)return;
+    sealed=false;
+    $("companion-letter").classList.remove("is-sealed");
+    setLetterContentHidden(false);updateLetterAffordance();
   }
   function setCharacter(letter){
     var all=Array.isArray(data.characters)?data.characters:[];
@@ -72,17 +91,23 @@
     $("companion-title").textContent=letter.title;
     $("companion-copy").textContent=letter.text;
     if(stamp){$("companion-stamp-ja").textContent=stamp.ja;$("companion-stamp-en").textContent=stamp.en}
-    setExpanded(false);setCharacter(letter);
+    sealed=!!letter.secret;
+    $("companion-letter").classList.toggle("is-secret",sealed);
+    $("companion-letter").classList.toggle("is-sealed",sealed);
+    expanded=false;$("companion-letter").classList.remove("is-expanded");
+    setLetterContentHidden(sealed);updateLetterAffordance();setCharacter(letter);
     if(remember){try{localStorage.setItem("jp-companion-last",letter.id)}catch(e){}}
   }
   $("companion-prev").addEventListener("click",function(){render(current-1,true)});
   $("companion-next").addEventListener("click",function(){render(current+1,true)});
   $("companion-letter").addEventListener("click",function(event){
-    if(mobileQuery.matches)setExpanded(!expanded);
+    if(sealed){openSecret();return}
+    if(mobileQuery.matches&&!data.letters[current].secret)setExpanded(!expanded);
   });
   $("companion-letter").addEventListener("keydown",function(event){
-    if(!mobileQuery.matches)return;
-    if(event.key==="Enter"||event.key===" "){event.preventDefault();setExpanded(!expanded)}
+    if(event.key!=="Enter"&&event.key!==" ")return;
+    if(sealed){event.preventDefault();openSecret();return}
+    if(mobileQuery.matches&&!data.letters[current].secret){event.preventDefault();setExpanded(!expanded)}
   });
   $("travel-companion").addEventListener("keydown",function(event){
     if(event.key==="ArrowLeft"){event.preventDefault();render(current-1,true)}

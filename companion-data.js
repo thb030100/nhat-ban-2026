@@ -14,6 +14,7 @@
     fuji:"https://www.japan.travel/en/destinations/tokai/yamanashi/fuji-five-lakes/"
   };
   function letter(id,category,title,text,source,label){return {id:id,category:category,title:title,text:text,source:source,sourceLabel:label||"JNTO"}}
+  function secretLetter(id,category,title,text){var item=letter(id,category,title,text);item.secret=true;return item}
   window.JP_COMPANION={
     stamps:[
       {ja:"東京",en:"TOKYO"},{ja:"京都",en:"KYOTO"},{ja:"大阪",en:"OSAKA"},
@@ -95,7 +96,12 @@
       letter("hatsumode","rituals","Hatsumōde","Hatsumōde là lần viếng đền hoặc chùa đầu tiên trong năm. Không nhất thiết phải đúng nửa đêm; nhiều gia đình thong thả đi trong ba ngày đầu năm.",S.shrine),
       letter("omikuji","rituals","Một quẻ omikuji","Omikuji không quyết định tương lai, chỉ gửi một lời để suy ngẫm. Nếu nhận quẻ chưa tốt, bạn có thể buộc nó tại nơi được chỉ dẫn và để nỗi lo ở lại.",S.shrine),
       letter("kachi-daruma","rituals","Kachi-Daruma của Katsuoji","Daruma ở Katsuoji không hứa làm điều ước thành sự thật. Nó nhắc người cầu nguyện đối diện với mình và chiến thắng sự yếu lòng trước khi mong chiến thắng bên ngoài.",S.katsuoji,"Katsuoji"),
-      letter("mount-fuji","rituals","Phú Sĩ—một nơi để ngước nhìn","Phú Sĩ được trân trọng không chỉ vì độ cao, mà còn như một nơi thờ phụng và nguồn cảm hứng nghệ thuật. Có lẽ vì thế, mỗi lần ngọn núi hiện ra, người ta thường im lặng thêm một chút.",S.fuji)
+      letter("mount-fuji","rituals","Phú Sĩ—một nơi để ngước nhìn","Phú Sĩ được trân trọng không chỉ vì độ cao, mà còn như một nơi thờ phụng và nguồn cảm hứng nghệ thuật. Có lẽ vì thế, mỗi lần ngọn núi hiện ra, người ta thường im lặng thêm một chút.",S.fuji),
+
+      secretLetter("secret-chiisana-kiseki","seasons","Chiisana kiseki","Được cùng anh lên kế hoạch cho chuyến đi này làm em thấy biết ơn và trân trọng vô cùng từng khoảnh khắc hiện tại. Anh chính là chiisana kiseki - một điều kỳ diệu nhỏ bé - trong cuộc đời em. Mong sớm đến ngày chúng mình cùng nhau ngắm tuyết rơi."),
+      secretLetter("secret-komorebi","words","Komorebi","Với em, anh chính là komorebi - những vệt nắng ấm dịu xuyên qua kẽ lá, luôn làm em thấy bình yên và dễ chịu. Cảm ơn anh vì tất cả sự dịu dàng anh dành cho em."),
+      secretLetter("secret-omoide","daily-life","Omoide","Mùa đông này, em mong tụi mình sẽ cùng nhau tạo nên thật nhiều omoide - những kỷ niệm thật đẹp và vô giá. Đến lúc đó, anh nhớ nắm tay em thật chặt, cùng em ăn thật nhiều món ngon và cùng nhau đi qua hết những góc phố mùa đông nhé. Cảm ơn anh vì đã luôn chiều chuộng em!"),
+      secretLetter("secret-noel-kiseki","seasons","Điều ước đêm Noel","Người ta bảo đêm Noel là lúc những kiseki - điều kỳ diệu - dễ xảy ra nhất. Nếu anh có một điều ước vào Giáng Sinh này, hãy để lại một lời nhắn cho em biết nhé.")
     ]
   };
 })();
