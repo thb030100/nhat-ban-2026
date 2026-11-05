@@ -63,9 +63,9 @@ window.JP_EXPERIENCE = {
     {city:"Fuji · Kawaguchiko",title:"Bữa tối sau hai hồ",detail:"Về Kawaguchiko ăn tối, rồi nghỉ và tắm onsen tại khách sạn nếu muốn.",time:"Tối 25/12",day:"d25",query:"dinner near Kawaguchiko Station"},
     {city:"Fuji · Fujiten",title:"Bữa trưa tại khu trượt",detail:"Ăn nhanh sau lớp trượt tuyết buổi sáng, trước khi về Oishi Park.",time:"Trưa 26/12",day:"d26",query:"Fujiten Snow Resort restaurant"},
     {city:"Kyoto · ga Kyoto",title:"Honke Daiichi Asahi Honten",detail:"Một lựa chọn ramen sau khi đến Kyoto; chỉ ghé nếu còn mở ngày 27/12 và hàng chờ không dài.",time:"Tối 27/12",day:"d27",query:"Honke Daiichi Asahi Honten Kyoto"},
-    {city:"Kyoto · Higashiyama",title:"Starbucks Kyoto Nineizaka Yasaka Chaya",detail:"Quán nằm trên lối Sannenzaka–Ninenzaka; ghé ngắn khi hàng chờ vừa phải.",time:"Sáng 28/12",day:"d28",query:"Starbucks Kyoto Nineizaka Yasaka Chaya"},
-    {city:"Kyoto · Gion",title:"Bữa trưa Gion hoặc Higashiyama",detail:"Chọn quán thuận đường giữa Kiyomizu-dera, Yasaka và Gion.",time:"Trưa 28/12",day:"d28",query:"lunch Gion Higashiyama Kyoto"},
-    {city:"Kyoto · trung tâm",title:"Rokujuan",detail:"Một khoảng nghỉ café yên tĩnh, thay cho Nishiki nếu muốn đi chậm hơn.",time:"Chiều 28 hoặc 29/12",day:"d28",query:"Rokujuan Kyoto cafe"},
+    {city:"Kyoto · Gion",title:"Café nghỉ khi mặc kimono",detail:"Chọn quán gần Gion Shirakawa để nghỉ ngắn mà vẫn kịp hai giờ chụp ảnh.",time:"Sáng 28/12",day:"d28",query:"cafe Gion Shirakawa Kyoto"},
+    {city:"Kyoto · Gion",title:"Bữa trưa sau khi trả kimono",detail:"Ăn gần cửa hàng từ 12:15 để dành buổi chiều cho Yasaka, Maruyama và các con dốc phía Đông.",time:"Trưa 28/12",day:"d28",query:"lunch Gion Kyoto"},
+    {city:"Kyoto · Arashiyama",title:"Café trước tàu Sagano",detail:"Nếu chọn tàu Sagano, nghỉ tại Arashiyama trước khi đi JR tới Umahori khoảng 14:45.",time:"Chiều 29/12 · tùy chọn",day:"d29",query:"cafe near Saga Arashiyama Station"},
     {city:"Kyoto · Gojo",title:"Soba-no-Mi Yoshimura",detail:"Lựa chọn soba cho tối 28 hoặc 29/12; xác nhận giờ phục vụ cuối năm trước khi đi.",time:"Tối 28 hoặc 29/12",day:"d29",query:"Soba-no-Mi Yoshimura Kyoto"},
     {city:"Kyoto · Arashiyama",title:"Bữa trưa Arashiyama",detail:"Ăn tại khu Arashiyama sau rừng tre và cầu Togetsukyo, rồi về trung tâm nghỉ.",time:"Trưa 29/12",day:"d29",query:"lunch Arashiyama Kyoto"},
     {city:"Osaka · Dotonbori",title:"Okonomiyaki Mizuno",detail:"Quán trong danh sách cho bữa trưa muộn; kiểm tra ngày mở cửa và dự trù xếp hàng.",time:"Trưa 30/12",day:"d30",query:"Okonomiyaki Mizuno Dotonbori",official:"https://mizuno.gorp.jp/"},
@@ -76,8 +76,7 @@ window.JP_EXPERIENCE = {
   shopping: [
     {city:"Tokyo",title:"Shibuya và Harajuku",detail:"Dạo phố, tìm quà nhỏ trong buổi chiều Tokyo trước khi về Shinjuku nghỉ.",time:"24/12",day:"d24",query:"Shibuya Harajuku shopping Tokyo"},
     {city:"Fuji",title:"Quà quanh ga Kawaguchiko",detail:"Chỉ ghé nếu còn thời gian sau Oishi Park; ưu tiên nghỉ trước chặng đi Kyoto.",time:"26/12 · tùy chọn",day:"d26",query:"souvenir near Kawaguchiko Station"},
-    {city:"Kyoto",title:"Nishiki Market",detail:"Có thể ghé sau Gion nếu các quầy còn mở; cuối năm kiểm tra giờ từng nơi.",time:"Chiều 28/12 · tùy chọn",day:"d28",query:"Nishiki Market Kyoto"},
-    {city:"Kyoto",title:"Gion và Pontocho",detail:"Sau khi về khách sạn nghỉ, đi dạo phố cổ ven kênh; chỉ mua quà nhỏ nếu bắt gặp cửa hàng hợp ý.",time:"Chiều 29/12",day:"d29",query:"Gion Shirakawa Pontocho Kyoto"},
+    {city:"Kyoto",title:"Quà quanh Kyoto Station",detail:"Phù hợp với phương án nhẹ ngày 29/12: về trung tâm nghỉ, mua quà và giữ buổi chiều tự do.",time:"Chiều 29/12 · phương án nhẹ",day:"d29",query:"Kyoto Station shopping"},
     {city:"Osaka",title:"Kuromon và Dotonbori",detail:"Dạo phố khi mới đến Namba; một số quầy có thể đổi giờ cuối năm.",time:"30/12",day:"d30",query:"Kuromon Market Dotonbori Osaka"},
     {city:"Osaka",title:"Namba và Shinsaibashi",detail:"Ghé ngắn sau Katsuoji; kiểm tra cửa hàng còn mở và giữ thời gian nghỉ trước giao thừa.",time:"Trưa 31/12",day:"d31",query:"Shinsaibashi shopping Osaka"}
   ],
@@ -85,8 +84,8 @@ window.JP_EXPERIENCE = {
     {city:"Tokyo",title:"Shibuya",image:"shibuya",tip:"Tìm một góc cao để giữ nhịp người và biển hiệu trong cùng khung hình.",time:"Chiều 24/12",day:"d24"},
     {city:"Fuji",title:"Fujiten",image:"fujiten",tip:"Chụp đường tuyết và người mới tập sau lớp học; giữ an toàn trên dốc.",time:"Sáng 26/12",day:"d26"},
     {city:"Fuji",title:"Bờ bắc hồ Kawaguchi",image:"winterlake",tip:"Chờ khoảng trời quang để mặt hồ và Fuji có lớp lang mùa đông.",time:"Chiều 26/12",day:"d26"},
-    {city:"Kyoto",title:"Kiyomizu-dera",image:"kiyomizu",tip:"Đi sớm để dãy mái Kyoto hiện rõ dưới ánh sáng dịu.",time:"Sáng 28/12",day:"d28"},
-    {city:"Kyoto",title:"Gion",image:"gion",tip:"Đi chậm khi phố bắt đầu lên đèn; tôn trọng biển cấm chụp và sự riêng tư.",time:"Chiều 28 hoặc 29/12",day:"d29"},
+    {city:"Kyoto",title:"Kimono ở Gion Shirakawa",image:"gion",tip:"Chụp quanh cầu Tatsumi và ven kênh trong hai giờ; chỉ đứng ở nơi cho phép và luôn giữ lối đi thông thoáng.",time:"09:45–11:45 · 28/12",day:"d28"},
+    {city:"Kyoto",title:"Kiyomizu-dera",image:"kiyomizu",tip:"Ghé cuối buổi chiều nếu còn sức; có thể bỏ để ngày mặc kimono nhẹ nhàng hơn.",time:"Chiều 28/12 · tùy sức",day:"d28"},
     {city:"Kyoto",title:"Fushimi Inari",image:"fushimi",tip:"Đi sâu hơn qua các dãy torii và nhường đường cho người đi lễ.",time:"Sáng 29/12",day:"d29"},
     {city:"Osaka",title:"Dotonbori",image:"dotonbori",tip:"Tìm góc có phản chiếu của bảng hiệu trên kênh, tránh cản dòng người.",time:"Tối 30/12",day:"d30"},
     {city:"Osaka",title:"Katsuoji",image:"katsuoji",tip:"Chụp daruma cùng hồ và cây xanh, giữ khoảng cách với đồ lễ.",time:"Sáng 31/12",day:"d31"}
