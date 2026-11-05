@@ -110,6 +110,39 @@ nav a.today{border-color:var(--shu)}
 .photo-card .photo-links{display:flex;flex-wrap:wrap;gap:8px 15px}
 .photo-card a{font-size:12px;color:var(--ai);text-decoration:none}
 .foot{max-width:920px;margin:70px auto 0;border-top:1px solid var(--line)}
+
+/* A small letter from Japan, kept above the page without changing its layout. */
+.travel-companion{
+  position:fixed;top:96px;right:max(14px,calc((100vw - 1320px)/2 + 16px));z-index:4;
+  width:min(390px,calc(100vw - 28px));display:grid;grid-template-columns:minmax(0,1fr) 104px;
+  align-items:end;filter:drop-shadow(5px 7px 9px #4b351f28);pointer-events:none;
+}
+.companion-letter{
+  position:relative;min-width:0;padding:17px 18px 14px;background:#fffaf0;color:var(--ink);
+  border:1px solid #cbb999;box-shadow:3px 4px 0 #8d755225;transform:rotate(-.35deg);pointer-events:auto;
+}
+.companion-letter::after{
+  content:"";position:absolute;right:-13px;bottom:25px;width:24px;height:24px;background:#fffaf0;
+  border-top:1px solid #cbb999;border-right:1px solid #cbb999;transform:rotate(45deg);z-index:-1;
+}
+.companion-eyebrow{color:var(--shu);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.companion-prompt{margin-top:6px;color:var(--ai);font:italic 13px Georgia,var(--jp),serif}
+.companion-letter h2{margin-top:2px;font:600 20px/1.18 Georgia,var(--jp),serif;color:var(--ink)}
+.companion-copy{margin-top:7px}
+.companion-copy p{font:14px/1.58 Georgia,var(--sans),serif;color:var(--muted)}
+.companion-footer{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:10px}
+.companion-footer button,.companion-footer a{border:0;background:none;padding:2px 0;color:var(--shu);text-decoration:none;cursor:pointer;font:700 10px var(--sans);letter-spacing:.04em}
+.companion-expand{display:none}
+.companion-footer a{border-bottom:1px solid #a34b3766}
+.companion-position{margin-left:auto;color:#8a7a67;font-variant-numeric:tabular-nums}
+.companion-character{position:relative;width:104px;height:118px;display:grid;align-items:end;justify-items:center;pointer-events:none}
+.companion-character img{display:block;width:104px;height:104px;object-fit:contain;filter:drop-shadow(1px 4px 4px #523b252b)}
+.companion-character img[hidden]{display:none}
+.companion-fallback{display:grid;place-items:center;width:82px;height:82px;margin-bottom:8px;border:2px solid var(--shu);border-radius:50%;color:var(--shu);background:#f7ebd7;font:600 21px var(--jp);transform:rotate(7deg)}
+.companion-fallback[hidden]{display:none}
+.companion-controls{position:absolute;left:0;right:0;bottom:-17px;display:flex;justify-content:center;gap:6px;pointer-events:auto}
+.companion-controls button{display:grid;place-items:center;width:29px;height:29px;padding:0;border:1px solid #bba98c;border-radius:50%;background:#fffaf0;color:var(--shu);font:22px/1 Georgia,serif;cursor:pointer;box-shadow:1px 2px 0 #8d755225}
+.companion-controls button:hover{background:#f3e7d2}
 @media(max-width:980px){
   .experience-hero{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);min-height:auto}
   .hero-intro{grid-column:1}
@@ -137,6 +170,20 @@ nav a.today{border-color:var(--shu)}
   .sec{padding-top:64px}
   .dhead{grid-template-columns:auto 1fr}
   .dkanji{display:none}
+  .travel-companion{top:80px;right:8px;width:min(304px,calc(100vw - 16px));grid-template-columns:minmax(0,1fr) 72px}
+  .companion-letter{padding:12px 13px 10px}
+  .companion-eyebrow{font-size:8px}
+  .companion-prompt{font-size:11px;margin-top:4px}
+  .companion-letter h2{font-size:17px}
+  .companion-copy p{font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+  .companion-letter.is-expanded .companion-copy p{display:block;overflow:visible}
+  .companion-character{width:72px;height:92px}
+  .companion-character img{width:72px;height:72px}
+  .companion-fallback{width:58px;height:58px;margin-bottom:8px;font-size:16px}
+  .companion-controls{bottom:-15px;gap:4px}
+  .companion-controls button{width:27px;height:27px;font-size:19px}
+  .companion-footer{gap:8px;margin-top:7px}
+  .companion-expand{display:inline-block}
 }
 @media(max-width:380px){
   .brand{font-size:12px}.brand-jp{font-size:15px}
@@ -150,4 +197,5 @@ nav a.today{border-color:var(--shu)}
   html{scroll-behavior:auto}
   .scene-frame img,.explore-grid a{transition:none}
   .flake{animation:none;display:none}
+  .companion-letter,.companion-fallback{transform:none}
 }
