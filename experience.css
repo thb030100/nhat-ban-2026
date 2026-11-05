@@ -113,36 +113,32 @@ nav a.today{border-color:var(--shu)}
 
 /* A small letter from Japan, kept above the page without changing its layout. */
 .travel-companion{
-  position:fixed;top:96px;right:max(14px,calc((100vw - 1320px)/2 + 16px));z-index:4;
-  width:min(390px,calc(100vw - 28px));display:grid;grid-template-columns:minmax(0,1fr) 104px;
-  align-items:end;filter:drop-shadow(5px 7px 9px #4b351f28);pointer-events:none;
+  position:fixed;top:96px;right:max(104px,calc((100vw - 1320px)/2 + 106px));z-index:4;
+  width:min(350px,calc(100vw - 92px));filter:drop-shadow(5px 7px 9px #4b351f28);pointer-events:none;
 }
 .companion-letter{
-  position:relative;min-width:0;padding:17px 18px 14px;background:#fffaf0;color:var(--ink);
-  border:1px solid #cbb999;box-shadow:3px 4px 0 #8d755225;transform:rotate(-.35deg);pointer-events:auto;
+  position:relative;isolation:isolate;min-width:0;padding:20px 22px 22px;background:#fff;color:var(--ink);
+  border:1px solid #d8cfc1;box-shadow:3px 4px 0 #8d75521f;transform:rotate(-.35deg);pointer-events:auto;cursor:default;
 }
-.companion-letter::after{
-  content:"";position:absolute;right:-13px;bottom:25px;width:24px;height:24px;background:#fffaf0;
-  border-top:1px solid #cbb999;border-right:1px solid #cbb999;transform:rotate(45deg);z-index:-1;
+.companion-letter::before{
+  content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;opacity:.72;
+  background:
+    linear-gradient(32deg,transparent 49.6%,#e8e0d4 50%,transparent 50.4%) left bottom/51% 42% no-repeat,
+    linear-gradient(-32deg,transparent 49.6%,#e8e0d4 50%,transparent 50.4%) right bottom/51% 42% no-repeat;
 }
+.companion-letter::after{content:"";position:absolute;right:14px;top:13px;width:31px;height:25px;border:1px solid #c98a7b66;background:repeating-linear-gradient(135deg,#fff 0 4px,#eedbd5 4px 8px);transform:rotate(2deg);z-index:-1}
 .companion-eyebrow{color:var(--shu);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
-.companion-prompt{margin-top:6px;color:var(--ai);font:italic 13px Georgia,var(--jp),serif}
-.companion-letter h2{margin-top:2px;font:600 20px/1.18 Georgia,var(--jp),serif;color:var(--ink)}
-.companion-copy{margin-top:7px}
-.companion-copy p{font:14px/1.58 Georgia,var(--sans),serif;color:var(--muted)}
-.companion-footer{display:flex;align-items:center;gap:10px;margin-top:10px;font-size:10px}
-.companion-footer button,.companion-footer a{border:0;background:none;padding:2px 0;color:var(--shu);text-decoration:none;cursor:pointer;font:700 10px var(--sans);letter-spacing:.04em}
-.companion-expand{display:none}
-.companion-footer a{border-bottom:1px solid #a34b3766}
-.companion-position{margin-left:auto;color:#8a7a67;font-variant-numeric:tabular-nums}
-.companion-character{position:relative;width:104px;height:118px;display:grid;align-items:end;justify-items:center;pointer-events:none}
-.companion-character img{display:block;width:104px;height:104px;object-fit:contain;filter:drop-shadow(1px 4px 4px #523b252b)}
+.companion-letter h2{max-width:calc(100% - 34px);margin-top:6px;font:600 21px/1.18 Georgia,var(--jp),serif;color:var(--ink)}
+.companion-copy{margin-top:9px}
+.companion-copy p{font:14px/1.62 Georgia,var(--sans),serif;color:var(--muted)}
+.companion-character{position:absolute;right:-95px;bottom:-12px;z-index:2;width:126px;height:142px;display:grid;align-items:end;justify-items:center;pointer-events:none}
+.companion-character img{display:block;width:126px;height:126px;object-fit:contain;object-position:left bottom;filter:drop-shadow(1px 4px 4px #523b252b)}
 .companion-character img[hidden]{display:none}
-.companion-fallback{display:grid;place-items:center;width:82px;height:82px;margin-bottom:8px;border:2px solid var(--shu);border-radius:50%;color:var(--shu);background:#f7ebd7;font:600 21px var(--jp);transform:rotate(7deg)}
+.companion-fallback{display:grid;place-items:center;width:82px;height:82px;margin-bottom:21px;border:2px solid var(--shu);border-radius:50%;color:var(--shu);background:#fff;font:600 21px var(--jp);transform:rotate(-7deg)}
 .companion-fallback[hidden]{display:none}
-.companion-controls{position:absolute;left:0;right:0;bottom:-17px;display:flex;justify-content:center;gap:6px;pointer-events:auto}
-.companion-controls button{display:grid;place-items:center;width:29px;height:29px;padding:0;border:1px solid #bba98c;border-radius:50%;background:#fffaf0;color:var(--shu);font:22px/1 Georgia,serif;cursor:pointer;box-shadow:1px 2px 0 #8d755225}
-.companion-controls button:hover{background:#f3e7d2}
+.companion-controls{position:absolute;left:0;right:0;bottom:-5px;display:flex;justify-content:center;gap:6px;pointer-events:auto}
+.companion-controls button{display:grid;place-items:center;width:29px;height:29px;padding:0;border:1px solid #c9bda9;border-radius:50%;background:#fff;color:var(--shu);font:22px/1 Georgia,serif;cursor:pointer;box-shadow:1px 2px 0 #8d75521f}
+.companion-controls button:hover{background:#f8f4ed}
 @media(max-width:980px){
   .experience-hero{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);min-height:auto}
   .hero-intro{grid-column:1}
@@ -170,20 +166,17 @@ nav a.today{border-color:var(--shu)}
   .sec{padding-top:64px}
   .dhead{grid-template-columns:auto 1fr}
   .dkanji{display:none}
-  .travel-companion{top:80px;right:8px;width:min(304px,calc(100vw - 16px));grid-template-columns:minmax(0,1fr) 72px}
-  .companion-letter{padding:12px 13px 10px}
+  .travel-companion{top:80px;right:68px;width:min(292px,calc(100vw - 74px))}
+  .companion-letter{padding:14px 15px 16px;cursor:pointer}
   .companion-eyebrow{font-size:8px}
-  .companion-prompt{font-size:11px;margin-top:4px}
-  .companion-letter h2{font-size:17px}
+  .companion-letter h2{max-width:calc(100% - 27px);font-size:17px;margin-top:4px}
   .companion-copy p{font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
   .companion-letter.is-expanded .companion-copy p{display:block;overflow:visible}
-  .companion-character{width:72px;height:92px}
-  .companion-character img{width:72px;height:72px}
-  .companion-fallback{width:58px;height:58px;margin-bottom:8px;font-size:16px}
-  .companion-controls{bottom:-15px;gap:4px}
+  .companion-character{right:-60px;bottom:-8px;width:82px;height:100px}
+  .companion-character img{width:82px;height:82px}
+  .companion-fallback{width:58px;height:58px;margin-bottom:18px;font-size:16px}
+  .companion-controls{bottom:-4px;gap:4px}
   .companion-controls button{width:27px;height:27px;font-size:19px}
-  .companion-footer{gap:8px;margin-top:7px}
-  .companion-expand{display:inline-block}
 }
 @media(max-width:380px){
   .brand{font-size:12px}.brand-jp{font-size:15px}
