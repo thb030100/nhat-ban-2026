@@ -15,12 +15,13 @@
   };
   function letter(id,category,title,text,source,label){return {id:id,category:category,title:title,text:text,source:source,sourceLabel:label||"JNTO"}}
   window.JP_COMPANION={
-    assetsReady:false,
-    poses:{
-      morning:["assets/doraemon/morning-a.webp","assets/doraemon/morning-b.webp"],
-      afternoon:["assets/doraemon/afternoon-a.webp","assets/doraemon/afternoon-b.webp"],
-      evening:["assets/doraemon/evening-a.webp","assets/doraemon/evening-b.webp"]
-    },
+    characters:[
+      {id:"doraemon-snack",src:"assets/characters/doraemon-snack.png",categories:["food","daily-life"]},
+      {id:"doraemon-walk",src:"assets/characters/doraemon-walk.png",categories:["daily-life","rituals","food"]},
+      {id:"doraemon-broom",src:"assets/characters/doraemon-broom.png",categories:["seasons","crafts","words"]},
+      {id:"naruto",src:"assets/characters/naruto.png",categories:["words","rituals","seasons"]},
+      {id:"kuromi",src:"assets/characters/kuromi.png",categories:["crafts","words","rituals","seasons"]}
+    ],
     letters:[
       letter("omoiyari","daily-life","Omoiyari","Ở Nhật có một từ rất dịu dàng: omoiyari—nghĩ cho người khác trước khi họ phải lên tiếng. Đôi khi, đó chỉ là hạ giọng trên tàu hay né sang bên để một người đang vội bước qua.",S.mindful),
       letter("sumimasen","daily-life","Một lời sumimasen","Sumimasen không chỉ có nghĩa là xin lỗi. Người Nhật còn dùng nó để gọi ai đó, cảm ơn một sự giúp đỡ, hay nhẹ nhàng xin được đi qua. Một từ nhỏ, nhưng chứa rất nhiều sự ý tứ.",S.manners),

@@ -7,6 +7,7 @@
   var current=0;
   var expanded=false;
   var imageVersion=0;
+  var currentCharacter="";
   var mobileQuery=window.matchMedia("(max-width: 680px)");
 
   function randomIndex(max){
@@ -25,13 +26,6 @@
     while(data.letters[index].id===last)index=randomIndex(data.letters.length);
     return index;
   }
-  function japanHour(){
-    var hour=Number(new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tokyo",hour:"2-digit",hourCycle:"h23"}).format(new Date()));
-    var preview=query.get("previewHour");
-    if(preview!==null&&/^(?:[01]?\d|2[0-3])$/.test(preview))hour=Number(preview);
-    return hour;
-  }
-  function periodForHour(hour){return hour>=5&&hour<12?"morning":hour>=12&&hour<18?"afternoon":"evening"}
   function setExpanded(next){
     expanded=!!next;
     $("companion-letter").classList.toggle("is-expanded",expanded);
@@ -50,26 +44,32 @@
       ["role","tabindex","aria-controls","aria-expanded","aria-label"].forEach(function(name){element.removeAttribute(name)});
     }
   }
-  function setPose(){
-    var period=periodForHour(japanHour());
-    var poses=data.poses&&data.poses[period]||[];
-    var src=poses[current%Math.max(poses.length,1)];
+  function setCharacter(letter){
+    var all=Array.isArray(data.characters)?data.characters:[];
+    var preview=query.get("previewCharacter");
+    var candidates=all.filter(function(character){return character.categories.indexOf(letter.category)>=0});
+    if(preview){var selected=all.find(function(character){return character.id===preview});if(selected)candidates=[selected]}
+    if(!candidates.length)candidates=all;
+    var last=currentCharacter;
+    if(!last){try{last=localStorage.getItem("jp-companion-character")||""}catch(e){}}
+    var available=candidates.filter(function(character){return character.id!==last});
+    if(available.length)candidates=available;
+    var character=candidates[randomIndex(candidates.length)];
     var image=$("companion-image"),fallback=$("companion-fallback"),version=++imageVersion;
-    if(!data.assetsReady||!src){image.hidden=true;fallback.hidden=false;return}
-    image.hidden=true;fallback.hidden=false;
-    fetch(src,{method:"HEAD"}).then(function(response){
-      if(version!==imageVersion||!response.ok)return;
-      image.onload=function(){if(version===imageVersion){image.hidden=false;fallback.hidden=true}};
-      image.onerror=function(){if(version===imageVersion){image.hidden=true;fallback.hidden=false}};
-      image.src=src;
-    }).catch(function(){});
+    if(!character){image.hidden=true;fallback.hidden=false;return}
+    currentCharacter=character.id;
+    image.hidden=true;fallback.hidden=false;image.dataset.character=character.id;
+    image.onload=function(){if(version===imageVersion){image.hidden=false;fallback.hidden=true}};
+    image.onerror=function(){if(version===imageVersion){image.hidden=true;fallback.hidden=false}};
+    image.src=character.src;
+    try{localStorage.setItem("jp-companion-character",character.id)}catch(e){}
   }
   function render(index,remember){
     current=(index+data.letters.length)%data.letters.length;
     var letter=data.letters[current];
     $("companion-title").textContent=letter.title;
     $("companion-copy").textContent=letter.text;
-    setExpanded(false);setPose();
+    setExpanded(false);setCharacter(letter);
     if(remember){try{localStorage.setItem("jp-companion-last",letter.id)}catch(e){}}
   }
   $("companion-prev").addEventListener("click",function(){render(current-1,true)});
@@ -85,11 +85,9 @@
     if(event.key==="ArrowLeft"){event.preventDefault();render(current-1,true)}
     if(event.key==="ArrowRight"){event.preventDefault();render(current+1,true)}
   });
-  var lastPeriod=periodForHour(japanHour());
   if(mobileQuery.addEventListener)mobileQuery.addEventListener("change",updateLetterAffordance);
   else if(mobileQuery.addListener)mobileQuery.addListener(updateLetterAffordance);
   updateLetterAffordance();
-  setInterval(function(){var period=periodForHour(japanHour());if(period!==lastPeriod){lastPeriod=period;setPose()}},60000);
   current=initialIndex();render(current,true);
   window.JPCompanion={show:function(id){var index=data.letters.findIndex(function(letter){return letter.id===id});if(index>=0)render(index,true)},current:function(){return data.letters[current]}};
 })();

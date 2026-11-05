@@ -131,8 +131,13 @@ nav a.today{border-color:var(--shu)}
 .companion-letter h2{max-width:calc(100% - 34px);margin-top:6px;font:600 21px/1.18 Georgia,var(--jp),serif;color:var(--ink)}
 .companion-copy{margin-top:9px}
 .companion-copy p{font:14px/1.62 Georgia,var(--sans),serif;color:var(--muted)}
-.companion-character{position:absolute;right:-95px;bottom:-12px;z-index:2;width:126px;height:142px;display:grid;align-items:end;justify-items:center;pointer-events:none}
-.companion-character img{display:block;width:126px;height:126px;object-fit:contain;object-position:left bottom;filter:drop-shadow(1px 4px 4px #523b252b)}
+.companion-character{position:absolute;right:-95px;bottom:-12px;z-index:2;width:126px;height:148px;display:grid;align-items:end;justify-items:center;pointer-events:none}
+.companion-character img{display:block;width:132px;height:136px;object-fit:contain;object-position:center bottom;filter:drop-shadow(1px 4px 4px #523b252b);transform-origin:center bottom}
+.companion-character img[data-character="doraemon-snack"]{width:142px;height:142px;transform:translateX(-5px)}
+.companion-character img[data-character="doraemon-walk"]{width:116px;height:136px;transform:translateX(-9px)}
+.companion-character img[data-character="doraemon-broom"]{width:154px;height:146px;transform:translateX(-18px)}
+.companion-character img[data-character="naruto"]{width:194px;height:142px;transform:translateX(-35px)}
+.companion-character img[data-character="kuromi"]{width:118px;height:138px;transform:translateX(-8px)}
 .companion-character img[hidden]{display:none}
 .companion-fallback{display:grid;place-items:center;width:82px;height:82px;margin-bottom:21px;border:2px solid var(--shu);border-radius:50%;color:var(--shu);background:#fff;font:600 21px var(--jp);transform:rotate(-7deg)}
 .companion-fallback[hidden]{display:none}
@@ -172,8 +177,13 @@ nav a.today{border-color:var(--shu)}
   .companion-letter h2{max-width:calc(100% - 27px);font-size:17px;margin-top:4px}
   .companion-copy p{font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
   .companion-letter.is-expanded .companion-copy p{display:block;overflow:visible}
-  .companion-character{right:-60px;bottom:-8px;width:82px;height:100px}
-  .companion-character img{width:82px;height:82px}
+  .companion-character{right:-60px;bottom:-8px;width:82px;height:104px}
+  .companion-character img{width:86px;height:92px}
+  .companion-character img[data-character="doraemon-snack"]{width:94px;height:94px;transform:translateX(-3px)}
+  .companion-character img[data-character="doraemon-walk"]{width:76px;height:92px;transform:translateX(-5px)}
+  .companion-character img[data-character="doraemon-broom"]{width:100px;height:96px;transform:translateX(-11px)}
+  .companion-character img[data-character="naruto"]{width:126px;height:92px;transform:translateX(-22px)}
+  .companion-character img[data-character="kuromi"]{width:78px;height:94px;transform:translateX(-5px)}
   .companion-fallback{width:58px;height:58px;margin-bottom:18px;font-size:16px}
   .companion-controls{bottom:-4px;gap:4px}
   .companion-controls button{width:27px;height:27px;font-size:19px}
