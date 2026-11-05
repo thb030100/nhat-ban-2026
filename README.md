@@ -14,6 +14,8 @@ Trong thư mục repo, chạy `python3 -m http.server 8000`, rồi mở `http://
 
 Để kiểm tra cảnh theo từng giờ, dùng `?previewHour=7` (giá trị 0–23). Tải lại trang sẽ chọn cảnh theo giờ Nhật Bản hoặc giờ giả lập; thao tác bấm mũi tên chỉ giữ cảnh được chọn trong phiên xem hiện tại.
 
+Widget “Một lá thư nhỏ từ Nhật Bản” chọn ngẫu nhiên một trong 60 lá thư và ghép với một nhân vật phù hợp chủ đề. Có thể kiểm tra trực tiếp bằng `?previewLetter=kaizen&previewCharacter=naruto`; các mã nhân vật gồm `doraemon-snack`, `doraemon-walk`, `doraemon-broom`, `naruto` và `kuromi`.
+
 Ảnh trang chủ, nguồn và giấy phép nằm trong `experience-data.js`; các ảnh trong `hero/` được thu nhỏ và cắt khung khi hiển thị. Dữ liệu thẻ Ăn uống, Mua sắm, Chụp ảnh cũng ở file này. `trip-data.js` chứa lịch 10 ngày; `experience.js` dựng giao diện; bộ ảnh và phần HTML các chương nằm trong `index.html`.
 
 Lịch trình 31/12 dành buổi sáng cho Katsuoji. Giờ mở cửa và xe buýt dịp cuối năm 2026 cần được xác nhận lại gần ngày đi.
