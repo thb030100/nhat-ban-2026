@@ -1,12 +1,13 @@
 Tên,Ngày,Thứ tự,Ghi chú,Tìm,Vĩ độ,Kinh độ
-Sân bay Narita,23/12 · Thứ 4 · Đến Tokyo,1,"Đến 15:30, chuyến VietJet Air VJ934 từ Hà Nội.",Narita International Airport Terminal 2,35.772,140.3929
-Shibuya Sky,23/12 · Thứ 4 · Đến Tokyo,2,"19:30 · Ngắm Tokyo về đêm, đặt vé khung sau 19:00.",Shibuya Sky,35.6584,139.7022
-Omoide Yokocho,23/12 · Thứ 4 · Đến Tokyo,3,21:00 · Ăn tối hẻm quán nướng Shinjuku.,Omoide Yokocho Shinjuku,35.6929,139.6996
-Chùa Sensō-ji,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",1,"8:30 · Asakusa, phố Nakamise.",Senso-ji Asakusa,35.7148,139.7967
-Tokyo Skytree,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",2,11:00 · Lên nếu trời trong.,Tokyo Skytree,35.7101,139.8107
-Ueno · chợ Ameyoko,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",3,"13:30 · Ăn trưa, công viên Ueno.",Ameyoko Ueno,35.7101,139.7745
-Marunouchi · Ga Tokyo,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",4,16:30 · Đèn Giáng sinh lung linh nhất Tokyo.,Tokyo Station Marunouchi,35.6812,139.7671
-Akihabara,"24/12 · Thứ 5 · Tokyo truyền thống, Giáng sinh",5,"19:00 · Điện tử, game, ăn tối Yurakucho.",Akihabara Station,35.6984,139.7731
+Sân bay Narita,23/12 · Thứ 4 · Narita → Shinjuku → Sushiro,1,15:25 · Hạ cánh; nhập cảnh và lấy hành lý.,Narita International Airport,35.772,140.3929
+Shinjuku Washington Hotel,23/12 · Thứ 4 · Narita → Shinjuku → Sushiro,2,18:45–19:30 · Nhận phòng và cất hành lý.,Shinjuku Washington Hotel,,
+Sushiro Shinjuku West Exit,23/12 · Thứ 4 · Narita → Shinjuku → Sushiro,3,20:00–21:30 · Tầng 6 Shinjuku Palette Building.,Sushiro Shinjuku West Exit,,
+Prince Shiba Park,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",1,09:45–10:45 · Chụp Tokyo Tower từ bãi cỏ.,Prince Shiba Park Tokyo,35.6555,139.7485
+Zōjō-ji,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",2,10:45–11:30 · Chụp góc chùa và Tokyo Tower.,Zojoji Temple Tokyo,35.6575,139.7483
+Meiji Jingu,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",3,13:15–14:15 · Tuyến ngắn; có thể bỏ.,Meiji Jingu,35.6764,139.6993
+Cat Street · Jinnan,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",4,14:15–16:30 · Dạo phố và chụp nắng cuối ngày.,Jinnan Shibuya Tokyo,35.664,139.699
+Roppongi Hills,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",5,17:15–19:45 · 66 Plaza; Maman; Mohri Garden; chợ Giáng sinh.,Roppongi Hills Tokyo,35.6605,139.7292
+Keyakizaka Illumination,"24/12 · Thứ 5 · Tokyo Tower, Shibuya và Roppongi",6,19:45–20:30 · Đèn trắng xanh và Tokyo Tower cuối phố.,Keyakizaka Street Roppongi,35.6597,139.7303
 Đền Meiji,"25/12 · Thứ 6 · Noel, Tokyo hiện đại",1,9:00 · Trong rừng cây tĩnh lặng.,Meiji Jingu,35.6764,139.6993
 "Phố Takeshita, Harajuku","25/12 · Thứ 6 · Noel, Tokyo hiện đại",2,"Sau đền Meiji, rồi sang Omotesando.",Takeshita Street Harajuku,35.6716,139.7031
 teamLab Planets,"25/12 · Thứ 6 · Noel, Tokyo hiện đại",3,13:00 · Đặt vé theo khung giờ.,teamLab Planets Tokyo,35.6491,139.7898
@@ -17,18 +18,19 @@ Chùa Chureito,26/12 · Thứ 7 · Lên Phú Sĩ,3,"10:30 · ~400 bậc, góc ch
 Công viên Oishi,26/12 · Thứ 7 · Lên Phú Sĩ,4,14:00 · Bờ bắc hồ Kawaguchi.,Oishi Park Fujikawaguchiko,35.5233,138.7449
 Cáp treo Kachi Kachi,26/12 · Thứ 7 · Lên Phú Sĩ,5,Hoàng hôn ~16:37.,Mt. Fuji Panoramic Ropeway,35.5022,138.7727
 Fujiten Snow Resort,27/12 · Chủ nhật · Trượt tuyết,1,"Cả ngày · Lớp học 9:30, tự trượt buổi chiều.",Fujiten Snow Resort,35.435,138.695
-Ga Mishima,28/12 · Thứ 2 · Sang Kyoto,1,~11:30 · Shinkansen đi Kyoto.,Mishima Station,35.1264,138.911
-Ga Kyoto,28/12 · Thứ 2 · Sang Kyoto,2,"~14:00 · Nhận phòng, nhận vali đã gửi trước.",Kyoto Station,34.9858,135.7588
-Chùa Kiyomizu-dera,28/12 · Thứ 2 · Sang Kyoto,3,15:00 · Ngắm hoàng hôn.,Kiyomizu-dera,34.9949,135.785
-Dốc Sannenzaka & Ninenzaka,28/12 · Thứ 2 · Sang Kyoto,4,16:30 · Dạo bộ phố cổ lát đá.,Sannenzaka,34.9965,135.781
-Đền Yasaka,28/12 · Thứ 2 · Sang Kyoto,5,Lúc lên đèn lồng lung linh.,Yasaka Shrine,35.0037,135.7785
-"Phố Hanamikoji, Gion",28/12 · Thứ 2 · Sang Kyoto,6,17:30 · Phố geisha truyền thống.,Hanamikoji Street,35.0025,135.775
-Pontocho,28/12 · Thứ 2 · Sang Kyoto,7,Ăn tối bên sông Kamo.,Pontocho Kyoto,35.005,135.771
-Rừng tre Arashiyama,"29/12 · Thứ 3 · Arashiyama, Chùa Vàng",1,7:30 · Đến trước 8:00 sáng.,Arashiyama Bamboo Grove,35.017,135.6713
-Chùa Tenryū-ji,"29/12 · Thứ 3 · Arashiyama, Chùa Vàng",2,Khu vườn di sản UNESCO.,Tenryu-ji,35.0157,135.6738
-Cầu Togetsukyo,"29/12 · Thứ 3 · Arashiyama, Chùa Vàng",3,Cầu gỗ biểu tượng Arashiyama.,Togetsukyo Bridge,35.0127,135.6778
-Chùa Vàng Kinkaku-ji,"29/12 · Thứ 3 · Arashiyama, Chùa Vàng",4,11:30 · Taxi ~25 phút.,Kinkaku-ji,35.0394,135.7292
-Chợ Nishiki,"29/12 · Thứ 3 · Arashiyama, Chùa Vàng",5,"13:30 · Ăn trưa, không khí sắm đồ Tết.",Nishiki Market,35.005,135.7649
+Okamoto Gion,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,1,09:00 · Chọn và mặc kimono; làm tóc nếu đã đặt.,Rental Kimono Okamoto Gion,,
+Gion Shirakawa · cầu Tatsumi,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,2,09:45–11:45 · Chụp ảnh ở nơi cho phép và giữ lối đi thông thoáng.,Tatsumi Bridge Gion Kyoto,,
+Đền Yasaka,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,3,13:15 · Dạo sau bữa trưa ở Gion.,Yasaka Shrine,35.0037,135.7785
+Công viên Maruyama,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,4,13:45 · Ngồi nghỉ và đi dạo thư thả.,Maruyama Park Kyoto,35.0035,135.7809
+Dốc Ninenzaka & Sannenzaka,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,5,14:45 · Đi bộ chậm qua khu phố cổ.,Ninenzaka Sannenzaka Kyoto,34.9977,135.781
+Chùa Kiyomizu-dera,28/12 · Thứ 2 · Kimono và Kyoto phía Đông,6,15:45 · Chỉ ghé nếu còn sức.,Kiyomizu-dera,34.9949,135.785
+Đền Fushimi Inari,"29/12 · Thứ 3 · Fushimi Inari và Arashiyama",1,07:15–09:00 · Dạo lối cổng torii buổi sớm.,Fushimi Inari Taisha,34.9671,135.7727
+Rừng tre Arashiyama,"29/12 · Thứ 3 · Fushimi Inari và Arashiyama",2,10:15 · Dạo rừng tre sau khi đổi tàu.,Arashiyama Bamboo Grove,35.017,135.6713
+Chùa Tenryū-ji,"29/12 · Thứ 3 · Fushimi Inari và Arashiyama",3,11:00 · Ghé nếu mở cửa và còn thời gian.,Tenryu-ji,35.0157,135.6738
+Cầu Togetsukyo,"29/12 · Thứ 3 · Fushimi Inari và Arashiyama",4,12:00 · Ăn trưa tại Arashiyama sau khi dạo cầu.,Togetsukyo Bridge,35.0127,135.6778
+Ga Umahori,"29/12 · Tùy chọn tàu Sagano",5,14:45 · Đi JR từ Arashiyama rồi đi bộ tới Torokko Kameoka.,Umahori Station,,
+Torokko Kameoka,"29/12 · Tùy chọn tàu Sagano",6,16:30 · Lên tàu chiếu sáng về Torokko Saga.,Torokko Kameoka Station,,
+Torokko Saga,"29/12 · Tùy chọn tàu Sagano",7,17:04 · Xuống tàu rồi về Kyoto Station khoảng 18:00.,Torokko Saga Station,,
 Đền Fushimi Inari,"30/12 · Thứ 4 · Fushimi Inari, sang Osaka",1,7:00 · 5 phút tàu JR từ ga Kyoto.,Fushimi Inari Taisha,34.9671,135.7727
 Công viên lâu đài Osaka,"30/12 · Thứ 4 · Fushimi Inari, sang Osaka",2,13:00 · Ngắm hào thành và lâu đài từ công viên.,Osaka Castle Park,34.6873,135.5262
 Shinsekai,"30/12 · Thứ 4 · Fushimi Inari, sang Osaka",3,"16:00 · Tháp Tsutenkaku, kushikatsu.",Shinsekai Osaka,34.6525,135.5063
