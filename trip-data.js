@@ -36,7 +36,7 @@
       {id:"d25",dnum:"25",dateLabel:"25",w:"Thứ 6",k:"富士",title:"Kawaguchiko và ánh chiều Yamanakako",sleep:"Super Hotel Fujikawaguchiko Natural Hot Spring",
        maps:[{pts:[S("Busta Shinjuku","Shinjuku Expressway Bus Terminal"),S("Kawaguchiko Station","Kawaguchiko Station","road"),S("Super Hotel","Super Hotel Fujikawaguchiko Natural Hot Spring","road",true),S("Nagaike Shinsui Park","Nagaike Shinsui Park","road"),S("Hirano Beach","Hirano Beach Yamanakako","road")]}],
        items:[
-        ["08:00–09:05","Ăn sáng, trả phòng và đến Busta Shinjuku","Dành 25–30 phút đi bộ với vali, có mặt trước giờ bus.","move","busta"],
+        ["08:00–09:05","Ăn sáng, trả phòng và đến Busta Shinjuku","Mang toàn bộ vali theo chặng Fuji; dành 25–30 phút đi bộ và có mặt trước giờ bus.","move","busta"],
         ["09:15–11:00","Bus Shinjuku → Kawaguchiko","Chuyến thẳng dự kiến khoảng 1 giờ 45 phút; giữ đệm nếu đường đông.","move"],
         ["11:00–11:30","Gửi vali tại Super Hotel","Taxi từ ga khoảng 5 phút; khách sạn nhận phòng từ 15:00."],
         ["11:30–12:15","Ăn trưa Kawaguchiko","Ưu tiên quán gần ga hoặc khách sạn trước khi đi Yamanakako."],
@@ -61,11 +61,11 @@
        maps:[{pts:[S("Super Hotel","Super Hotel Fujikawaguchiko Natural Hot Spring",null,true),S("Kawaguchiko Station","Kawaguchiko Station","road"),S("Mishima North Exit","Mishima Station North Exit","road"),S("Kyoto Station","Kyoto Station","train"),S("Miyako Hotel","Miyako Hotel Kyoto Hachijo","walk",true)]}],
        items:[
         ["07:00–09:10","Ăn sáng, ngắm Fuji hoặc quay lại Oishi","Chỉ đi Oishi nếu chiều hôm trước bị mây che; còn lại dành sáng nghỉ."],
-        ["09:10–10:30","Trả phòng và đến ga Kawaguchiko","Lấy vali, có mặt trước giờ bus.","move"],
+        ["09:10–10:30","Trả phòng và đến ga Kawaguchiko","Lấy toàn bộ vali tại khách sạn, mang theo lên bus đi Mishima và có mặt trước giờ xe chạy.","move"],
         ["10:55–12:25","Mishima–Kawaguchiko Liner","Bus đặt chỗ trước đến Mishima Station North Exit; giờ thực tế cần xác nhận.","move"],
         ["12:25–13:30","Đệm chuyển tàu và ăn trưa","Chừa ít nhất 45–60 phút trước Shinkansen để phòng bus trễ."],
-        ["13:30–16:15","Shinkansen Mishima → Kyoto","Ưu tiên Hikari có dừng Mishima; nếu không phù hợp dùng Kodama/đổi tàu. Nozomi không dừng Mishima.","move","shinkansen"],
-        ["16:15–17:30","Nhận phòng Miyako Hotel Kyoto Hachijo","Ra cửa Hachijo của ga Kyoto, đi bộ khoảng 2 phút."],
+        ["13:30–16:15","Shinkansen Mishima → Kyoto","Mang vali theo cùng chuyến tàu. Ưu tiên Hikari có dừng Mishima; nếu không phù hợp dùng Kodama/đổi tàu. Nozomi không dừng Mishima.","move","shinkansen"],
+        ["16:15–17:30","Nhận phòng Miyako Hotel Kyoto Hachijo","Cùng vali ra cửa Hachijo của ga Kyoto, đi bộ khoảng 2 phút đến khách sạn."],
         ["18:00–20:30","Ăn tối gần ga Kyoto","Honke Daiichi Asahi Honten là một lựa chọn nếu còn mở và hàng chờ vừa phải."]
        ],notes:[["warn","Đặt bus Mishima trước; chưa khóa chuyến Shinkansen cho tới khi kiểm tra lịch 27/12. <a href=\"https://bus.fujikyu.co.jp/highway/mishima/\" target=\"_blank\" rel=\"noopener\">Fujikyu Liner</a> · <a href=\"https://travel.jr-central.co.jp/plan/tokushu/shinkansen/station/\" target=\"_blank\" rel=\"noopener\">ga dừng Shinkansen</a>."]]},
 
