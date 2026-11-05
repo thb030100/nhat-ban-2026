@@ -1,6 +1,5 @@
 :root,
-:root[data-theme="dark"],
-:root[data-theme="light"]{
+:root[data-theme="dark"]{
   color-scheme:dark;
   --bg:#071722;--surface:#102833;--ink:#f7f0e4;--muted:#b8c8ca;--line:#2d4852;
   --map:#18313b;--ai:#e6c78d;--ai-soft:#1b3642;--shu:#e5785e;--shu-soft:#3b292c;
@@ -123,7 +122,7 @@ nav a.today{border-color:var(--shu)}
   .brand{gap:7px;font-size:13px}
   .brand-jp{font-size:17px;padding-right:8px}
   .site-dates{grid-column:1;grid-row:2;margin-top:-16px;font-size:10px;letter-spacing:.02em}
-  .menu-toggle{grid-column:2;grid-row:1/3}
+  .header-actions{grid-column:2;grid-row:1/3;display:flex;align-items:center;gap:8px}
   .experience-hero{display:flex;flex-direction:column;align-items:stretch;gap:19px;padding:27px 0 44px}
   .hero-intro{display:none}
   .scene-frame{height:clamp(340px,48vh,470px);border-radius:15px}

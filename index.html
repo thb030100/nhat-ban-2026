@@ -3,7 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Winter in Japan · 冬の旅</title>
+<script>
+(function(){
+  try{
+    var t=localStorage.getItem("jp-theme");
+    if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);
+  }catch(e){}
+})();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
@@ -209,10 +218,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   <header class="site-header" id="home">
     <a class="brand" href="#home" aria-label="Back to the beginning"><span class="brand-jp" lang="ja">冬の旅</span><span>Winter in Japan</span></a>
     <span class="site-dates">23/12/2026 – 01/01/2027</span>
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu">☰</button>
+    <div class="header-actions">
+      <button class="theme-toggle header-theme-toggle" id="theme-toggle" type="button" aria-label="Chuyển chế độ sáng / tối" title="Chuyển chế độ sáng / tối">
+        <span class="theme-icon icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
+        <span class="theme-icon icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
     <div class="menu-panel" id="menu-panel" hidden>
       <a href="#cho-o">Places to stay · 宿</a><a href="#chi-phi">Travel costs · 旅の費用</a><a href="#chuan-bi">Before we go · 旅支度</a>
       <button type="button" id="snow-toggle" aria-pressed="true">Snow · 雪: on</button>
+      <button type="button" id="menu-theme-toggle" class="menu-theme-btn">Theme · 画面: Dark · 夜</button>
     </div>
   </header>
 
@@ -266,7 +282,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
     <p class="note warn">Từ cuối tháng 12, giờ mở cửa và phương tiện có thể thay đổi. Những chặng ngày 31/12–01/01 cần kiểm tra lại gần ngày đi.</p>
   </section>
 
-  <nav aria-label="Chọn ngày"><div class="row" id="nav"></div></nav>
+  <nav aria-label="Chọn ngày">
+    <div class="nav-bar">
+      <div class="row" id="nav"></div>
+      <button class="theme-toggle nav-theme-toggle" id="nav-theme-toggle" type="button" aria-label="Chuyển chế độ sáng / tối" title="Chuyển chế độ sáng / tối">
+        <span class="theme-icon icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
+        <span class="theme-icon icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
+      </button>
+    </div>
+  </nav>
 
   <main id="days"></main>
 

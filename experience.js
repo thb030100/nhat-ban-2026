@@ -19,6 +19,50 @@
   document.addEventListener("click",function(e){if(!menuPanel.hidden&&!menuPanel.contains(e.target)&&!menuButton.contains(e.target))closeMenu()});
   document.addEventListener("keydown",function(e){if(e.key==="Escape")closeMenu()});
 
+  // Theme switcher
+  var menuThemeButton=$("menu-theme-toggle");
+  function isDarkMode(){
+    var t=document.documentElement.getAttribute("data-theme");
+    if(t==="dark")return true;
+    if(t==="light")return false;
+    return !!(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+  function updateThemeUI(dark){
+    var tip=dark?"Chuyển sang giao diện sáng":"Chuyển sang giao diện tối";
+    document.querySelectorAll(".theme-toggle").forEach(function(b){
+      b.setAttribute("title",tip);
+      b.setAttribute("aria-label",tip);
+      b.setAttribute("aria-pressed",String(dark));
+    });
+    if(menuThemeButton){
+      menuThemeButton.textContent="Theme · 画面: "+(dark?"Dark · 夜":"Light · 昼");
+      menuThemeButton.setAttribute("aria-pressed",String(dark));
+    }
+  }
+  function toggleTheme(){
+    var next=!isDarkMode();
+    var val=next?"dark":"light";
+    document.documentElement.setAttribute("data-theme",val);
+    try{localStorage.setItem("jp-theme",val)}catch(e){}
+    updateThemeUI(next);
+  }
+  document.querySelectorAll(".theme-toggle").forEach(function(b){
+    b.addEventListener("click",toggleTheme);
+  });
+  if(menuThemeButton){
+    menuThemeButton.addEventListener("click",toggleTheme);
+  }
+  updateThemeUI(isDarkMode());
+  if(window.matchMedia){
+    try{
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(e){
+        if(!localStorage.getItem("jp-theme")){
+          updateThemeUI(e.matches);
+        }
+      });
+    }catch(err){}
+  }
+
   var reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)");
   var snowWanted=true;
   try{snowWanted=localStorage.getItem("jp-snow")!=="off"}catch(e){}

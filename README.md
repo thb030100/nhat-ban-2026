@@ -4,7 +4,7 @@ Bản kế hoạch chi tiết chuyến đi Nhật Bản 10 ngày 9 đêm (Tokyo 
 
 Lịch trình, nơi ở và các gợi ý ăn uống được cập nhật theo file `lich-trinh-nhat-ban-23-12-2026_den_01-01-2027.md` người đi cung cấp ngày 04/11/2026. Chuyến bay là VietJet Air HAN → Narita ngày 23/12 và Kansai → HAN ngày 01/01; số hiệu và terminal cần đối chiếu trên vé. Phương án lưu trú là Tokyo 2 đêm, Fuji 2 đêm, Kyoto 3 đêm, Osaka 2 đêm. Ba khách sạn đầu đã được chọn nhưng chưa được xác nhận là đã đặt hoặc thanh toán; Osaka chưa chọn. Lịch Fujiten là nửa ngày 26/12, giao thừa dự kiến ở Sumiyoshi Taisha với Hōzenji là phương án dự phòng.
 
-Trang chủ mang phong cách nhật ký hành trình vintage: giấy ngà, mực nâu, ảnh như dán vào trang sổ và mục lục dạng thẻ. Cảnh thay theo giờ Nhật Bản, có nút xem thủ công sáu cảnh và bốn lối vào Lịch trình, Ăn uống, Mua sắm, Chụp ảnh. Menu chứa Chỗ ở, Chi phí, Chuẩn bị và nút bật/tắt tuyết. Tuyết chỉ xuất hiện ở ảnh Kawaguchiko có tuyết và tự tắt khi thiết bị bật chế độ giảm chuyển động.
+Trang chủ mang phong cách nhật ký hành trình vintage: giấy ngà, mực nâu, ảnh như dán vào trang sổ và mục lục dạng thẻ. Cảnh thay theo giờ Nhật Bản, có nút xem thủ công sáu cảnh và bốn lối vào Lịch trình, Ăn uống, Mua sắm, Chụp ảnh. Menu chứa Chỗ ở, Chi phí, Chuẩn bị, nút bật/tắt tuyết và nút chuyển đổi giao diện Sáng / Tối (Dark mode). Giao diện tối được tối ưu hóa theo phong cách đêm đông Nhật Bản, có thể bật/tắt từ thanh tiêu đề, menu hoặc thanh điều hướng chọn ngày, và được ghi nhớ trên thiết bị. Tuyết chỉ xuất hiện ở ảnh Kawaguchiko có tuyết và tự tắt khi thiết bị bật chế độ giảm chuyển động.
 
 Phần trang chủ dùng copy song ngữ Anh–Nhật; các chương thông tin và lịch trình chi tiết vẫn dùng tiếng Việt. Chữ của sáu cảnh nằm trong `experience-data.js`.
 
