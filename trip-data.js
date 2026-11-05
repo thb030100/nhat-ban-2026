@@ -80,16 +80,17 @@
         ["18:00–20:00","Ăn tối Kyoto","Soba-no-Mi Yoshimura ở Gojo nếu còn phục vụ ngày 28/12."]
        ],notes:[["warn","Giờ các quầy Nishiki và nhà hàng cuối năm cần kiểm tra lại trước khi đi."]]},
 
-      {id:"d29",dnum:"29",dateLabel:"29",w:"Thứ 3",k:"京都",title:"Fushimi Inari và Arashiyama",sleep:"Miyako Hotel Kyoto Hachijo",
-       maps:[{pts:[S("Miyako Hotel","Miyako Hotel Kyoto Hachijo",null,true),S("Fushimi Inari","Fushimi Inari Taisha"),S("Kyoto Station","Kyoto Station"),S("Arashiyama","Arashiyama Bamboo Grove"),S("Togetsukyo","Togetsukyo Bridge","walk")]}],
+      {id:"d29",dnum:"29",dateLabel:"29",w:"Thứ 3",k:"京都",title:"Fushimi Inari, Arashiyama và phố cổ",sleep:"Miyako Hotel Kyoto Hachijo",
+       maps:[{pts:[S("Miyako Hotel","Miyako Hotel Kyoto Hachijo",null,true),S("Fushimi Inari","Fushimi Inari Taisha"),S("Kyoto Station","Kyoto Station"),S("Arashiyama","Arashiyama Bamboo Grove"),S("Togetsukyo","Togetsukyo Bridge","walk"),S("Miyako Hotel","Miyako Hotel Kyoto Hachijo","train",true),S("Gion Shirakawa","Gion Shirakawa Kyoto"),S("Pontocho","Pontocho Kyoto","walk")]}],
        items:[
         ["07:15–09:00","Fushimi Inari Taisha","Tàu JR Nara Line từ Kyoto Station đến Inari; đi sớm qua rừng cổng torii.",null,"fushimi"],
         ["09:00–10:15","Qua ga Kyoto đến Saga-Arashiyama","Tính thời gian đổi tàu và đi bộ.","move"],
         ["10:15–12:30","Rừng tre và cầu Togetsukyo","Tenryu-ji nếu mở ngày 29/12; không xếp thêm điểm xa.",null,"arashiyama"],
         ["12:30–13:30","Ăn trưa Arashiyama","Chọn quán thuận đường."],
-        ["13:30–17:30","Về trung tâm Kyoto nghỉ và mua quà","Có thể ghé Rokujuan nếu chưa đi ngày 28; giữ buổi chiều linh hoạt."],
-        ["18:00–20:00","Ăn tối Kyoto","Soba-no-Mi Yoshimura là lựa chọn nếu chưa ghé hôm trước."]
-       ],notes:[["tip","Kiểm tra giờ mở cửa các điểm và nhà hàng ngày 29/12; <a href=\"https://inari.jp/en/access/\" target=\"_blank\" rel=\"noopener\">đường đến Fushimi Inari</a>."]]},
+        ["13:30–15:30","Về khách sạn nghỉ","Dành hai giờ ngồi yên, uống trà hoặc ngủ ngắn sau buổi sáng di chuyển nhiều."],
+        ["15:30–17:30","Dạo Gion Shirakawa, Hanamikoji và Pontocho","Đi chậm qua những con phố ven kênh, ghé một quán trà nếu muốn; không cần thêm điểm tham quan xa."],
+        ["18:00–20:00","Ăn tối Kyoto","Chọn quán quanh Gion hoặc Pontocho; Soba-no-Mi Yoshimura là lựa chọn nếu chưa ghé hôm trước."]
+       ],notes:[["tip","Buổi chiều linh hoạt: có thể ở lại khách sạn lâu hơn rồi chỉ dạo một khu phố. Tôn trọng biển cấm chụp và lối đi riêng tại Gion. <a href=\"https://inari.jp/en/access/\" target=\"_blank\" rel=\"noopener\">Đường đến Fushimi Inari</a>."]]},
 
       {id:"d30",dnum:"30",dateLabel:"30",w:"Thứ 4",k:"大阪",title:"Từ Kyoto đến Namba, dạo phố Osaka",sleep:"Namba/Nipponbashi · chưa chọn khách sạn",
        maps:[{pts:[S("Miyako Hotel","Miyako Hotel Kyoto Hachijo",null,true),S("Kyoto Station","Kyoto Station","walk"),S("Osaka Station","Osaka Station","train"),S("Namba","Namba Station Osaka","train"),S("Kuromon Market","Kuromon Market Osaka","walk"),S("Dotonbori · Hōzenji","Hozenji Yokocho Osaka","walk")]}],

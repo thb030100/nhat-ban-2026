@@ -49,12 +49,12 @@
 <Placemark><name>7. Phố Hanamikoji, Gion</name><description>17:30</description><styleUrl>#s5</styleUrl><Point><coordinates>135.775,35.0025,0</coordinates></Point></Placemark>
 <Placemark><name>8. Pontocho</name><description>Ăn tối.</description><styleUrl>#s5</styleUrl><Point><coordinates>135.771,35.005,0</coordinates></Point></Placemark>
 </Folder>
-<Folder><name>28/12 · Thứ 2 · Arashiyama, Chùa Vàng</name>
+<Folder><name>28/12 · Thứ 2 · Arashiyama và phố cổ</name>
 <Placemark><name>1. Rừng tre Arashiyama</name><description>7:30 · Đến trước 8:00.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.6713,35.017,0</coordinates></Point></Placemark>
 <Placemark><name>2. Chùa Tenryū-ji</name><description></description><styleUrl>#s6</styleUrl><Point><coordinates>135.6738,35.0157,0</coordinates></Point></Placemark>
 <Placemark><name>3. Cầu Togetsukyo</name><description></description><styleUrl>#s6</styleUrl><Point><coordinates>135.6778,35.0127,0</coordinates></Point></Placemark>
-<Placemark><name>4. Chùa Vàng Kinkaku-ji</name><description>11:30 · Taxi ~25 phút.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.7292,35.0394,0</coordinates></Point></Placemark>
-<Placemark><name>5. Chợ Nishiki</name><description>13:30 · Ăn trưa, đồ Tết.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.7649,35.005,0</coordinates></Point></Placemark>
+<Placemark><name>4. Phố Hanamikoji, Gion</name><description>16:00 · Dạo phố sau giờ nghỉ.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.775,35.0025,0</coordinates></Point></Placemark>
+<Placemark><name>5. Pontocho</name><description>17:00 · Dạo phố ven sông Kamo.</description><styleUrl>#s6</styleUrl><Point><coordinates>135.771,35.005,0</coordinates></Point></Placemark>
 </Folder>
 <Folder><name>29/12 · Thứ 3 · Fushimi Inari, sang Osaka</name>
 <Placemark><name>1. Đền Fushimi Inari</name><description>7:00 · 5 phút tàu JR từ ga Kyoto.</description><styleUrl>#s7</styleUrl><Point><coordinates>135.7727,34.9671,0</coordinates></Point></Placemark>

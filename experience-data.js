@@ -77,7 +77,7 @@ window.JP_EXPERIENCE = {
     {city:"Tokyo",title:"Shibuya và Harajuku",detail:"Dạo phố, tìm quà nhỏ trong buổi chiều Tokyo trước khi về Shinjuku nghỉ.",time:"24/12",day:"d24",query:"Shibuya Harajuku shopping Tokyo"},
     {city:"Fuji",title:"Quà quanh ga Kawaguchiko",detail:"Chỉ ghé nếu còn thời gian sau Oishi Park; ưu tiên nghỉ trước chặng đi Kyoto.",time:"26/12 · tùy chọn",day:"d26",query:"souvenir near Kawaguchiko Station"},
     {city:"Kyoto",title:"Nishiki Market",detail:"Có thể ghé sau Gion nếu các quầy còn mở; cuối năm kiểm tra giờ từng nơi.",time:"Chiều 28/12 · tùy chọn",day:"d28",query:"Nishiki Market Kyoto"},
-    {city:"Kyoto",title:"Trung tâm Kyoto",detail:"Một khoảng tự do mua quà sau buổi sáng ở Fushimi Inari và Arashiyama.",time:"Chiều 29/12",day:"d29",query:"Kyoto Station shopping"},
+    {city:"Kyoto",title:"Gion và Pontocho",detail:"Sau khi về khách sạn nghỉ, đi dạo phố cổ ven kênh; chỉ mua quà nhỏ nếu bắt gặp cửa hàng hợp ý.",time:"Chiều 29/12",day:"d29",query:"Gion Shirakawa Pontocho Kyoto"},
     {city:"Osaka",title:"Kuromon và Dotonbori",detail:"Dạo phố khi mới đến Namba; một số quầy có thể đổi giờ cuối năm.",time:"30/12",day:"d30",query:"Kuromon Market Dotonbori Osaka"},
     {city:"Osaka",title:"Namba và Shinsaibashi",detail:"Ghé ngắn sau Katsuoji; kiểm tra cửa hàng còn mở và giữ thời gian nghỉ trước giao thừa.",time:"Trưa 31/12",day:"d31",query:"Shinsaibashi shopping Osaka"}
   ],
@@ -86,7 +86,7 @@ window.JP_EXPERIENCE = {
     {city:"Fuji",title:"Fujiten",image:"fujiten",tip:"Chụp đường tuyết và người mới tập sau lớp học; giữ an toàn trên dốc.",time:"Sáng 26/12",day:"d26"},
     {city:"Fuji",title:"Bờ bắc hồ Kawaguchi",image:"winterlake",tip:"Chờ khoảng trời quang để mặt hồ và Fuji có lớp lang mùa đông.",time:"Chiều 26/12",day:"d26"},
     {city:"Kyoto",title:"Kiyomizu-dera",image:"kiyomizu",tip:"Đi sớm để dãy mái Kyoto hiện rõ dưới ánh sáng dịu.",time:"Sáng 28/12",day:"d28"},
-    {city:"Kyoto",title:"Gion",image:"gion",tip:"Dùng ánh đèn lồng làm điểm dẫn mắt; tôn trọng biển cấm chụp và sự riêng tư.",time:"Chiều 28/12",day:"d28"},
+    {city:"Kyoto",title:"Gion",image:"gion",tip:"Đi chậm khi phố bắt đầu lên đèn; tôn trọng biển cấm chụp và sự riêng tư.",time:"Chiều 28 hoặc 29/12",day:"d29"},
     {city:"Kyoto",title:"Fushimi Inari",image:"fushimi",tip:"Đi sâu hơn qua các dãy torii và nhường đường cho người đi lễ.",time:"Sáng 29/12",day:"d29"},
     {city:"Osaka",title:"Dotonbori",image:"dotonbori",tip:"Tìm góc có phản chiếu của bảng hiệu trên kênh, tránh cản dòng người.",time:"Tối 30/12",day:"d30"},
     {city:"Osaka",title:"Katsuoji",image:"katsuoji",tip:"Chụp daruma cùng hồ và cây xanh, giữ khoảng cách với đồ lễ.",time:"Sáng 31/12",day:"d31"}
