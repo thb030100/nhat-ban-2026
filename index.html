@@ -1,8 +1,13 @@
-<title>Nhật Bản 23/12 – 1/1</title>
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Winter in Japan · 冬の旅</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&text=東京富士京都大阪河口湖&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap">
 <style>
 :root{
   --bg:#F2F5F9;
@@ -195,90 +200,130 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
 .pack span{font-size:14px;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
 .foot{color:var(--muted);font-size:13px;padding-top:28px}
 </style>
+<link rel="stylesheet" href="experience.css">
+<link rel="stylesheet" href="diary.css">
+</head>
+<body>
 
 <div class="wrap">
-  <header class="hero">
-    <p class="eyebrow">10 ngày 9 đêm · Thứ 4 23/12/2026 → Thứ 6 01/01/2027</p>
-    <h1>Nhật Bản mùa đông</h1>
-    <p class="sub">VietJet Air bay thẳng · 23/12 HAN 08:20 → NRT 15:30 (VJ934) · 01/01 KIX 15:30 → HAN 19:15 (VJ931)</p>
-    <p class="count" id="count"><b>—</b> <span>ngày nữa khởi hành</span></p>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="Back to the beginning"><span class="brand-jp" lang="ja">冬の旅</span><span>Winter in Japan</span></a>
+    <span class="site-dates">23/12/2026 – 01/01/2027</span>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu">☰</button>
+    <div class="menu-panel" id="menu-panel" hidden>
+      <a href="#cho-o">Places to stay · 宿</a><a href="#chi-phi">Travel costs · 旅の費用</a><a href="#chuan-bi">Before we go · 旅支度</a>
+      <button type="button" id="snow-toggle" aria-pressed="true">Snow · 雪: on</button>
+    </div>
+  </header>
+
+  <section class="experience-hero" aria-label="A winter journey through Japan">
+    <div class="hero-intro">
+      <p class="eyebrow">A WINTER JOURNAL · <span lang="ja">冬の旅の記録</span></p>
+      <h1><span lang="en">The winter we<br> will carry home.</span><em lang="ja">心に持ち帰る、日本の冬。</em></h1>
+      <p class="count" id="count"><b>—</b> <span>days until the first page</span></p>
+    </div>
+    <div class="scene-stage">
+      <p class="scene-time" id="scene-time">00:00 · JST (UTC+9)</p>
+      <div class="scene-frame" id="scene-frame">
+        <img id="scene-image" src="hero/fushimi.jpg" alt="Lối cổng torii tại Fushimi Inari" width="1920" height="1280" fetchpriority="high">
+        <div class="snow-layer" id="snow-layer" aria-hidden="true"></div>
+        <div class="scene-image-fallback" id="scene-image-fallback" hidden>Japan, remembered</div>
+        <button class="scene-arrow prev" id="scene-prev" type="button" aria-label="Previous scene">‹</button>
+        <button class="scene-arrow next" id="scene-next" type="button" aria-label="Next scene">›</button>
+      </div>
+      <div class="scene-story" aria-live="polite">
+        <div class="scene-kicker"><span id="scene-period">KYOTO · DAWN / 京都・夜明け</span><span id="scene-position">01/06</span></div>
+        <h2 id="scene-title">Fushimi Inari Taisha</h2><p class="scene-title-ja" id="scene-title-ja" lang="ja">伏見稲荷大社</p>
+        <p id="scene-caption" lang="en">At dawn, the vermilion gates fold into one another, and every quiet step feels like a wish for the year ahead.</p>
+        <p class="scene-caption-ja" id="scene-caption-ja" lang="ja">朝の朱い鳥居をくぐるたび、静かな足音が新しい年への願いになる。</p>
+      </div>
+      <div class="scene-links"><a id="scene-day" href="#d29">Open Dec 29 · 12月29日 ↗</a><a id="scene-credit" href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer">Photo / 写真 ↗</a></div>
+      <div class="scene-dots" id="scene-dots" aria-label="Choose a scene"></div>
+    </div>
+    <div class="explore-panel">
+      <p class="eyebrow">CHAPTERS · <span lang="ja">旅のしおり</span></p>
+      <div class="explore-grid">
+        <a href="#lich-trinh"><span class="explore-icon" aria-hidden="true">01</span><span>Our days</span><small lang="ja">十日間の旅路</small></a>
+        <a href="#an-uong"><span class="explore-icon" aria-hidden="true">02</span><span>At the table</span><small lang="ja">旅先の味わい</small></a>
+        <a href="#mua-sam"><span class="explore-icon" aria-hidden="true">03</span><span>Little keepsakes</span><small lang="ja">持ち帰る思い出</small></a>
+        <a href="#chup-anh"><span class="explore-icon" aria-hidden="true">04</span><span>Through the lens</span><small lang="ja">写真に残す景色</small></a>
+      </div>
+      <div class="support-links"><a href="#cho-o">Stay · 宿</a><a href="#chi-phi">Costs · 費用</a><a href="#chuan-bi">Pack · 旅支度</a></div>
+    </div>
+  </section>
+
+  <section class="itinerary-intro" id="lich-trinh">
+    <div class="section-heading"><p class="eyebrow">Chương 01 · Hành trình</p><h2>Lịch trình 10 ngày</h2><p>Chọn một ngày để xem tuyến đường, các mốc giờ và ảnh địa điểm.</p></div>
     <ol class="route" aria-label="Cung đường">
-      <li><span class="k">東京</span><span class="n">Tokyo</span><span class="s">3 đêm</span></li>
+      <li><span class="k">東京</span><span class="n">Tokyo</span><span class="s">2 đêm</span></li>
       <li><span class="k">富士</span><span class="n">Phú Sĩ</span><span class="s">2 đêm</span><span class="ski-mark">Trượt tuyết</span></li>
-      <li><span class="k">京都</span><span class="n">Kyoto</span><span class="s">2 đêm</span></li>
+      <li><span class="k">京都</span><span class="n">Kyoto</span><span class="s">3 đêm</span></li>
       <li><span class="k">大阪</span><span class="n">Osaka</span><span class="s">2 đêm</span><span class="ski-mark" style="color:var(--shu)">Giao thừa</span></li>
     </ol>
     <div id="overview"></div>
-    <p class="sub">Bấm vào tên từng điểm dưới bản đồ để mở trong Google Maps, rồi bấm <b>Lưu</b> để giữ lại.</p>
+    <p class="sub">Sơ đồ thể hiện thứ tự chặng; bấm tên địa điểm để mở trong Google Maps.</p>
     <button type="button" class="allph" id="allph" aria-pressed="false">Mở tất cả ảnh</button>
-    <p class="note warn">Từ <b>29/12</b> Nhật vào kỳ nghỉ năm mới. Lịch đã xếp để các điểm hay đóng cửa rơi vào trước ngày đó.</p>
-  </header>
+    <p class="note warn">Từ cuối tháng 12, giờ mở cửa và phương tiện có thể thay đổi. Những chặng ngày 31/12–01/01 cần kiểm tra lại gần ngày đi.</p>
+  </section>
 
-  <nav aria-label="Đi tới"><div class="row" id="nav"></div></nav>
+  <nav aria-label="Chọn ngày"><div class="row" id="nav"></div></nav>
 
   <main id="days"></main>
 
+  <section class="sec discovery" id="an-uong"><div class="section-heading"><p class="eyebrow">Chương 02 · Hương vị</p><h2>Địa điểm ăn uống</h2><p>Các bữa ăn và quán được nhắc trong lịch mới; kiểm tra giờ mở cửa cuối năm và đặt bàn khi cần.</p></div><div class="discovery-grid" id="food-grid"></div></section>
+
+  <section class="sec discovery" id="mua-sam"><div class="section-heading"><p class="eyebrow">Chương 03 · Mang về</p><h2>Mua sắm</h2><p>Chọn khu phố và món quà hợp với lịch đi; kiểm tra giờ mở cửa dịp năm mới.</p></div><div class="discovery-grid" id="shop-grid"></div></section>
+
+  <section class="sec discovery" id="chup-anh"><div class="section-heading"><p class="eyebrow">Chương 04 · Lưu giữ</p><h2>Chụp ảnh</h2><p>Ánh sáng, góc chụp và những khoảnh khắc nên dành thời gian để ngắm.</p></div><div class="photo-grid" id="photo-grid"></div></section>
+
   <section class="sec" id="cho-o">
-    <h2>Chỗ ở, tối đa $100/đêm</h2>
-    <p class="sub">Tính theo phòng, $100 ≈ 15.000 ¥ ≈ 2,6 triệu. Giá là mức thường gặp cuối tháng 12, chưa kiểm tra cho năm nay. Tìm theo khu và tên chuỗi trên Booking hoặc Agoda.</p>
+    <h2>Nơi ở theo hành trình mới</h2>
+    <p class="sub">Ba khách sạn đầu là phương án đã chọn trong file lịch trình; điều này chưa xác nhận đã đặt phòng hoặc thanh toán. Chặng Osaka vẫn đang tìm nơi ở.</p>
 
     <article class="card stay">
-      <div class="stay-h"><h3><span class="jp">東京</span>Tokyo</h3><span>3 đêm · 23–25/12</span></div>
+      <div class="stay-h"><h3><span class="jp">東京</span>Shinjuku Washington Hotel</h3><span>2 đêm · 23–24/12 · đã chọn</span></div>
       <dl>
-        <dt>Nên ở</dt><dd><b>Shinjuku</b>, phía nam hoặc phía tây ga</dd>
-        <dt>Vì sao</dt><dd>Bến xe buýt đi Phú Sĩ (Busta Shinjuku) nằm ngay trên ga. Tàu JR đi Shibuya 5 phút, Harajuku 3 phút. Từ sân bay Narita có tàu Narita Express (N'EX) chạy thẳng về ga Shinjuku (~1h15).</dd>
-        <dt>Giá</dt><dd><span class="price">12.000–18.000 ¥</span> phòng đôi, khách sạn business</dd>
-        <dt>Chuỗi</dt><dd class="chains"><span>Sotetsu Fresa Inn</span><span>Hotel Mystays</span><span>APA Hotel</span><span>Toyoko Inn</span><span>Tokyu Stay</span></dd>
-      </dl>
-      <p class="note tip">Tokyu Stay có máy giặt trong phòng ở nhiều chi nhánh, giặt được giữa chuyến 10 ngày. Giá thường sát ngân sách. Muốn rẻ hơn (10.000–14.000 ¥) thì ở Ueno hoặc Asakusa, nhưng sáng 26/12 phải đi thêm ~25 phút ra Shinjuku bắt xe buýt.</p>
-    </article>
-
-    <article class="card stay">
-      <div class="stay-h"><h3><span class="jp">河口湖</span>Kawaguchiko</h3><span>2 đêm · 26–27/12</span></div>
-      <dl>
-        <dt>Nên ở</dt><dd>Quanh <b>ga Kawaguchiko</b> và bờ đông hồ</dd>
-        <dt>Vì sao</dt><dd>Xe buýt từ Shinjuku và xe đi Mishima đều đỗ ở ga. Taxi lên khu trượt tuyết Fujiten ~25 phút. Đi bộ ra hồ và cáp treo.</dd>
-        <dt>Giá</dt><dd><span class="price">10.000–15.000 ¥</span> khách sạn nhỏ, guesthouse<br><span class="price over">40.000–80.000 ¥</span> ryokan nhìn Phú Sĩ, kèm ăn tối</dd>
-        <dt>Tìm</dt><dd>Lọc "onsen" và "Mt Fuji view". Một số khách sạn nhỏ gần ga có bồn onsen chung trên sân thượng nhìn ra núi. Hostel có phòng riêng (ví dụ K's House Mt Fuji) là lựa chọn rẻ nhất.</dd>
-      </dl>
-      <p class="note warn"><b>Ryokan nhìn Phú Sĩ kèm bữa tối vượt xa $100</b>, nhất là tối thứ Bảy dịp Giáng sinh. Nếu muốn thử ryokan: một đêm ryokan không kèm bữa (khoảng 18.000–25.000 ¥) và một đêm guesthouse. Trung bình hai đêm vẫn quanh $100.</p>
-    </article>
-
-    <article class="card stay">
-      <div class="stay-h"><h3><span class="jp">京都</span>Kyoto</h3><span>2 đêm · 28–29/12</span></div>
-      <dl>
-        <dt>Nên ở</dt><dd>Quanh <b>ga Kyoto</b>, ưu tiên phía nam (cửa Hachijo)</dd>
-        <dt>Vì sao</dt><dd>Xuống Shinkansen kéo vali vài phút là tới. Sáng 30 đi Fushimi Inari chỉ 2 ga JR. Xe buýt đi Kiyomizu, Chùa Vàng xuất phát từ ga.</dd>
-        <dt>Giá</dt><dd><span class="price">10.000–16.000 ¥</span> phòng đôi</dd>
-        <dt>Chuỗi</dt><dd class="chains"><span>Daiwa Roynet</span><span>Hotel Keihan</span><span>Sotetsu Fresa Inn</span><span>Toyoko Inn</span><span>Dormy Inn</span></dd>
-      </dl>
-      <p class="note tip">Dormy Inn có bồn tắm onsen chung và mì miễn phí buổi tối, nhưng giá thường sát hoặc vượt ngân sách. Khu Shijo, Kawaramachi gần Gion và chỗ ăn tối hơn, nhưng xa ga hơn ~10 phút tàu điện ngầm.</p>
-    </article>
-
-    <article class="card stay">
-      <div class="stay-h"><h3><span class="jp">大阪</span>Osaka</h3><span>2 đêm · 30–31/12</span></div>
-      <dl>
-        <dt>Nên ở</dt><dd><b>Namba</b></dd>
-        <dt>Vì sao</dt><dd>Tàu Nankai ra sân bay Kansai chạy thẳng từ ga Namba. Đi bộ tới Dotonbori, chợ Kuromon, Shinsaibashi. Đêm 31/12 đón giao thừa countdown hoặc nghe 108 tiếng chuông chùa.</dd>
-        <dt>Giá</dt><dd><span class="price">9.000–15.000 ¥</span> phòng đôi</dd>
-        <dt>Chuỗi</dt><dd class="chains"><span>APA Hotel</span><span>Hotel Mystays</span><span>Toyoko Inn</span><span>Super Hotel</span><span>Dormy Inn</span></dd>
+        <dt>Khu vực</dt><dd>Shinjuku, Tokyo; trả phòng 25/12.</dd>
+        <dt>Di chuyển</dt><dd>Từ cửa Nam ga Shinjuku đi bộ khoảng 8 phút theo hướng dẫn khách sạn. Sáng 25/12 đi bộ đến Busta Shinjuku để bắt bus 09:15.</dd>
+        <dt>Thông tin</dt><dd><a href="https://whgshinjuku.washington-hotels.jp/" target="_blank" rel="noopener">Website khách sạn ↗</a> · <a href="https://whgshinjuku.washington-hotels.jp/access/" target="_blank" rel="noopener">Đường đi ↗</a></dd>
       </dl>
     </article>
 
-    <p class="note tip">Phòng "double" ở khách sạn business Nhật chỉ khoảng 11–14 m², giường ~140 cm. Hai người lớn mang vali to nên chọn phòng <b>twin</b> hoặc "moderate double".</p>
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">河口湖</span>Super Hotel Fujikawaguchiko Natural Hot Spring</h3><span>2 đêm · 25–26/12 · đã chọn</span></div>
+      <dl>
+        <dt>Khu vực</dt><dd>Kawaguchiko; trả phòng 27/12.</dd>
+        <dt>Di chuyển</dt><dd>Từ ga Kawaguchiko đi taxi khoảng 5 phút. Có thể gửi hành lý trong ngày nhận phòng; nhận phòng từ 15:00.</dd>
+        <dt>Tiện nghi</dt><dd>Có onsen. Kiểm tra quy định sử dụng trực tiếp với khách sạn.</dd>
+        <dt>Thông tin</dt><dd><a href="https://www.superhotel.co.jp/s_hotels/kawaguchiko/" target="_blank" rel="noopener">Website khách sạn ↗</a></dd>
+      </dl>
+    </article>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">京都</span>Miyako Hotel Kyoto Hachijo</h3><span>3 đêm · 27–29/12 · đã chọn</span></div>
+      <dl>
+        <dt>Khu vực</dt><dd>Gần cửa Hachijo của Kyoto Station; trả phòng 30/12.</dd>
+        <dt>Di chuyển</dt><dd>Đi bộ khoảng 2 phút từ cửa Hachijo, tiện khi xuống Shinkansen từ Mishima.</dd>
+        <dt>Loại phòng</dt><dd>Nếu giá phù hợp, ưu tiên Regular Twin 26 m² cho hai người và vali. Khách sạn có phòng tắm riêng, không có onsen/đại dục trường.</dd>
+        <dt>Thông tin</dt><dd><a href="https://www.miyakohotels.ne.jp/kyoto-hachijo/" target="_blank" rel="noopener">Website khách sạn ↗</a> · <a href="https://www.miyakohotels.ne.jp/kyoto-hachijo/stay/" target="_blank" rel="noopener">Loại phòng ↗</a></dd>
+      </dl>
+    </article>
+
+    <article class="card stay">
+      <div class="stay-h"><h3><span class="jp">大阪</span>Osaka · Namba/Nipponbashi</h3><span>2 đêm · 30–31/12 · chưa chọn</span></div>
+      <dl>
+        <dt>Ưu tiên</dt><dd>Chọn nơi có thể đi bộ về sau đêm giao thừa và thuận ra ga Nankai Namba sáng 01/01.</dd>
+        <dt>Lưu ý</dt><dd>Chốt khách sạn trước khi đặt lịch về từ Sumiyoshi Taisha; nếu tàu đêm không phù hợp, cần dự phòng taxi hoặc đón năm mới ở Hōzenji gần Namba.</dd>
+      </dl>
+    </article>
   </section>
 
   <section class="sec" id="chi-phi">
-    <h2>Chi phí mỗi người</h2>
-    <p class="sub">Ước tính cho 2 người ở chung phòng, chưa gồm vé máy bay. Nên kiểm tra lại giá khi đặt.</p>
+    <h2>Chi phí cần chốt</h2>
+    <p class="sub">File lịch trình mới chưa có tổng giá vé bay, phòng đã đặt, taxi và tàu. Vì vậy chưa có tổng ngân sách đáng tin cậy. Các mức dưới đây chỉ là giá tham khảo được nêu trong lịch và cần xác nhận lúc đặt.</p>
     <div class="card">
       <ul class="cost" id="cost"></ul>
-      <div class="total">
-        <div class="r"><span>Tổng tại Nhật (10 ngày 9 đêm)</span><span>170.000–195.000 ¥</span></div>
-        <div class="r"><span>Quy đổi</span><span>≈ 29–33 triệu</span></div>
-        <div class="r"><span>Cộng vé máy bay ~19,8 triệu</span><span class="big">49–53 triệu</span></div>
-      </div>
-      <p class="sub" style="margin-top:10px">Vé VietJet Air bay thẳng (đã xuất vé): 23/12 HAN → NRT, 01/01 KIX → HAN. Kiểm tra hành lý ký gửi mua kèm theo vé.</p>
+      <p class="note warn" style="margin-top:14px">Chưa cộng các khoản này thành tổng: chúng thuộc những lựa chọn khác nhau, và có khoản như Sushi Akazu chỉ là phương án tùy chọn.</p>
     </div>
     <div class="card conv">
       <label for="yen">Yên<input id="yen" type="number" inputmode="numeric" value="15000"></label>
@@ -297,157 +342,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
     <div class="pack" id="pack"></div>
   </section>
 
-  <p class="foot">Ảnh từ Wikipedia và Wikimedia Commons theo giấy phép tự do, ghi tên tác giả dưới mỗi ảnh. Bản đồ nền © OpenStreetMap contributors. Đường nối trên bản đồ là thứ tự đi, không phải đường đi thực tế; bấm Google Maps để xem chỉ đường. Ngày mở cửa khu trượt tuyết, giờ xe chạy và lịch nghỉ năm mới có thể thay đổi theo năm.</p>
+  <p class="foot">Ảnh từ Wikimedia Commons và Wikipedia, ghi nguồn cùng giấy phép tại từng ảnh. Sơ đồ chặng chỉ thể hiện thứ tự di chuyển; bấm Google Maps để xem tuyến thực tế. Giờ mở cửa, xe chạy và lịch nghỉ năm mới có thể thay đổi.</p>
 </div>
 
+<script src="experience-data.js"></script>
+<script src="trip-data.js"></script>
 <script>
 (function(){
-  function P(n,a,o,m,q){return {n:n,a:a,o:o,m:m,q:q}}
-  var HOT={
-    T:{a:35.6885,o:139.6990,q:"Shinjuku Station, Tokyo"},
-    F:{a:35.5060,o:138.7680,q:"Kawaguchiko Station"},
-    K:{a:34.9835,o:135.7585,q:"Kyoto Station"},
-    O:{a:34.6650,o:135.5020,q:"Namba Station, Osaka"}
-  };
-  function H(c,m){var h=HOT[c];return {n:"Khách sạn",a:h.a,o:h.o,m:m,q:h.q,h:1}}
-  var FUJI={n:"Núi Phú Sĩ 3.776 m",a:35.3606,o:138.7274};
-
-  var DAYS=[
-    {id:"d23",dnum:"23",dateLabel:"23",w:"Thứ 4",k:"東京",title:"Bay sang Narita, tối Shibuya",sleep:"Shinjuku",temp:"2–12°C",sun:"16:32",
-     maps:[{src:"maps/d22-0.webp",from:{t:"Từ Narita · Narita Express ~1h15'",a:35.7720,o:140.3929,m:"train"},pts:[
-       H("T"),P("Shibuya Sky",35.6584,139.7022,"train","Shibuya Sky"),P("Omoide Yokocho",35.6929,139.6996,"train","Omoide Yokocho, Shinjuku"),H("T","walk")]}],
-     items:[
-      ["8:20","Cất cánh từ Nội Bài","VietJet Air VJ934, bay thẳng ~5h10.","move"],
-      ["15:30","Đến sân bay Narita (NRT)","Terminal 2. Nhập cảnh, lấy hành lý khoảng 45–60 phút.","move","haneda"],
-      ["16:30","Tàu Narita Express về Shinjuku","Tàu N'EX chạy thẳng ~1h15 đến ga Shinjuku.","move"],
-      ["18:00","Nhận phòng khách sạn","Nghỉ ngơi, chuẩn bị đi chơi tối."],
-      ["19:30","Shibuya Sky ngắm Tokyo về đêm","Ngã tư Shibuya, lên đài quan sát Shibuya Sky (đặt vé khung sau 19:00).",null,"shibuya"],
-      ["21:00","Ăn tối Omoide Yokocho","Thưởng thức xiên nướng yakitori ở hẻm Shinjuku.",null,"omoide"]
-    ],notes:[["tip","Mặt trời lặn 16:32 lúc bạn đang trên tàu từ sân bay về. Về khách sạn cất đồ xong đi chơi tối vừa đẹp."]]},
-
-    {id:"d24",dnum:"24",dateLabel:"24",w:"Thứ 5",k:"東京",title:"Tokyo truyền thống, đêm Giáng sinh",sleep:"Shinjuku",temp:"2–12°C",sun:"16:33",
-     maps:[{src:"maps/d23-0.webp",pts:[
-       H("T"),P("Sensō-ji",35.7148,139.7967,"train","Senso-ji, Tokyo"),P("Skytree",35.7101,139.8107,"walk","Tokyo Skytree"),
-       P("Ueno · Ameyoko",35.7120,139.7745,"train","Ameyoko, Tokyo"),P("Akihabara",35.6984,139.7731,"train","Akihabara Station"),H("T","train")]}],
-     items:[
-      ["8:30","Asakusa","Chùa Sensō-ji trước khi đông, phố Nakamise.",null,"sensoji"],
-      ["11:00","Sông Sumida, Tokyo Skytree","Lên Skytree nếu trời trong. Không lên thì ngắm từ bờ sông.",null,"skytree"],
-      ["13:30","Ueno, chợ Ameyoko","Ăn trưa, đi dạo công viên Ueno.",null,"ameyoko"],
-      ["16:30","Đèn Giáng sinh","Marunouchi và ga Tokyo, hoặc Roppongi Hills. Đêm 24 là đông và rực rỡ nhất.",null,"marunouchi"],
-      ["19:00","Akihabara & ăn tối Yurakucho","Cửa hàng điện tử, game, ăn tối hẻm gầm tàu Yurakucho.",null,"akihabara"]
-    ],notes:[["tip","Đêm Giáng sinh các khu đèn trang trí và nhà hàng rất đông. Nên đặt bàn ăn tối trước."]]},
-
-    {id:"d25",dnum:"25",dateLabel:"25",w:"Thứ 6",k:"東京",title:"Tokyo hiện đại & nghệ thuật ánh sáng",sleep:"Shinjuku",temp:"2–12°C",sun:"16:33",
-     maps:[{src:"maps/d24-0.webp",pts:[
-       H("T"),P("Đền Meiji",35.6764,139.6993,"train","Meiji Jingu"),P("Harajuku",35.6716,139.7031,"walk","Takeshita Street, Harajuku"),
-       P("teamLab Planets",35.6491,139.7898,"train","teamLab Planets Tokyo"),P("Marunouchi",35.6812,139.7671,"train","Marunouchi, Tokyo"),
-       P("Yurakucho",35.6750,139.7630,"walk","Yurakucho Station"),H("T","train")]}],
-     items:[
-      ["9:00","Đền Meiji → Harajuku","Không gian tĩnh lặng trong rừng cây, rồi sang phố Takeshita, Omotesando.",null,"meiji"],
-      ["13:00","teamLab Planets","Ở Toyosu, thế giới tương tác ánh sáng ngập nước. Đặt vé theo khung giờ.",null,"teamlab"],
-      ["16:30","Ginza & Roppongi","Dạo phố hàng hiệu Ginza hoặc ngắm tháp Tokyo rực sáng mùa đông.",null,"ginza"],
-      ["19:30","Ăn tối Giáng sinh","Thưởng thức lẩu nabe hoặc thịt nướng ấm cúng."],
-      ["21:30","Gửi vali đi Kyoto","Takkyubin ở quầy lễ tân, ~2.500 ¥/vali. Ghi ngày nhận 28/12, báo khách sạn Kyoto giữ giúp.","task"]
-    ],notes:[["tip","Từ mai chỉ mang <b>balo nhỏ</b>: đồ cho 2 đêm ở Kawaguchiko và đồ trượt tuyết."]]},
-
-    {id:"d26",dnum:"26",dateLabel:"26",w:"Thứ 7",k:"河口湖",title:"Lên Phú Sĩ & Hồ Kawaguchi",sleep:"Kawaguchiko",temp:"−4–8°C",sun:"16:37",
-     maps:[{src:"maps/d25-0.webp",from:{t:"Từ Shinjuku · xe buýt 2h",a:35.6886,o:139.7005,m:"road"},look:FUJI,pts:[
-       P("Ga Kawaguchiko",35.4985,138.7690,null,"Kawaguchiko Station"),P("Chùa Chureito",35.5011,138.8013,"train","Chureito Pagoda"),
-       P("Công viên Oishi",35.5233,138.7449,"road","Oishi Park, Fujikawaguchiko"),P("Cáp treo Kachi Kachi",35.5022,138.7727,"road","Mt. Fuji Panoramic Ropeway"),H("F","walk")]}],
-     items:[
-      ["8:00","Xe buýt Shinjuku → Kawaguchiko","Từ bến Busta Shinjuku, ~2h, ~2.200 ¥. Đặt vé trước.","move","busta"],
-      ["10:30","Chùa Chureito","Đi tàu 2 ga đến Shimoyoshida, leo ~400 bậc. Góc chụp Phú Sĩ cùng ngôi chùa năm tầng.",null,"chureito"],
-      ["12:30","Mì hōtō","Món mì dẹp hầm bí đỏ đặc sản vùng Yamanashi.",null,"hoto"],
-      ["14:00","Hồ Kawaguchi & Công viên Oishi","Đi xe buýt vòng quanh hồ, ngắm bờ bắc hồ Kawaguchi đối diện Phú Sĩ.",null,"kawaguchi"],
-      ["16:00","Cáp treo Kachi Kachi","Lên đài quan sát ngắm hoàng hôn buông xuống núi Phú Sĩ."],
-      ["17:30","Nhận phòng & Onsen","Nghỉ ngơi, ngâm suối nước khoáng nóng onsen, ăn tối quanh ga."]
-    ]},
-
-    {id:"d27",dnum:"27",dateLabel:"27",w:"Chủ nhật",k:"富士",title:"Trượt tuyết cả ngày ở Fujiten",sleep:"Kawaguchiko",temp:"−8–2°C",sun:"16:37",
-     maps:[{src:"maps/d26-0.webp",ctx:[FUJI],pts:[H("F"),P("Fujiten",35.4350,138.6950,"road","Fujiten Snow Resort"),H("F","road")]}],
-     items:[
-      ["8:00","Taxi hoặc xe đưa đón đến Fujiten","~25 phút, taxi ~5.000 ¥ mỗi chiều. Hỏi chỗ ở xem có xe đưa đón không.","move"],
-      ["8:30","Thuê đồ trượt tuyết","Trọn bộ ván, giày, quần áo trượt tuyết. Chỉ cần mang găng tay và đồ giữ nhiệt."],
-      ["9:30","Lớp học cho người mới","Khoảng 2 tiếng: đứng, giữ thăng bằng, phanh, chuyển hướng.","ski","fujiten"],
-      ["12:00","Ăn trưa ở khu nghỉ dưỡng","Khu ẩm thực nhìn thẳng ra dốc tuyết và đỉnh Phú Sĩ."],
-      ["13:00","Tự trượt tuyết","Dốc cho người mới, cả buổi chiều làm quen tuyết. Khu đóng khoảng 16:30.","ski"],
-      ["16:30","Về chỗ ở","","move"],
-      ["17:30","Tắm Onsen","Thư giãn cơ bắp sau ngày trượt tuyết, ăn tối đồ nướng địa phương."]
-    ],notes:[["warn","Hôm nay là <b>Chủ nhật</b>: khu trượt đông người. Nên đặt trước lớp học và đến sớm thuê đồ."],["tip","Ở 2 đêm là <b>3 buổi sáng</b> có cơ hội ngắm Phú Sĩ rõ nét."]]},
-
-    {id:"d28",dnum:"28",dateLabel:"28",w:"Thứ 2",k:"京都",title:"Phú Sĩ bình minh, chiều Kyoto cổ kính",sleep:"Gần ga Kyoto",temp:"1–10°C",sun:"16:53",
-     maps:[{src:"maps/d27-0.webp",from:{t:"Từ Kawaguchiko · buýt + Shinkansen ~4h30",a:35.1264,o:138.9110,m:"train"},pts:[
-       H("K"),P("Kiyomizu-dera",34.9949,135.7850,"road","Kiyomizu-dera"),P("Sannenzaka",34.9965,135.7810,"walk","Sannenzaka"),
-       P("Ninenzaka",34.9982,135.7806,"walk","Ninenzaka"),P("Đền Yasaka",35.0037,135.7785,"walk","Yasaka Shrine"),
-       P("Hanamikoji",35.0025,135.7750,"walk","Hanamikoji Street"),P("Pontocho",35.0050,135.7710,"walk","Pontocho, Kyoto"),H("K","road")]}],
-     items:[
-      ["6:45","Phú Sĩ lúc bình minh","Lần ngắm cuối trước khi rời đi. Sáng sớm trời trong nhất.",null,"fuji"],
-      ["9:00","Xe buýt đi ga Mishima","Chuyến xe buýt xuyên núi ~2h.","move"],
-      ["11:30","Shinkansen Mishima → Kyoto","Tàu siêu tốc ~2h, ~11.000 ¥. Đổi tàu ở Nagoya nếu cần.","move","shinkansen"],
-      ["14:00","Đến Kyoto & nhận phòng","Nhận phòng khách sạn gần ga Kyoto, nhận lại vali đã gửi."],
-      ["15:00","Chùa Thanh Thủy (Kiyomizu-dera)","Lên chùa lúc chiều muộn, ngắm hoàng hôn phủ bóng Kyoto cổ kính.",null,"kiyomizu"],
-      ["16:30","Dốc Sannenzaka & Ninenzaka","Dạo bộ xuống triền dốc lát đá cổ, ghé các tiệm gốm và trà xanh.",null,"sannenzaka"],
-      ["17:30","Đền Yasaka, Gion, Pontocho","Đền Yasaka lung linh đèn lồng, dạo phố geisha Hanamikoji, ăn tối hẻm Pontocho bên sông Kamo.",null,"gion"]
-    ]},
-
-    {id:"d29",dnum:"29",dateLabel:"29",w:"Thứ 3",k:"京都",title:"Rừng tre Arashiyama & Chùa Vàng",sleep:"Gần ga Kyoto",temp:"1–10°C",sun:"16:54",
-     maps:[{src:"maps/d28-0.webp",pts:[
-       H("K"),P("Rừng tre · Tenryū-ji",35.0165,135.6722,"train","Arashiyama Bamboo Grove"),P("Cầu Togetsukyo",35.0127,135.6778,"walk","Togetsukyo Bridge"),
-       P("Kinkaku-ji",35.0394,135.7292,"road","Kinkaku-ji"),P("Nishiki · Kawaramachi",35.0045,135.7665,"road","Nishiki Market"),H("K","train")]}],
-     items:[
-      ["7:30","Rừng tre Arashiyama","Tàu JR ~15 phút từ ga Kyoto. Đến trước 8:00 sáng để vắng bóng người. Chùa Tenryū-ji, cầu Togetsukyo.",null,"arashiyama"],
-      ["11:30","Chùa Vàng Kinkaku-ji","Taxi ~25 phút. Ngôi chùa dát vàng soi bóng tuyệt đẹp dưới hồ gương.",null,"kinkakuji"],
-      ["13:30","Chợ Nishiki","Ăn trưa ở 'nhà bếp Kyoto'. Cuối năm chợ bán đồ Tết truyền thống rất tấp nập.",null,"nishiki"],
-      ["16:00","Mua sắm phố Kawaramachi","Tự do dạo phố, mua trà matcha Uji, đồ lưu niệm truyền thống."]
-    ],notes:[["tip","Từ 29/12 nhiều cửa tiệm nhỏ bắt đầu nghỉ Tết. Nếu muốn mua đồ thủ công mỹ nghệ, nên mua hôm nay."]]},
-
-    {id:"d30",dnum:"30",dateLabel:"30",w:"Thứ 4",k:"大阪",title:"Fushimi Inari, sang Osaka sôi động",sleep:"Namba, Osaka",temp:"3–11°C",sun:"16:55",
-     maps:[
-      {src:"maps/d29-0.webp",cap:"Sáng · Kyoto",to:{t:"Đi Osaka · JR 30'",a:34.7025,o:135.4959,m:"train"},pts:[
-        H("K"),P("Fushimi Inari",34.9671,135.7727,"train","Fushimi Inari Taisha"),H("K","train")]},
-      {src:"maps/d29-1.webp",cap:"Chiều · Osaka",from:{t:"Từ Kyoto · JR + tàu điện ngầm",a:34.9858,o:135.7588,m:"train"},pts:[
-        H("O"),P("Lâu đài Osaka",34.6873,135.5262,"train","Osaka Castle"),P("Shinsekai",34.6525,135.5063,"train","Shinsekai, Osaka"),
-        P("Dotonbori",34.6687,135.5013,"train","Dotonbori"),H("O","walk")]}
-     ],
-     items:[
-      ["7:00","Đền Fushimi Inari Taisha","5 phút tàu JR từ ga Kyoto. Đi bộ qua rừng cổng torii đỏ rực lúc sáng sớm vắng vẻ.",null,"fushimi"],
-      ["10:00","Trả phòng ga Kyoto","Lấy vali đã gửi ở khách sạn.","move"],
-      ["10:30","JR Kyoto → Osaka","Chuyến tàu ~30 phút, ~580 ¥. Về Namba gửi vali ở khách sạn.","move"],
-      ["13:00","Công viên Lâu đài Osaka","Dạo quanh hào thành cổ và ngắm tháp lâu đài nguy nga từ công viên.",null,"osakajo"],
-      ["16:00","Khu phố cổ Shinsekai","Tháp Tsutenkaku mang phong cách retro, ăn xiên que giòn rụm Kushikatsu.",null,"shinsekai"],
-      ["19:00","Phố đêm Dotonbori","Check-in biển đèn Glico, ăn bánh bạch tuộc Takoyaki và bánh xèo Okonomiyaki.",null,"dotonbori"]
-    ],notes:[["warn","Tháp chính bên trong lâu đài Osaka đóng cửa dịp Tết (28/12–1/1). Vẫn mở cửa tự do toàn bộ công viên và hào thành ngoài."]]},
-
-    {id:"d31",dnum:"31",dateLabel:"31",w:"Thứ 5",k:"大阪",title:"Đêm Giao thừa Ōmisoka, Countdown Osaka",sleep:"Namba, Osaka",temp:"2–10°C",sun:"16:56",
-     maps:[{src:"maps/d30-0.webp",pts:[
-       H("O"),P("Chợ Kuromon",34.6654,135.5065,"walk","Kuromon Market"),P("Shinsaibashi",34.6748,135.5012,"walk","Shinsaibashi-suji"),
-       P("Dotonbori",34.6687,135.5013,"walk","Dotonbori Glico Sign"),H("O","walk")]}],
-     items:[
-      ["8:30","Chợ hải sản Kuromon","Ăn sáng sashimi, sò điệp nướng mỡ hành, cua tuyết khổng lồ trong không khí ngày 30 Tết náo nhiệt.",null,"kuromon"],
-      ["10:30","Shinsaibashi & Umeda","Mua sắm đồ mùa đông, mỹ phẩm, quà tặng ở phố có mái che dài nhất Osaka.",null,"shinsaibashi"],
-      ["14:30","Nghỉ ngơi, cafe tại Namba","Nghỉ ngơi lấy sức để thức khuya đón thời khắc chuyển giao năm mới."],
-      ["18:30","Ăn tối mì Toshikoshi Soba","Thưởng thức bát mì kiều mạch trường thọ truyền thống - phong tục tiễn năm cũ của người Nhật."],
-      ["22:30","Đón Giao thừa chào năm 2027","Hòa vào hàng vạn người đếm ngược tại cầu Ebisu Dotonbori HOẶC viếng chùa Shitennō-ji nghe 108 hồi chuông trừ tịch Joya no Kane.",null,"dotonbori"]
-    ],notes:[["tip","Đêm 31/12 rạng sáng 01/01, các tuyến tàu điện ngầm chính ở Osaka (như tuyến Midosuji) chạy thâu đêm phục vụ người dân đón năm mới và đi lễ đền."]]},
-
-    {id:"d1",dnum:"1/1",dateLabel:"1/1",w:"Thứ 6",k:"大阪",title:"Tết Hatsumode, bay về Hà Nội",sleep:"Bay về Hà Nội",temp:"2–10°C",sun:"",
-     maps:[{src:"maps/d30-0.webp",to:{t:"Ra sân bay Kansai · Nankai 40'",a:34.4320,o:135.2304,m:"train"},pts:[
-       H("O"),P("Đền Namba Yasaka",34.6610,135.4965,"walk","Namba Yasaka Shrine"),P("Ga Nankai Namba",34.6629,135.5013,"walk","Nankai Namba Station"),H("O","walk")]}],
-     items:[
-      ["8:30","Đi lễ đầu năm Hatsumode","Viếng Đền Namba Yasaka (ngôi đền đầu lân khổng lồ nuốt điềm xấu, ban vận may) cách ga Namba 8 phút đi bộ. Mua bùa may mắn omamori năm mới."],
-      ["10:30","Trả phòng khách sạn","Lấy vali gửi ở quầy lễ tân."],
-      ["11:00","Săn túi may mắn Fukubukuro","Trải nghiệm mua 'túi mù may mắn' ngày đầu năm mới tại các trung tâm thương mại quanh ga Namba."],
-      ["12:30","Tàu Nankai Rapi:t ra sân bay Kansai","Chuyến tàu chạy thẳng ~40 phút. Có mặt tại sân bay KIX trước 13:30.","move"],
-      ["15:30","Cất cánh về Hà Nội","VietJet Air VJ931, bay thẳng 5h45, hạ cánh Nội Bài 19:15.","move"]
-    ],notes:[["tip","Ngày 1/1 sân bay Kansai rất đông khách du lịch quốc tế và nội địa, nên có mặt đúng giờ trước 2–2.5 tiếng."]]}
-  ];
-
-  var OVERVIEW={numbered:false,ctx:[{n:"Phú Sĩ",a:35.3606,o:138.7274}],pts:[
-    P("Narita",35.7720,140.3929,null),P("Tokyo · 23–25",35.6896,139.7006,"train"),
-    P("Kawaguchiko · 26–27",35.4985,138.7690,"road"),P("Mishima",35.1264,138.9110,"road"),
-    P("Kyoto · 28–29",34.9858,135.7588,"train"),P("Osaka · 30–31",34.6663,135.5003,"train"),P("Sân bay Kansai",34.4320,135.2304,"train")]};
+  var DAYS=window.JP_TRIP.days;
+  var OVERVIEW=window.JP_TRIP.overview;
 
   var PHOTOS={"haneda":{"src":"photos/haneda.webp","credit":"ブルーノ・プラス · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:All_haneda.jpg","w":900,"h":675},"shibuya":{"src":"photos/shibuya.webp","credit":"David Kernan · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg","w":900,"h":506},"sensoji":{"src":"photos/sensoji.webp","credit":"Akonnchiroll · CC0","file":"https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg","w":900,"h":643},"skytree":{"src":"photos/skytree.webp","credit":"Kakidai · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg","w":900,"h":1379},"kawaguchi":{"src":"photos/kawaguchi.webp","credit":"Alpsdake · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg","w":900,"h":600},"omoide":{"src":"photos/omoide.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Shinjuku-West_Omoide-Yokocho.jpg","w":900,"h":600},"ameyoko":{"src":"photos/ameyoko.webp","credit":"Ka23 13 · CC BY 4.0","file":"https://commons.wikimedia.org/wiki/File:Ueno_20241210_133139.jpg","w":900,"h":506},"akihabara":{"src":"photos/akihabara.webp","credit":"Phineyes · CC0","file":"https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png","w":900,"h":675},"meiji":{"src":"photos/meiji.webp","credit":"Akonnchiroll · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg","w":900,"h":506},"teamlab":{"src":"photos/teamlab.webp","credit":"Sasa0403 · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Photos_at_teamlab_planets_tokyo.jpg","w":900,"h":506},"marunouchi":{"src":"photos/marunouchi.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Tokyo-STA_Marunouchi-Entrance_2023.jpg","w":900,"h":600},"ginza":{"src":"photos/ginza.webp","credit":"Kakidai · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Ginza-WAKO_at_night.jpg","w":900,"h":675},"busta":{"src":"photos/busta.webp","credit":"江戸前鰻 · CC BY 3.0","file":"https://commons.wikimedia.org/wiki/File:Shinjuku_Expressway_Bus_Terminal_2020.JPG","w":900,"h":675},"chureito":{"src":"photos/chureito.webp","credit":"Wikimedia Commons · CC BY 2.0","file":"https://commons.wikimedia.org/wiki/File:Chuurei-tou_Fujiyoshida_17025277650_c59733d6ba_o.jpg","w":900,"h":600},"hoto":{"src":"photos/hoto.webp","credit":"Wikimedia Commons · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Houtou.jpg","w":900,"h":713},"fujiten":{"src":"photos/fujiten.webp","credit":"Derek Springer · CC BY-SA 2.0","file":"https://commons.wikimedia.org/wiki/File:Fujiten_Snow_Resort_(1)_Dec_27,_2006.jpg","w":900,"h":600},"fuji":{"src":"photos/fuji.webp","credit":"Suicasmo · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:View_of_Mount_Fuji_from_%C5%8Cwakudani_20211202.jpg","w":900,"h":440},"shinkansen":{"src":"photos/shinkansen.webp","credit":"MaedaAkihiko · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Series-N700S-J2.jpg","w":900,"h":601},"kiyomizu":{"src":"photos/kiyomizu.webp","credit":"Jordy Meow · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg","w":900,"h":601},"sannenzaka":{"src":"photos/sannenzaka.webp","credit":"Tomomarusan · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:Stone_stairway_Kiyomizu-dera.JPG","w":900,"h":1200},"gion":{"src":"photos/gion.webp","credit":"663highland · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg","w":900,"h":600},"arashiyama":{"src":"photos/arashiyama.webp","credit":"Basile Morin · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Bamboo_Grove,_Arashiyama,_Kyoto,_Japan.jpg","w":900,"h":1350},"kinkakuji":{"src":"photos/kinkakuji.webp","credit":"Nacaru · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg","w":900,"h":1350},"nishiki":{"src":"photos/nishiki.webp","credit":"matsuyuki · CC BY-SA 2.0","file":"https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg","w":900,"h":1200},"fushimi":{"src":"photos/fushimi.webp","credit":"Basile Morin · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg","w":900,"h":600},"osakajo":{"src":"photos/osakajo.webp","credit":"663highland · CC BY 2.5","file":"https://commons.wikimedia.org/wiki/File:Osaka_Castle_03bs3200.jpg","w":900,"h":600},"shinsekai":{"src":"photos/shinsekai.webp","credit":"Dick Thomas Johnson from Tokyo, Japan · CC BY 2.0","file":"https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_at_night_2019-04-12.jpg","w":900,"h":1350},"dotonbori":{"src":"photos/dotonbori.webp","credit":"Type specimen · CC BY-SA 3.0","file":"https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg","w":900,"h":598},"kuromon":{"src":"photos/kuromon.webp","credit":"ほっきー · CC0","file":"https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg","w":900,"h":675},"shinsaibashi":{"src":"photos/shinsaibashi.webp","credit":"Mc681 · CC BY-SA 4.0","file":"https://commons.wikimedia.org/wiki/File:Shinsaibashi-suji_201408.JPG","w":900,"h":900}};
+
+  PHOTOS.katsuoji={src:"hero/katsuoji.jpg",credit:"Ouppygirl · CC BY-SA 4.0",file:"https://commons.wikimedia.org/wiki/File:Daruma_at_Katsu%C5%8D-ji_temple_overlooking_pond.jpg",w:1920,h:1455};
+  PHOTOS.winterlake={src:"hero/kawaguchiko.jpg",credit:"Chris Moore · Public domain",file:"https://commons.wikimedia.org/wiki/File:Winterkawaguchiko.jpg",w:1024,h:768};
+  window.JP_PHOTOS=PHOTOS;
 
   function photo(ph,alt){
     if(!ph)return '';
@@ -464,7 +373,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
     var numbered=panel.numbered!==false,marks=[],seen={},num=0,modes={};
     panel.pts.forEach(function(p,i){
       if(i>0)modes[p.m||"train"]=1;
-      var key=p.a.toFixed(4)+","+p.o.toFixed(4);
+      var key=p.q||p.n;
       if(seen[key])return;
       var m={p:p,h:!!p.h};
       if(!m.h&&numbered)m.num=++num;
@@ -472,7 +381,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
     });
     if(panel.from)modes[panel.from.m]=1;
     if(panel.to)modes[panel.to.m]=1;
-    var img='<img src="'+src+'" alt="'+esc("Bản đồ: "+marks.map(function(m){return m.p.n}).join(", "))+'" decoding="async">';
+    var img=src?'<img src="'+src+'" alt="'+esc("Bản đồ: "+marks.map(function(m){return m.p.n}).join(", "))+'" decoding="async">':
+      '<div class="route-visual" aria-label="Sơ đồ thứ tự chặng">'+marks.map(function(m,i){return '<span class="route-stop"><i>'+(m.h?'⌂':String(m.num||i+1).padStart(2,'0'))+'</i><b>'+esc(m.p.n)+'</b></span>'}).join('')+'</div>';
     var stops=numbered?'<ol class="stops">'+marks.map(function(m){return '<li><i'+(m.h?' class="h">H':'>'+m.num)+'</i><a href="https://www.google.com/maps/search/?api=1&amp;query='+encodeURIComponent(m.p.q)+'" target="_blank" rel="noopener">'+esc(m.p.n)+'</a></li>'}).join("")+'</ol>':'';
     var legend='<div class="legend">'+Object.keys(MODES).filter(function(k){return modes[k]}).map(function(k){return '<span class="lg-'+k+'">'+MODES[k]+'</span>'}).join("")+'</div>';
     var link="";
@@ -484,23 +394,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   }
 
   var COST=[
-    ["Chỗ ở 9 đêm (≤ $100/phòng, chia đôi)",68000,"~68.000 ¥"],
-    ["Ăn uống 10 ngày",45000,"~45.000 ¥"],
-    ["Đi lại (Shinkansen, buýt, tàu)",35000,"~35.000 ¥"],
-    ["Trượt tuyết cả ngày (vé, thuê đồ, lớp học)",22500,"20–25.000 ¥"],
-    ["Tham quan, chuyển hành lý",10000,"~10.000 ¥"]
+    ["Vé lift Fujiten 4 giờ cuối tuần","¥5.800/người · chưa gồm thuê đồ và lớp"],
+    ["Taxi ga Kawaguchiko ↔ Fujiten","khoảng ¥4.000–5.000/chiều từ ga"],
+    ["Bus Hankyu Minoh-Kayano → Katsuoji","¥800/người/chiều · chuẩn bị thẻ IC hoặc vé"],
+    ["Vé vào Katsuoji ngày thường","¥500/người · xác nhận giờ 31/12"],
+    ["Sushi Akazu Mochizuki (tùy chọn)","set niêm yết ¥19.800/người · đặt trước"]
   ];
 
   var TODO=[
-    ["flight","Vé máy bay VietJet Air (Đã xuất vé ✓)","HAN 08:20 → NRT 15:30 ngày 23/12 (VJ934), KIX 15:30 → HAN 19:15 ngày 01/01 (VJ931). Kiểm tra hành lý ký gửi mua kèm theo vé."],
-    ["visa","Nộp hồ sơ visa Nhật","Cuối tháng 10 – giữa tháng 11. Cuối năm hồ sơ dồn nhiều."],
-    ["ryokan","Chỗ ở Kawaguchiko 2 đêm 26–27/12","Đặt trước tiên: có tối thứ Bảy và Chủ nhật, chỗ view núi hết nhanh."],
-    ["hotels","Khách sạn ≤ $100/đêm","Shinjuku 3 đêm (23–25/12), ga Kyoto 2 đêm (28–29/12), Namba 2 đêm (30–31/12). Chọn phòng twin."],
-    ["ski","Đặt lớp trượt tuyết ở Fujiten ngày 27/12","Chủ nhật đông. Đầu tháng 12 kiểm tra khu đã mở cửa chưa."],
-    ["tickets","Vé Shibuya Sky, teamLab, xe buýt đi Kawaguchiko","Đặt trước 1–2 tuần. Shibuya Sky đặt vé khung sau 18:00."],
-    ["xmas","Nhà hàng tối 24 & 25/12 ở Tokyo","Đêm Giáng sinh ở Nhật là dịp đi ăn, quán đẹp kín chỗ sớm."],
-    ["countdown","Kế hoạch Giao thừa 31/12 ở Osaka","Đặt chỗ ăn mì Toshikoshi soba, đón Countdown tại Dotonbori."],
-    ["money","Tiền mặt và thẻ IC","Đổi yên, cài Suica trên điện thoại hoặc mua thẻ ở ga."]
+    ["v2-flight","Xác nhận vé VietJet và terminal","HAN 08:20 → NRT 15:25 ngày 23/12; KIX 15:30 → HAN 19:15 ngày 01/01. Kiểm tra số hiệu, terminal và hành lý trên vé điện tử."],
+    ["v2-hotels","Xác nhận đặt phòng ba khách sạn đã chọn","Shinjuku Washington 23–24/12, Super Hotel Fujikawaguchiko 25–26/12, Miyako Hotel Kyoto Hachijo 27–29/12."],
+    ["v2-osaka","Chọn khách sạn Osaka 30–31/12","Ưu tiên đi bộ về sau giao thừa và thuận ra Nankai Namba sáng 01/01."],
+    ["v2-fuji-bus","Đặt bus Shinjuku → Kawaguchiko 25/12","Dự kiến chuyến 09:15 từ Busta Shinjuku; đối chiếu lịch đúng ngày đi."],
+    ["v2-yamanakako","Đặt taxi Yamanakako 25/12","Dự kiến 12:15–17:30; hỏi phụ phí chờ và điểm dừng ở Nagaike, Hirano."],
+    ["v2-ski","Xác nhận Fujiten và lớp học 26/12","Chỉ đi nếu đường cho người mới mở; đặt lớp 2 giờ, thiết bị và taxi."],
+    ["v2-mishima","Đặt Mishima–Kawaguchiko Liner 27/12","Dự kiến bus 10:55; chừa 45–60 phút trước Shinkansen đi Kyoto."],
+    ["v2-meals","Đặt các bữa tối cần chỗ","Đêm Noel Shinjuku, tối 30/12 nếu chọn Sushi Akazu, và giao thừa 31/12 ở Namba."],
+    ["v2-katsuoji","Kiểm tra Katsuoji và bus Hankyu 31/12","Xác nhận giờ lễ, bến số 8, lịch cuối năm và thẻ IC/vé vì tuyến không nhận tiền mặt."],
+    ["v2-newyear","Chốt cách đón năm mới và về Namba","Kiểm tra giờ Sumiyoshi Taisha và tàu Nankai; dự phòng taxi hoặc Hōzenji gần Namba."]
   ];
   var PACK=["Áo giữ nhiệt","Áo khoác dày","Găng tay chống nước","Mũ len","Khăn quàng","Tất len dày","Giày chống trơn","Kem dưỡng ẩm, son dưỡng","Kính râm (tuyết chói)","Đầu chuyển phích chân dẹt","Sạc dự phòng"];
 
@@ -517,39 +428,37 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   }
   var cnt = document.getElementById("count");
   if (diff > 0) {
-    cnt.innerHTML = "<b>" + diff + "</b> <span>ngày nữa khởi hành</span>";
+    cnt.innerHTML = "<b>" + diff + "</b> <span>days until the first page<br><span lang=\"ja\">旅立ちまで、あと" + diff + "日</span></span>";
   } else if (todayIdx) {
-    cnt.innerHTML = "<b>Ngày " + todayIdx + "/10</b> <span>đang ở Nhật</span>";
+    cnt.innerHTML = "<b>Day " + todayIdx + "/10</b> <span>our story unfolds<br><span lang=\"ja\">旅の途中</span></span>";
   } else {
-    cnt.innerHTML = "<span>Chuyến đi đã kết thúc</span>";
+    cnt.innerHTML = "<span>The pages remain with us.<br><span lang=\"ja\">旅の記憶は、これからも。</span></span>";
   }
 
-  document.getElementById("overview").innerHTML = renderMap(OVERVIEW, "maps/overview.webp");
+  document.getElementById("overview").innerHTML = renderMap(OVERVIEW);
 
   var nav="", html="";
   DAYS.forEach(function(D, idx){
     var isToday = (todayIdx === (idx + 1));
     nav += '<a href="#' + D.id + '" data-t="' + D.id + '"' + (isToday ? ' class="today"' : '') + '><b>' + D.dateLabel + '</b>' + esc(D.w.replace("Thứ ", "T").replace("Chủ nhật", "CN")) + '</a>';
-    var facts = '<span class="fact">Ngủ: <strong>' + esc(D.sleep) + '</strong></span><span class="fact"><strong>' + D.temp + '</strong></span>' + (D.sun ? '<span class="fact">Mặt trời lặn <strong>' + D.sun + '</strong></span>' : '');
+    var facts = '<span class="fact">' + (D.id === 'd1' ? 'Kết thúc: ' : 'Ngủ: ') + '<strong>' + esc(D.sleep) + '</strong></span>' + (D.temp?'<span class="fact"><strong>' + D.temp + '</strong></span>':'') + (D.sun ? '<span class="fact">Mặt trời lặn <strong>' + D.sun + '</strong></span>' : '');
     var items = D.items.map(function(it){
       var ph = it[4] ? PHOTOS[it[4]] : null;
       var tag = it[3] ? '<span class="tag">' + TAGS[it[3]] + '</span>' : '';
       return '<li class="' + (it[3] || '') + '"><time>' + esc(it[0]) + '</time><div><p class="t">' + tag + esc(it[1]) + '</p>' + (it[2] ? '<p class="d">' + esc(it[2]) + '</p>' : '') + photo(ph, it[1]) + '</div></li>';
     }).join("");
     var notes = (D.notes || []).map(function(x){ return '<p class="note ' + x[0] + '">' + x[1] + '</p>'; }).join("");
-    var maps = (D.maps || []).map(function(p, i){ return renderMap(p, p.src || ("maps/d" + D.dnum + "-" + i + ".webp")); }).join("");
+    var maps = (D.maps || []).map(function(p){ return renderMap(p, p.src); }).join("");
     html += '<section class="day" id="' + D.id + '">' + (isToday ? '<span class="badge-today">Hôm nay</span>' : '') +
       '<div class="dhead"><span class="dnum">' + D.dnum + '</span><div class="dmeta"><span class="eyebrow">' + esc(D.w) + ' · Ngày ' + (idx + 1) + '</span><h2>' + esc(D.title) + '</h2></div><span class="dkanji" aria-hidden="true">' + D.k + '</span></div>' +
       '<div class="facts">' + facts + '</div>' + maps + '<ol class="tl">' + items + '</ol>' + notes + '</section>';
   });
 
-  nav += '<a class="txt" href="#cho-o" data-t="cho-o">Chỗ ở</a><a class="txt" href="#chi-phi" data-t="chi-phi">Chi phí</a><a class="txt" href="#chuan-bi" data-t="chuan-bi">Chuẩn bị</a>';
   document.getElementById("nav").innerHTML = nav;
   document.getElementById("days").innerHTML = html;
 
-  var max=68000;
   document.getElementById("cost").innerHTML=COST.map(function(c){
-    return '<li><div class="r"><span>'+esc(c[0])+'</span><span>'+c[2]+'</span></div><div class="bar"><i style="width:'+Math.round(c[1]/max*100)+'%"></i></div></li>';
+    return '<li><div class="r"><span>'+esc(c[0])+'</span><span>'+esc(c[1])+'</span></div></li>';
   }).join("");
 
   // Yen converter
@@ -608,3 +517,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   }
 })();
 </script>
+<script src="experience.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* A paper journal skin for the existing static itinerary and scene controls. */
+:root,
+:root[data-theme="dark"],
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#e9dfca;
+  --surface:#fbf7eb;
+  --ink:#302a23;
+  --muted:#685e51;
+  --line:#cabc9f;
+  --map:#efe7d6;
+  --ai:#725238;
+  --ai-soft:#eee2cd;
+  --shu:#a34b37;
+  --shu-soft:#f0ddd0;
+  --snow:#728a8c;
+  --snow-soft:#e4ece9;
+  --warn-bg:#f4e7cb;
+  --warn-ink:#654a29;
+  --tip-bg:#e6ecdf;
+  --tip-ink:#3f5b46;
+}
+
+body{
+  color:var(--ink);
+  background:
+    radial-gradient(ellipse at 50% 0%,#faf3df 0%,transparent 53%),
+    repeating-linear-gradient(0deg,transparent 0 32px,#896f4a09 33px,#896f4a09 34px),
+    #e9dfca;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 51%,#5c422621 100%);
+}
+.wrap{max-width:1320px}
+a{color:var(--shu)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline-color:var(--shu)}
+.eyebrow,.scene-time,.scene-kicker,.discover-card .locale{color:var(--shu)}
+
+/* Cover and index */
+.site-header{
+  min-height:86px;border-bottom:3px double var(--line);
+}
+.brand{gap:14px;font-family:Georgia,var(--jp),serif;font-weight:600;font-size:17px;letter-spacing:.01em}
+.brand-jp{font-size:19px;color:var(--shu);border-right:1px solid var(--line);padding-right:14px}
+.site-dates{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.11em}
+.menu-toggle{
+  border-radius:50%;background:var(--surface);color:var(--ai);
+  box-shadow:2px 3px 0 #8c73532b;
+}
+.menu-panel{
+  top:72px;background:#fbf7eb;border-radius:3px;
+  box-shadow:6px 9px 0 #8c73532d,0 18px 36px #4a382025;
+}
+.menu-panel a,.menu-panel button{color:var(--ink);border-radius:2px}
+.menu-panel a:hover,.menu-panel button:hover{background:var(--ai-soft)}
+.experience-hero{
+  min-height:calc(100svh - 86px);border-bottom:3px double var(--line);
+  grid-template-columns:minmax(190px,.75fr) minmax(370px,1.32fr) minmax(210px,.72fr);
+  gap:clamp(24px,3.5vw,52px);
+}
+.hero-intro{gap:20px;align-self:center;padding:20px 0}
+.hero-intro h1{font-size:clamp(34px,3.55vw,56px);line-height:1.15;letter-spacing:-.035em}
+.hero-intro h1 span{display:block}
+.hero-intro h1 em{display:block;margin-top:18px;color:var(--shu);font-family:var(--jp);font-size:.52em;font-style:normal;font-weight:400;line-height:1.55;letter-spacing:.02em}
+.count{color:var(--shu);font-family:Georgia,serif}
+.count b{font-size:25px}
+.count span{line-height:1.55}
+.count span[lang="ja"]{font-family:var(--jp);font-size:12px;font-weight:400}
+
+/* A photograph mounted on a journal page. */
+.scene-stage{
+  gap:11px;padding:18px 18px 15px;background:var(--surface);
+  border:1px solid #d4c7af;box-shadow:7px 9px 0 #856a4824,0 16px 35px #5a432922;
+  transform:rotate(-.35deg);
+}
+.scene-time{font-size:10px;letter-spacing:.18em}
+.scene-frame{
+  height:clamp(390px,56vh,615px);border:6px solid #f8f2e5;border-radius:2px;
+  background:linear-gradient(145deg,#af9b7c,#665543);box-shadow:inset 0 0 0 1px #5d473147,0 2px 6px #4f3a242b;
+}
+.scene-frame::before{
+  content:"";position:absolute;top:0;left:50%;width:98px;height:25px;
+  transform:translateX(-50%) rotate(-2deg);background:#ead6ad9c;
+  border-left:1px solid #baaa87a6;border-right:1px solid #baaa87a6;z-index:5;pointer-events:none;
+}
+.scene-frame::after{inset:67% 0 0;background:linear-gradient(transparent,#2b211528)}
+.scene-frame img{filter:sepia(.12) saturate(.84) contrast(.98)}
+.scene-image-fallback{background:linear-gradient(135deg,#b79874,#584a3b);color:#fff7e9}
+.scene-arrow{
+  width:40px;height:48px;border:1px solid #fff7e9b8;border-radius:50%;
+  background:#3c3025aa;color:#fff8ea;backdrop-filter:blur(3px);
+}
+.scene-arrow:hover{background:#3c3025eb}
+.scene-story{min-height:170px;gap:4px}
+.scene-kicker{font-size:10px;letter-spacing:.16em}
+.scene-story h2{color:var(--ink);font-size:clamp(27px,2.5vw,36px)}
+.scene-story p{font-family:Georgia,var(--sans),serif;font-size:15px;line-height:1.6;color:var(--muted)}
+.scene-story .scene-title-ja{font-family:var(--jp);font-size:14px;color:var(--shu);line-height:1.4}
+.scene-story .scene-caption-ja{font-family:var(--jp);font-size:13px;line-height:1.7;color:var(--muted)}
+.scene-links a{color:var(--shu);border-bottom:1px solid #a34b3766}
+.scene-links a:hover{border-color:var(--shu)}
+.scene-dots button{background:#ad9f88}
+.scene-dots button.active{background:var(--shu)}
+
+.explore-panel{gap:20px;padding:20px 0 20px 19px;border-left:1px dashed #ab9573}
+.explore-panel>.eyebrow{font-size:11px}
+.explore-grid{gap:9px}
+.explore-grid a{
+  min-height:108px;padding:14px 12px;border-radius:2px;background:#f7f0df;
+  border:1px solid #c8b89b;box-shadow:2px 3px 0 #9c846334;
+  transform:rotate(-.3deg);color:var(--ink);
+}
+.explore-grid a:nth-child(even){transform:rotate(.4deg)}
+.explore-grid a:hover,.explore-grid a:nth-child(even):hover{
+  transform:translateY(-3px) rotate(0);border-color:var(--shu);background:#fff8e9;
+}
+.explore-icon{font-family:Georgia,serif;font-size:22px;color:var(--shu);font-style:italic}
+.explore-grid a>span:nth-child(2){font-family:Georgia,var(--jp),serif;font-size:17px;font-weight:600}
+.explore-grid a>span:nth-child(2){white-space:normal;line-height:1.18}
+.explore-grid a small{color:var(--muted)}
+.explore-grid a small[lang="ja"]{font-family:var(--jp);font-size:11px}
+.support-links{border-top:1px dashed var(--line)}
+.support-links a{color:var(--ai);text-decoration:underline;text-decoration-color:#987b5791;text-underline-offset:3px}
+.support-links a:hover{color:var(--shu)}
+
+/* Pages, notes and travel ephemera. */
+.itinerary-intro,.sec{border-top:0}
+.section-heading{padding-left:18px;border-left:3px solid var(--shu)}
+.section-heading h2,.sec>h2{font-family:Georgia,var(--jp),serif;color:var(--ink);font-weight:500}
+.section-heading>p:last-child{color:var(--muted)}
+.route::before{background:var(--shu);height:1px}
+.route .k{border-width:2px;border-color:var(--shu);color:var(--shu);background:var(--surface)}
+.route .s{color:var(--muted)}
+nav{
+  background:#f3ead8ed;border-bottom:1px solid var(--line);
+  box-shadow:0 5px 12px #6d53311a;backdrop-filter:blur(12px);
+}
+nav a{background:#fbf7eb;border-radius:2px;color:var(--ink)}
+nav a.on{background:var(--shu);border-color:var(--shu);color:#fff7e9}
+nav a.today{border-color:var(--shu)}
+.day{border-top:1px dashed var(--line)}
+.dnum{font-family:Georgia,serif;font-style:italic;color:var(--shu);font-weight:400}
+.dmeta h2{font-family:Georgia,var(--jp),serif;font-size:22px;font-weight:500}
+.dkanji{color:var(--shu);opacity:.25}
+.fact{border-radius:2px;background:#f5eddd;color:var(--muted)}
+.fact strong,.tl time,.stops a{color:var(--ink)}
+.map,.card,.tl,.check,.discover-card,.photo-card{
+  background:var(--surface);border:1px solid #d3c5a9;border-radius:2px;
+  box-shadow:3px 4px 0 #8d755222;
+}
+.map img{background:var(--map)}
+.route-visual{display:flex;flex-wrap:wrap;gap:14px 6px;align-items:stretch;padding:24px 18px;background:repeating-linear-gradient(0deg,#f8f0df 0 31px,#b8a68b26 32px)}
+.route-stop{position:relative;display:grid;grid-template-columns:28px minmax(80px,1fr);align-items:center;gap:7px;min-height:44px;padding:5px 10px 5px 5px;background:#fff9ec;border:1px solid var(--line);box-shadow:2px 2px 0 #8d755222;font-size:12px}
+.route-stop:not(:last-child)::after{content:"→";position:absolute;right:-10px;top:50%;transform:translateY(-50%);z-index:1;color:var(--shu);font-size:14px;font-weight:700}
+.route-stop i{display:grid;place-items:center;width:27px;height:27px;border-radius:50%;background:var(--shu-soft);color:var(--shu);font:700 12px Georgia,serif}
+.route-stop b{font-weight:600;line-height:1.25}
+.mapfoot{border-top-color:var(--line)}
+.stops i{background:var(--ai);color:#fff7e9}
+.gm{background:var(--ai);color:#fff7e9;border-radius:2px}
+.tl li.move{background:#f1e6d3}
+.tl li.ski{background:#e8eeeb}
+.tl li.move .tag,.tl li.ski .tag{color:#fff8eb}
+.ph summary,.allph{background:#f7f0df;border-radius:2px;color:var(--ai)}
+.ph img{border-radius:1px;filter:sepia(.08) saturate(.9)}
+.note{border-radius:2px;border-left:3px solid currentColor}
+.discover-card{gap:10px;padding:21px}
+.discover-card h3,.photo-card h3{font-family:Georgia,var(--jp),serif;color:var(--ink)}
+.discover-card p,.photo-card p{color:var(--muted)}
+.discover-meta span{border-radius:2px;background:#f3ead8;color:var(--ink)}
+.discover-actions a,.photo-card a{color:var(--shu);border-bottom:1px solid #a34b3766}
+.cost .r span:last-child{white-space:normal;text-align:right}
+.photo-card{padding:8px;overflow:hidden}
+.photo-card img{filter:sepia(.13) saturate(.82);border:1px solid #d3c5a9}
+.photo-card .photo-body{padding:16px 10px 10px}
+.chains span,.pack span{border-radius:2px;background:#f1e5d1}
+.conv input{background:#fffaf0;border-radius:2px}
+.foot{border-top:3px double var(--line)}
+
+@media(max-width:980px){
+  .experience-hero{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr)}
+  .hero-intro{padding-bottom:24px}
+  .explore-panel{padding-left:0;border-left:0}
+}
+@media(max-width:680px){
+  .site-header{min-height:72px}
+  .brand{font-size:15px;gap:7px}
+  .brand-jp{font-size:16px;padding-right:8px}
+  .site-dates{font-size:10px}
+  .experience-hero{gap:19px;padding:25px 0 40px}
+  .hero-intro{display:grid;gap:8px;padding:0}
+  .hero-intro .eyebrow{font-size:9px}
+  .hero-intro h1{font-size:28px;line-height:1.08}
+  .hero-intro h1 br{display:none}
+  .hero-intro h1 em{margin-top:4px;font-size:16px;line-height:1.45}
+  .hero-intro .count{display:none}
+  .scene-stage{padding:12px 12px 13px;transform:none;box-shadow:4px 6px 0 #856a4824}
+  .scene-frame{height:clamp(300px,40vh,390px);border-width:4px}
+  .scene-story{min-height:0}
+  .scene-story h2{font-size:27px}
+  .scene-story p{font-size:14px}
+  .scene-story .scene-title-ja{font-size:13px}
+  .scene-story .scene-caption-ja{font-size:13px}
+  .route-visual{padding:16px 10px;gap:8px 5px}
+  .route-stop{font-size:11px;grid-template-columns:24px minmax(64px,1fr);padding-right:7px}
+  .route-stop i{width:23px;height:23px;font-size:10px}
+  .cost .r{display:grid;gap:2px}
+  .cost .r span:last-child{text-align:left;color:var(--shu)}
+  .explore-panel{align-self:stretch;padding-top:10px}
+  .explore-grid a{min-height:82px;padding:10px}
+  .explore-grid a>span:nth-child(2){font-size:16px}
+  .itinerary-intro{padding-top:55px}
+}
+@media(max-width:380px){
+  .brand{font-size:13px}
+  .brand-jp{font-size:15px}
+  .scene-frame{height:310px}
+}
+@media(prefers-reduced-motion:reduce){
+  .scene-stage,.explore-grid a{transform:none}
+}
