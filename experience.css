@@ -135,7 +135,11 @@ nav a.today{border-color:var(--shu)}
 .companion-character img[data-character="doraemon-snack"]{width:142px;height:142px;transform:translateX(-5px)}
 .companion-character img[data-character="doraemon-walk"]{width:116px;height:136px;transform:translateX(-9px)}
 .companion-character img[data-character="doraemon-broom"]{width:154px;height:146px;transform:translateX(-18px)}
+.companion-character img[data-character="doraemon-fly"]{width:144px;height:144px;transform:translateX(-10px)}
 .companion-character img[data-character="naruto"]{width:194px;height:142px;transform:translateX(-35px)}
+.companion-character img[data-character="sakura"]{width:112px;height:150px;transform:translateX(-7px)}
+.companion-character img[data-character="totoro-umbrella"]{width:166px;height:150px;transform:translateX(-20px) scaleX(-1)}
+.companion-character img[data-character="shizuka"]{width:108px;height:148px;transform:translateX(-6px)}
 .companion-character img[data-character="kuromi"]{width:118px;height:138px;transform:translateX(-8px)}
 .companion-character img[hidden]{display:none}
 .companion-fallback{display:grid;place-items:center;width:82px;height:82px;margin-bottom:21px;border:2px solid var(--shu);border-radius:50%;color:var(--shu);background:#fff;font:600 21px var(--jp);transform:rotate(-7deg)}
@@ -186,7 +190,11 @@ nav a.today{border-color:var(--shu)}
   .companion-character img[data-character="doraemon-snack"]{width:94px;height:94px;transform:translateX(-3px)}
   .companion-character img[data-character="doraemon-walk"]{width:76px;height:92px;transform:translateX(-5px)}
   .companion-character img[data-character="doraemon-broom"]{width:100px;height:96px;transform:translateX(-11px)}
+  .companion-character img[data-character="doraemon-fly"]{width:96px;height:96px;transform:translateX(-7px)}
   .companion-character img[data-character="naruto"]{width:126px;height:92px;transform:translateX(-22px)}
+  .companion-character img[data-character="sakura"]{width:72px;height:100px;transform:translateX(-4px)}
+  .companion-character img[data-character="totoro-umbrella"]{width:108px;height:100px;transform:translateX(-13px) scaleX(-1)}
+  .companion-character img[data-character="shizuka"]{width:70px;height:98px;transform:translateX(-4px)}
   .companion-character img[data-character="kuromi"]{width:78px;height:94px;transform:translateX(-5px)}
   .companion-fallback{width:58px;height:58px;margin-bottom:18px;font-size:16px}
   .companion-controls{bottom:-4px;gap:4px}

@@ -20,11 +20,15 @@
       {ja:"奈良",en:"NARA"},{ja:"札幌",en:"SAPPORO"},{ja:"横浜",en:"YOKOHAMA"}
     ],
     characters:[
-      {id:"doraemon-snack",src:"assets/characters/doraemon-snack.png?v=20261105.2",categories:["food","daily-life"]},
-      {id:"doraemon-walk",src:"assets/characters/doraemon-walk.png?v=20261105.2",categories:["daily-life","rituals","food"]},
-      {id:"doraemon-broom",src:"assets/characters/doraemon-broom.png?v=20261105.2",categories:["seasons","crafts","words"]},
-      {id:"naruto",src:"assets/characters/naruto.png?v=20261105.2",categories:["words","rituals","seasons"]},
-      {id:"kuromi",src:"assets/characters/kuromi.png?v=20261105.2",categories:["crafts","words","rituals","seasons"]}
+      {id:"doraemon-snack",src:"assets/characters/doraemon-snack.png?v=20261105.3",categories:["food","daily-life"]},
+      {id:"doraemon-walk",src:"assets/characters/doraemon-walk.png?v=20261105.3",categories:["daily-life","rituals","food"]},
+      {id:"doraemon-broom",src:"assets/characters/doraemon-broom.png?v=20261105.3",categories:["seasons","crafts","words"]},
+      {id:"doraemon-fly",src:"assets/characters/doraemon-fly.png?v=20261105.3",categories:["daily-life","seasons","words"]},
+      {id:"naruto",src:"assets/characters/naruto.png?v=20261105.3",categories:["words","rituals","seasons"]},
+      {id:"sakura",src:"assets/characters/sakura.png?v=20261105.3",categories:["daily-life","crafts","words"]},
+      {id:"totoro-umbrella",src:"assets/characters/totoro-umbrella.png?v=20261105.3",categories:["seasons","words","crafts"]},
+      {id:"shizuka",src:"assets/characters/shizuka.png?v=20261105.3",categories:["daily-life","food","rituals"]},
+      {id:"kuromi",src:"assets/characters/kuromi.png?v=20261105.3",categories:["crafts","words","rituals","seasons"]}
     ],
     letters:[
       letter("omoiyari","daily-life","Omoiyari","Ở Nhật có một từ rất dịu dàng: omoiyari—nghĩ cho người khác trước khi họ phải lên tiếng. Đôi khi, đó chỉ là hạ giọng trên tàu hay né sang bên để một người đang vội bước qua.",S.mindful),
