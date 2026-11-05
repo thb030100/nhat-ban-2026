@@ -42,6 +42,7 @@
       letter("oshibori","daily-life","Chiếc khăn oshibori","Chiếc khăn ấm hoặc lạnh được trao trước bữa ăn gọi là oshibori. Nó dành để lau tay, như một lời mời nhỏ rằng: hãy gác lại hành trình bên ngoài và thong thả thưởng thức bữa cơm.",S.manners),
       letter("no-tipping","daily-life","Không cần để lại tiền tip","Ở Nhật, sự chu đáo thường đã nằm trong cách phục vụ, nên tiền tip không phải thông lệ. Một lời arigatō gozaimashita chân thành thường là món quà đẹp hơn.",S.manners),
       letter("mottainai","daily-life","Mottainai","Mottainai là cảm giác tiếc khi một món đồ, thức ăn hay cơ hội chưa được trân trọng đúng mức. Từ ấy nhắc chúng ta dùng mọi thứ lâu hơn và biết đủ hơn một chút.",S.mindful),
+      secretLetter("secret-chiisana-kiseki","seasons","Chiisana kiseki","Được cùng anh lên kế hoạch cho chuyến đi này làm em thấy biết ơn và trân trọng vô cùng từng khoảnh khắc hiện tại. Anh chính là chiisana kiseki - một điều kỳ diệu nhỏ bé - trong cuộc đời em. Mong sớm đến ngày chúng mình cùng nhau ngắm tuyết rơi."),
 
       letter("sakura","seasons","Mùa hoa không ở lại lâu","Hoa anh đào đẹp một phần vì chóng tàn. Người Nhật ngắm những cánh hoa rơi như một lời nhắc rằng điều mong manh không vì ngắn ngủi mà kém phần quý giá.",S.seasons),
       letter("momijigari","seasons","Momijigari","Người Nhật gọi việc đi ngắm lá đỏ là momijigari—“săn” mùa thu. Không cần mang gì về; món quà chỉ là một buổi chiều đã đứng thật lâu dưới những tán phong.",S.seasons),
@@ -53,6 +54,7 @@
       letter("microseasons","seasons","Bảy mươi hai mùa nhỏ","Lịch truyền thống Nhật Bản từng chia năm thành 72 tiết khí rất nhỏ. Có mùa “gió đông làm tan băng” và mùa “đom đóm bay lên”—thiên nhiên được lắng nghe bằng những thay đổi thật khẽ.",S.seasons),
       letter("hatsuyuki","seasons","Hatsuyuki","Hatsuyuki là trận tuyết đầu tiên của mùa. Người ta nhớ nó không vì tuyết dày, mà vì khoảnh khắc quen thuộc bỗng trở nên mới mẻ dưới một lớp trắng đầu tiên.",S.seasons),
       letter("komorebi","seasons","Ánh nắng komorebi","Komorebi là ánh nắng lọt qua kẽ lá. Tiếng Nhật dành riêng một từ cho khoảnh khắc ấy, như thể vẻ đẹp nhỏ bé cũng xứng đáng được gọi đúng tên.",S.seasons),
+      secretLetter("secret-komorebi","words","Komorebi","Với em, anh chính là komorebi - những vệt nắng ấm dịu xuyên qua kẽ lá, luôn làm em thấy bình yên và dễ chịu. Cảm ơn anh vì tất cả sự dịu dàng anh dành cho em."),
 
       letter("dashi","food","Vị umami trong dashi","Nhiều món Nhật bắt đầu bằng dashi—nước dùng từ kombu, cá bào hoặc cá khô. Nó không lấn át nguyên liệu, chỉ lặng lẽ khiến mọi hương vị trở nên tròn đầy hơn.",S.food),
       letter("rice-left","food","Cơm ở bên trái","Trong một bữa cơm truyền thống, bát cơm thường ở phía trái và bát canh ở phía phải. Cách sắp đặt nhỏ ấy đã được gìn giữ qua nhiều thế hệ.",S.food),
@@ -75,6 +77,7 @@
       letter("ema","crafts","Tấm gỗ ema","Ema là tấm gỗ nhỏ để viết lời nguyện tại đền. Ngày xưa người ta từng dâng ngựa; về sau hình ảnh con ngựa được thu nhỏ trên tấm gỗ thay cho lễ vật lớn ấy.",S.shrine),
       letter("goshuin","crafts","Một trang goshuin","Goshuin là dấu son và thư pháp nhận tại đền chùa sau khi viếng lễ. Nó không đơn thuần là con dấu du lịch, mà là kỷ niệm của một cuộc gặp gỡ trang nghiêm.",S.shrine),
       letter("omamori","crafts","Omamori nhỏ bé","Mỗi omamori thường gửi gắm một lời cầu riêng: bình an, học hành hay chuyến đi thuận lợi. Người ta thường giữ nguyên túi bùa, không mở ra xem điều gì nằm bên trong.",S.shrine),
+      secretLetter("secret-omoide","daily-life","Omoide","Mùa đông này, em mong tụi mình sẽ cùng nhau tạo nên thật nhiều omoide - những kỷ niệm thật đẹp và vô giá. Đến lúc đó, anh nhớ nắm tay em thật chặt, cùng em ăn thật nhiều món ngon và cùng nhau đi qua hết những góc phố mùa đông nhé. Cảm ơn anh vì đã luôn chiều chuộng em!"),
 
       letter("natsukashii","words","Natsukashii","Natsukashii là cảm giác ấm áp khi một mùi hương, bài hát hay con phố đưa ta về ký ức cũ. Không hẳn là buồn; giống như được quá khứ khẽ chạm vào vai.",S.manners),
       letter("ichigo-ichie","words","Ichigo ichie","Ichigo ichie nhắc rằng mỗi cuộc gặp chỉ xảy ra đúng một lần theo cách ấy. Dù có gặp lại, con người và khoảnh khắc đã khác—vì vậy hãy có mặt thật trọn vẹn.",S.manners),
@@ -97,10 +100,6 @@
       letter("omikuji","rituals","Một quẻ omikuji","Omikuji không quyết định tương lai, chỉ gửi một lời để suy ngẫm. Nếu nhận quẻ chưa tốt, bạn có thể buộc nó tại nơi được chỉ dẫn và để nỗi lo ở lại.",S.shrine),
       letter("kachi-daruma","rituals","Kachi-Daruma của Katsuoji","Daruma ở Katsuoji không hứa làm điều ước thành sự thật. Nó nhắc người cầu nguyện đối diện với mình và chiến thắng sự yếu lòng trước khi mong chiến thắng bên ngoài.",S.katsuoji,"Katsuoji"),
       letter("mount-fuji","rituals","Phú Sĩ—một nơi để ngước nhìn","Phú Sĩ được trân trọng không chỉ vì độ cao, mà còn như một nơi thờ phụng và nguồn cảm hứng nghệ thuật. Có lẽ vì thế, mỗi lần ngọn núi hiện ra, người ta thường im lặng thêm một chút.",S.fuji),
-
-      secretLetter("secret-chiisana-kiseki","seasons","Chiisana kiseki","Được cùng anh lên kế hoạch cho chuyến đi này làm em thấy biết ơn và trân trọng vô cùng từng khoảnh khắc hiện tại. Anh chính là chiisana kiseki - một điều kỳ diệu nhỏ bé - trong cuộc đời em. Mong sớm đến ngày chúng mình cùng nhau ngắm tuyết rơi."),
-      secretLetter("secret-komorebi","words","Komorebi","Với em, anh chính là komorebi - những vệt nắng ấm dịu xuyên qua kẽ lá, luôn làm em thấy bình yên và dễ chịu. Cảm ơn anh vì tất cả sự dịu dàng anh dành cho em."),
-      secretLetter("secret-omoide","daily-life","Omoide","Mùa đông này, em mong tụi mình sẽ cùng nhau tạo nên thật nhiều omoide - những kỷ niệm thật đẹp và vô giá. Đến lúc đó, anh nhớ nắm tay em thật chặt, cùng em ăn thật nhiều món ngon và cùng nhau đi qua hết những góc phố mùa đông nhé. Cảm ơn anh vì đã luôn chiều chuộng em!"),
       secretLetter("secret-noel-kiseki","seasons","Điều ước đêm Noel","Người ta bảo đêm Noel là lúc những kiseki - điều kỳ diệu - dễ xảy ra nhất. Nếu anh có một điều ước vào Giáng Sinh này, hãy để lại một lời nhắn cho em biết nhé.")
     ]
   };
