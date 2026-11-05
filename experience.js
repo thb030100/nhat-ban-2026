@@ -7,7 +7,7 @@
   var esc=function(value){return String(value).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
   var mapUrl=function(query){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(query)};
 
-  var menuButton=$("menu-toggle"),menuPanel=$("menu-panel"),snowButton=$("snow-toggle");
+  var menuButton=$("menu-toggle"),menuPanel=$("menu-panel");
   function closeMenu(){menuPanel.hidden=true;menuButton.setAttribute("aria-expanded","false");menuButton.setAttribute("aria-label","Open menu")}
   menuButton.addEventListener("click",function(){
     var open=menuPanel.hidden;
@@ -19,55 +19,10 @@
   document.addEventListener("click",function(e){if(!menuPanel.hidden&&!menuPanel.contains(e.target)&&!menuButton.contains(e.target))closeMenu()});
   document.addEventListener("keydown",function(e){if(e.key==="Escape")closeMenu()});
 
-  // Theme switcher
-  var menuThemeButton=$("menu-theme-toggle");
-  function isDarkMode(){
-    var t=document.documentElement.getAttribute("data-theme");
-    if(t==="dark")return true;
-    if(t==="light")return false;
-    return !!(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches);
-  }
-  function updateThemeUI(dark){
-    var tip=dark?"Chuyển sang giao diện sáng":"Chuyển sang giao diện tối";
-    document.querySelectorAll(".theme-toggle").forEach(function(b){
-      b.setAttribute("title",tip);
-      b.setAttribute("aria-label",tip);
-      b.setAttribute("aria-pressed",String(dark));
-    });
-    if(menuThemeButton){
-      menuThemeButton.textContent="Theme · 画面: "+(dark?"Dark · 夜":"Light · 昼");
-      menuThemeButton.setAttribute("aria-pressed",String(dark));
-    }
-  }
-  function toggleTheme(){
-    var next=!isDarkMode();
-    var val=next?"dark":"light";
-    document.documentElement.setAttribute("data-theme",val);
-    try{localStorage.setItem("jp-theme",val)}catch(e){}
-    updateThemeUI(next);
-  }
-  document.querySelectorAll(".theme-toggle").forEach(function(b){
-    b.addEventListener("click",toggleTheme);
-  });
-  if(menuThemeButton){
-    menuThemeButton.addEventListener("click",toggleTheme);
-  }
-  updateThemeUI(isDarkMode());
-  if(window.matchMedia){
-    try{
-      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",function(e){
-        if(!localStorage.getItem("jp-theme")){
-          updateThemeUI(e.matches);
-        }
-      });
-    }catch(err){}
-  }
-
-  var reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)");
-  var snowWanted=true;
-  try{snowWanted=localStorage.getItem("jp-snow")!=="off"}catch(e){}
+  try{localStorage.removeItem("jp-theme");localStorage.removeItem("jp-snow")}catch(e){}
+  document.documentElement.removeAttribute("data-theme");
   var currentIndex=0,manual=false,swapVersion=0;
-  var image=$("scene-image"),fallback=$("scene-image-fallback"),snowLayer=$("snow-layer");
+  var image=$("scene-image"),fallback=$("scene-image-fallback");
   var jstFormatter=new Intl.DateTimeFormat("en-GB",{timeZone:"Asia/Tokyo",hour:"2-digit",minute:"2-digit",hourCycle:"h23"});
   function japanTime(){
     var parts=jstFormatter.formatToParts(new Date());
@@ -80,33 +35,6 @@
   function indexForHour(hour){
     return scenes.findIndex(function(s){return s.from<s.to?(hour>=s.from&&hour<s.to):(hour>=s.from||hour<s.to)});
   }
-  var flakes=document.createDocumentFragment();
-  for(var i=0;i<28;i++){
-    var flake=document.createElement("span");flake.className="flake";
-    flake.style.setProperty("--x",((i*37)%98+1)+"%");
-    flake.style.setProperty("--size",(i%5===0?5:2+i%3)+"px");
-    flake.style.setProperty("--duration",(6+i%7)+"s");
-    flake.style.setProperty("--delay",(-i*.52)+"s");
-    flake.style.setProperty("--drift",((i%2?1:-1)*(8+i%6*6))+"px");
-    flake.style.setProperty("--opacity",(.28+(i%5)*.12).toFixed(2));
-    flakes.appendChild(flake);
-  }
-  snowLayer.appendChild(flakes);
-  function updateSnow(){
-    var forced=reduceMotion.matches;
-    snowLayer.classList.toggle("is-snowing",!!(scenes[currentIndex].snow&&snowWanted&&!forced));
-    snowButton.textContent=forced?"Snow · 雪: off (reduced motion)":"Snow · 雪: "+(snowWanted?"on":"off");
-    snowButton.setAttribute("aria-pressed",String(snowWanted&&!forced));
-    snowButton.disabled=forced;
-  }
-  snowButton.addEventListener("click",function(){
-    snowWanted=!snowWanted;
-    try{localStorage.setItem("jp-snow",snowWanted?"on":"off")}catch(e){}
-    updateSnow();
-  });
-  if(reduceMotion.addEventListener)reduceMotion.addEventListener("change",updateSnow);
-  else if(reduceMotion.addListener)reduceMotion.addListener(updateSnow);
-
   function setImage(scene){
     var version=++swapVersion;
     image.classList.add("is-changing");fallback.hidden=true;image.hidden=false;
@@ -135,7 +63,7 @@
     $("scene-credit").textContent="Photo / 写真: "+scene.credit+" ↗";
     $("scene-credit").href=scene.source;
     $("scene-dots").querySelectorAll("button").forEach(function(dot,i){dot.classList.toggle("active",i===currentIndex);dot.setAttribute("aria-current",i===currentIndex?"true":"false")});
-    setImage(scene);updateSnow();
+    setImage(scene);
   }
   $("scene-dots").innerHTML=scenes.map(function(scene,i){return '<button type="button" aria-label="View '+esc(scene.title)+'" data-scene="'+i+'"></button>'}).join("");
   $("scene-dots").addEventListener("click",function(e){var n=e.target.getAttribute("data-scene");if(n===null)return;manual=true;renderScene(Number(n))});

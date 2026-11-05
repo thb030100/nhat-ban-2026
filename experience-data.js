@@ -8,7 +8,7 @@ window.JP_EXPERIENCE = {
       captionJa:"朝の朱い鳥居をくぐるたび、静かな足音が新しい年への願いになる。",
       image:"hero/fushimi.jpg", fallback:"photos/fushimi.webp", alt:"Lối đi giữa những cổng torii đỏ tại Fushimi Inari",
       day:"d29", dayLabel:"29/12", credit:"Basile Morin · CC BY-SA 4.0",
-      source:"https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg", snow:false
+      source:"https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
     },
     {
       id:"katsuoji", from:9, to:12, kicker:"OSAKA · MORNING / 大阪・朝",
@@ -17,7 +17,7 @@ window.JP_EXPERIENCE = {
       captionJa:"池のほとりで赤いだるまが小さな願いを見守る。私たちも、そのひとつをそっと預ける。",
       image:"hero/katsuoji.jpg", alt:"Những búp bê Daruma bên hồ trong khuôn viên Katsuoji",
       day:"d31", dayLabel:"31/12", credit:"Ouppygirl · CC BY-SA 4.0",
-      source:"https://commons.wikimedia.org/wiki/File:Daruma_at_Katsu%C5%8D-ji_temple_overlooking_pond.jpg", snow:false
+      source:"https://commons.wikimedia.org/wiki/File:Daruma_at_Katsu%C5%8D-ji_temple_overlooking_pond.jpg"
     },
     {
       id:"kawaguchiko", from:12, to:16, kicker:"FUJI · AFTERNOON / 富士・午後",
@@ -26,7 +26,7 @@ window.JP_EXPERIENCE = {
       captionJa:"湖は冬の淡い空を映し、雪の向こうに富士山が佇む。光が変わるまで、もう少しここにいたい。",
       image:"hero/kawaguchiko.jpg", fallback:"photos/kawaguchi.webp", alt:"Hồ Kawaguchi và khu dân cư phủ tuyết vào mùa đông",
       day:"d26", dayLabel:"26/12", credit:"Chris Moore · Public domain",
-      source:"https://commons.wikimedia.org/wiki/File:Winterkawaguchiko.jpg", snow:true
+      source:"https://commons.wikimedia.org/wiki/File:Winterkawaguchiko.jpg"
     },
     {
       id:"kiyomizu", from:16, to:18, kicker:"KYOTO · DUSK / 京都・夕暮れ",
@@ -35,7 +35,7 @@ window.JP_EXPERIENCE = {
       captionJa:"夕暮れが清水寺に降りるころ、京の屋根は琥珀色にほどける。古い坂道の先へ、歩いていこう。",
       image:"hero/kiyomizu.jpg", fallback:"photos/kiyomizu.webp", alt:"Chùa Kiyomizu-dera nhìn ra Kyoto",
       day:"d28", dayLabel:"28/12", credit:"Jordy Meow · CC BY-SA 3.0",
-      source:"https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg", snow:false
+      source:"https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg"
     },
     {
       id:"gion", from:18, to:22, kicker:"KYOTO · EVENING / 京都・夜",
@@ -44,7 +44,7 @@ window.JP_EXPERIENCE = {
       captionJa:"灯籠のあかりが細い路地を包み、木の格子の向こうで鴨川が夜を運んでいく。",
       image:"hero/gion.jpg", fallback:"photos/gion.webp", alt:"Con phố ở Gion, Kyoto vào buổi tối",
       day:"d28", dayLabel:"28/12", credit:"663highland · CC BY 2.5",
-      source:"https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg", snow:false
+      source:"https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg"
     },
     {
       id:"dotonbori", from:22, to:5, kicker:"OSAKA · AFTER DARK / 大阪・夜",
@@ -53,7 +53,7 @@ window.JP_EXPERIENCE = {
       captionJa:"運河に散るネオンは紙吹雪のよう。年の最後の時間を、ふたりでゆっくり見送る。",
       image:"hero/dotonbori.jpg", fallback:"photos/dotonbori.webp", alt:"Đèn đêm và kênh Dotonbori ở Osaka",
       day:"d31", dayLabel:"31/12", credit:"Type specimen · CC BY-SA 3.0",
-      source:"https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg", snow:false
+      source:"https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg"
     }
   ],
   food: [
