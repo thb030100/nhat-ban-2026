@@ -3,17 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <title>Winter in Japan · 冬の旅</title>
 <link rel="icon" href="data:,">
-<script>
-(function(){
-  try{
-    var t=localStorage.getItem("jp-theme");
-    if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);
-  }catch(e){}
-})();
-</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
@@ -38,20 +30,6 @@
   --tip-ink:#1E5A3C;
   --sans:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --jp:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    color-scheme:dark;
-    --bg:#0E131A;--surface:#161D27;--ink:#E6EBF2;--muted:#97A2B3;--line:#283241;--map:#121A24;
-    --ai:#93B3DD;--ai-soft:#1D2A3C;--shu:#F07B63;--shu-soft:#3A221E;
-    --snow:#8DB8DE;--snow-soft:#1A2B3B;--warn-bg:#352A12;--warn-ink:#F1CB7A;--tip-bg:#15291F;--tip-ink:#8FD3AE;
-  }
-}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --bg:#0E131A;--surface:#161D27;--ink:#E6EBF2;--muted:#97A2B3;--line:#283241;--map:#121A24;
-  --ai:#93B3DD;--ai-soft:#1D2A3C;--shu:#F07B63;--shu-soft:#3A221E;
-  --snow:#8DB8DE;--snow-soft:#1A2B3B;--warn-bg:#352A12;--warn-ink:#F1CB7A;--tip-bg:#15291F;--tip-ink:#8FD3AE;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -210,8 +188,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
 .pack span{font-size:14px;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
 .foot{color:var(--muted);font-size:13px;padding-top:28px}
 </style>
-<link rel="stylesheet" href="experience.css?v=20261105.1">
-<link rel="stylesheet" href="diary.css?v=20261105.1">
+<link rel="stylesheet" href="experience.css?v=20261105.2">
+<link rel="stylesheet" href="diary.css?v=20261105.2">
 </head>
 <body>
 
@@ -220,16 +198,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
     <a class="brand" href="#home" aria-label="Back to the beginning"><span class="brand-jp" lang="ja">冬の旅</span><span>Winter in Japan</span></a>
     <span class="site-dates">23/12/2026 – 01/01/2027</span>
     <div class="header-actions">
-      <button class="theme-toggle header-theme-toggle" id="theme-toggle" type="button" aria-label="Chuyển chế độ sáng / tối" title="Chuyển chế độ sáng / tối">
-        <span class="theme-icon icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
-        <span class="theme-icon icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
-      </button>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="menu-panel" aria-expanded="false" aria-label="Open menu">☰</button>
     </div>
     <div class="menu-panel" id="menu-panel" hidden>
       <a href="#cho-o">Places to stay · 宿</a><a href="#chi-phi">Travel costs · 旅の費用</a><a href="#chuan-bi">Before we go · 旅支度</a>
-      <button type="button" id="snow-toggle" aria-pressed="true">Snow · 雪: on</button>
-      <button type="button" id="menu-theme-toggle" class="menu-theme-btn">Theme · 画面: Dark · 夜</button>
     </div>
   </header>
 
@@ -243,6 +215,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
       </div>
     </div>
     <div class="companion-letter" id="companion-letter">
+      <div class="companion-city-stamp" id="companion-city-stamp" aria-hidden="true"><span id="companion-stamp-ja">東京</span><small id="companion-stamp-en">TOKYO</small></div>
       <p class="companion-eyebrow">Một lá thư nhỏ từ Nhật Bản</p>
       <h2 id="companion-title">Đang mở một lá thư…</h2>
       <div class="companion-copy" id="companion-copy-wrap">
@@ -261,7 +234,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
       <p class="scene-time" id="scene-time">00:00 · JST (UTC+9)</p>
       <div class="scene-frame" id="scene-frame">
         <img id="scene-image" src="hero/fushimi.jpg" alt="Lối cổng torii tại Fushimi Inari" width="1920" height="1280" fetchpriority="high">
-        <div class="snow-layer" id="snow-layer" aria-hidden="true"></div>
         <div class="scene-image-fallback" id="scene-image-fallback" hidden>Japan, remembered</div>
         <button class="scene-arrow prev" id="scene-prev" type="button" aria-label="Previous scene">‹</button>
         <button class="scene-arrow next" id="scene-next" type="button" aria-label="Next scene">›</button>
@@ -304,10 +276,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   <nav aria-label="Chọn ngày">
     <div class="nav-bar">
       <div class="row" id="nav"></div>
-      <button class="theme-toggle nav-theme-toggle" id="nav-theme-toggle" type="button" aria-label="Chuyển chế độ sáng / tối" title="Chuyển chế độ sáng / tối">
-        <span class="theme-icon icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></span>
-        <span class="theme-icon icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span>
-      </button>
     </div>
   </nav>
 
@@ -388,8 +356,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   <p class="foot">Ảnh từ Wikimedia Commons và Wikipedia, ghi nguồn cùng giấy phép tại từng ảnh. Sơ đồ chặng chỉ thể hiện thứ tự di chuyển; bấm Google Maps để xem tuyến thực tế. Giờ mở cửa, xe chạy và lịch nghỉ năm mới có thể thay đổi.</p>
 </div>
 
-<script src="experience-data.js?v=20261105.1"></script>
-<script src="trip-data.js?v=20261105.1"></script>
+<script src="experience-data.js?v=20261105.2"></script>
+<script src="trip-data.js?v=20261105.2"></script>
 <script>
 (function(){
   var DAYS=window.JP_TRIP.days;
@@ -562,8 +530,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
   }
 })();
 </script>
-<script src="experience.js?v=20261105.1"></script>
-<script src="companion-data.js?v=20261105.1"></script>
-<script src="companion.js?v=20261105.1"></script>
+<script src="experience.js?v=20261105.2"></script>
+<script src="companion-data.js?v=20261105.2"></script>
+<script src="companion.js?v=20261105.2"></script>
 </body>
 </html>

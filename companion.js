@@ -67,8 +67,11 @@
   function render(index,remember){
     current=(index+data.letters.length)%data.letters.length;
     var letter=data.letters[current];
+    var stamps=Array.isArray(data.stamps)?data.stamps:[];
+    var stamp=stamps.length?stamps[current%stamps.length]:null;
     $("companion-title").textContent=letter.title;
     $("companion-copy").textContent=letter.text;
+    if(stamp){$("companion-stamp-ja").textContent=stamp.ja;$("companion-stamp-en").textContent=stamp.en}
     setExpanded(false);setCharacter(letter);
     if(remember){try{localStorage.setItem("jp-companion-last",letter.id)}catch(e){}}
   }
